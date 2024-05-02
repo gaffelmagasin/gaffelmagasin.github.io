@@ -1,21 +1,4 @@
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDp7DzihvjGIEXviadgNrwRiz3bKp8lO78",
-  authDomain: "gaffel-4141d.firebaseapp.com",
-  projectId: "gaffel-4141d",
-  storageBucket: "gaffel-4141d.appspot.com",
-  messagingSenderId: "387098751146",
-  appId: "1:387098751146:web:2fca69935bcb2c8bd560d3",
-  measurementId: "G-KST67Z2T97"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const app = initializeApp(firebaseConfig);
 
 <!DOCTYPE html>
 	<html lang="en">
@@ -25,6 +8,47 @@ const app = initializeApp(firebaseConfig);
 	</style>
 	
 	<body>
+		
+		  <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+		  <script type="module">
+		    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js'
+		
+		    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+		    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js'
+		
+		    // Add Firebase products that you want to use
+		    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js'
+		    import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js'
+		  </script>
+
+		 <script type="module">
+		    // ...
+		
+		    // TODO: Replace the following with your app's Firebase project configuration
+		     const firebaseConfig = {
+		    apiKey: "AIzaSyDp7DzihvjGIEXviadgNrwRiz3bKp8lO78",
+		    authDomain: "gaffel-4141d.firebaseapp.com",
+		    projectId: "gaffel-4141d",
+		    storageBucket: "gaffel-4141d.appspot.com",
+		    messagingSenderId: "387098751146",
+		    appId: "1:387098751146:web:2fca69935bcb2c8bd560d3",
+		    measurementId: "G-KST67Z2T97"
+		    };
+		
+		    // Initialize Firebase
+			const app = initializeApp(firebaseConfig);
+			const db = getFirestore(app);
+			
+			// Get a list of cities from your database
+			async function getCities(db) {
+			  const citiesCol = collection(db, 'cities');
+			  const citySnapshot = await getDocs(citiesCol);
+			  const cityList = citySnapshot.docs.map(doc => doc.data());
+			  return cityList;
+			}
+			 
+		  </script>
+		
 		<p>Hello</p>
 	</body>
 </html>
