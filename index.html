@@ -1,5 +1,21 @@
-npm install firebase
-import { initializeApp } from 'firebase/app';
+
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDp7DzihvjGIEXviadgNrwRiz3bKp8lO78",
+  authDomain: "gaffel-4141d.firebaseapp.com",
+  projectId: "gaffel-4141d",
+  storageBucket: "gaffel-4141d.appspot.com",
+  messagingSenderId: "387098751146",
+  appId: "1:387098751146:web:2fca69935bcb2c8bd560d3",
+  measurementId: "G-KST67Z2T97"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
 
 <!DOCTYPE html>
 	<html lang="en">
