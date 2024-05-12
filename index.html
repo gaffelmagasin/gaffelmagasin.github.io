@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html>
      <head>
-         <script>
-               add_action( 'pre_get_posts', 'add_header_origin' );
-     
-               function add_header_origin() {
-               	if (is_feed()){
-               		header( 'Access-Control-Allow-Origin: *' );
-               	}
-               } 
-          </script>
+         
      </head>
-
-     <p>Gaffel</p>
-     <script>
-          const RSS_URL = `https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default`;
-
-          fetch(RSS_URL)
-            .then(response => response.text())
-            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-            .then(data => console.log(data))
-    </script>
+     <body>
+          <p>Gaffel</p>
+     </body>
 </html>
