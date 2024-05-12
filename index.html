@@ -7,8 +7,8 @@
           <p>Gaffel</p>
           <div id="rss-feed"></div>
           <script>
-               const url = 'https://corsproxy.io/?' + encodeURIComponent('https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default?alt=rss');
-               console.log(url);
+               const url = 'https://feeds.feedburner.com/gaffelmagasinsuperhemlig/jdk5KckZnGp');
+
                fetch(url)
                  .then(function(resp) { return resp.text() })
                  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
