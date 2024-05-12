@@ -8,7 +8,7 @@
           <div id="rss-feed"></div>
           <script>
                
-               fetch('https://corsproxy.io/?https%3A%2F%2Fgaffelmagasinsuperhemlig.blogspot.com%2Ffeeds%2Fposts%2Fdefault%3Falt%3Drss')
+               fetch('const url = 'https://corsproxy.io/?' + encodeURIComponent('https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default?alt=rss');')
                  .then(function(resp) { return resp.text() })
                  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
                  .then(function(resp) {
