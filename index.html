@@ -12,15 +12,11 @@
                  .then(function(resp) { return resp.text() })
                  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
                  .then(function(resp) {
-
-                    console.log();
                       
                    const items = resp.getElementsByTagName('item')
                    let buffer = "";
                    for (var x = 0; x < items.length && x < 5; x++) {
-               		
-                    
-                    	
+               		                                     	
                      const title = items[x].getElementsByTagName('title')[0].textContent
                      const date = items[x].getElementsByTagName('pubDate')[0].textContent
                      const content = items[x].getElementsByTagName('description')[0].textContent
