@@ -2,6 +2,11 @@
 <html>
      <p>Gaffel</p>
      <script>
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+          const RSS_URL = `https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default`;
+
+          fetch(RSS_URL)
+            .then(response => response.text())
+            .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+            .then(data => console.log(data))
     </script>
 </html>
