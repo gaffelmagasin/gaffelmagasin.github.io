@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
+     <head>
+         <script src="https://unpkg.com/rss-parser/dist/rss-parser.min.js"></script>
+         <script>
+             let parser = new RSSParser();
+             parser.parseURL('https://wordpress.com/blog/feed/', function(err, feed) {
+                 if (err) throw err;
+                 console.log(feed.title);
+                 feed.items.forEach(function(entry) {
+                     console.log(entry);
+                 })
+             })
+         </script>
+     </head>
+
      <p>Gaffel</p>
      <script>
           const RSS_URL = `https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default`;
