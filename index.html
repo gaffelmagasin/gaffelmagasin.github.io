@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
      <head>
-         <script src="https://unpkg.com/rss-parser/dist/rss-parser.min.js"></script>
          <script>
-             let parser = new RSSParser();
-             parser.parseURL('https://blogspot.com/feeds/posts/default', function(err, feed) {
-                 if (err) throw err;
-                 console.log(feed.title);
-                 feed.items.forEach(function(entry) {
-                     console.log(entry);
-                 })
-             })
-         </script>
+               add_action( 'pre_get_posts', 'add_header_origin' );
+     
+               function add_header_origin() {
+               	if (is_feed()){
+               		header( 'Access-Control-Allow-Origin: *' );
+               	}
+               } 
+          </script>
      </head>
 
      <p>Gaffel</p>
