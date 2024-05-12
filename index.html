@@ -7,7 +7,7 @@
           <p>Gaffel</p>
           <div id="rss-feed"></div>
           <script>
-               fetch('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml')
+               fetch('https://gaffelmagasinsuperhemlig.blogspot.com/feeds/posts/default')
                  .then(function(resp) { return resp.text() })
                  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
                  .then(function(resp) {
