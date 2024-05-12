@@ -5,6 +5,7 @@
      </head>
      <body>
           <p>Gaffel</p>
+          <div id="rss-feed"></div>
           <script>
                fetch('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml')
                  .then(function(resp) { return resp.text() })
