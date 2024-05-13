@@ -1,7 +1,7 @@
-artikel: 1
-titel: "FÖR HAWAIISKJORTAN I TIDEN"
-ingress: "Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys."
-text: "Under en diskussion med min kollega om hur Johan Glans lyckats se så ung ut trots sin höga ålder (49 år för övrigt) 
+<item>
+<titel> "FÖR HAWAIISKJORTAN I TIDEN" <titel>
+<ingress> "Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys." </ingress>
+<text> "Under en diskussion med min kollega om hur Johan Glans lyckats se så ung ut trots sin höga ålder (49 år för övrigt) 
 kom vi fram till att han måste leva ett ganska stressfritt liv. Komikeryrket kräver ju att man arbetar max 2 timmar om dagen, 
 dessutom får man dricka öl på jobbet, det är till och med uppmuntrat. Denna förklaring får man dessvärre avfärda, turnera runt 
 med buss, pissiga hotell och dylikt samt uppträda i hålor som Hässleholm, Örkelljunga och Sveg tär nog något ordentligt på en. 
@@ -33,10 +33,11 @@ iklädd en Hawaiiskjorta (antagligen). Plagget fungerar uppenbarligen som skydds
 Är hawaiiskjortan lösningen på psykisk ohälsa och nyckeln till världsfred? Antagligen inte (men onekligen en intressant tankeställare), den 
 lyckades trots allt inte stoppa det stundande världskriget. Hawaiiskjortan finns dock alltid här för oss, när det är dags att koppla av i 
 någon vecka efter en lång tids arbete. Hawaiiskjortan finns här, för Sverige, i tiden."
+</text>
+</item>
 
-§
-
-artikel: 2
-titel: "Test"
-ingress: "ingressingressingrosso - ali alonso"
-text: "hjälp"
+<item>
+  <titel>"Test"</titel>
+  <ingress> "ingressingressingrosso - ali alonso" </ingress>
+  <text> "hjälp" </text>
+</item>
