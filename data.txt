@@ -3,7 +3,7 @@
 <item>
   <titel> FÖR HAWAIISKJORTAN I TIDEN <titel>
   <ingress> Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys. </ingress>
-  <text> Text </text>
+  <text> ext </text>
 </item>
 <item>
   <titel>Test</titel>
