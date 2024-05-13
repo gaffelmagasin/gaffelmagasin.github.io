@@ -11,7 +11,7 @@
     <div id ='rss-feed'></div>
     <script>
 
-	fetch('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml')
+	fetch('data.txt')
 	  .then(function(resp) { return resp.text() })
 	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
 	  .then(function(resp) {
@@ -20,9 +20,9 @@
 	    let buffer = "";
 	    for (var x = 0; x < items.length && x < 5; x++) {
 	
-	      const title = items[x].getElementsByTagName('title')[0].textContent
-	      const date = items[x].getElementsByTagName('pubDate')[0].textContent
-	      const content = items[x].getElementsByTagName('description')[0].textContent
+	      const title = items[x].getElementsByTagName('titel')[0].textContent
+	      const date = items[x].getElementsByTagName('ingress')[0].textContent
+	      const content = items[x].getElementsByTagName('text')[0].textContent
 	      
 	      buffer += `
 	      <div style="
