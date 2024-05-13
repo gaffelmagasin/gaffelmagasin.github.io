@@ -22,6 +22,7 @@
 		console.log(str.length);
 		var i = 0;
 		var looks = 0;
+		var article_i = 0
 		while(i < str.length){
 			var index = str.indexOf("<artikel>",i);
 			
@@ -32,7 +33,11 @@
 			else{
 				var end_index = str.indexOf("</artikel>",index);
 				var content = str.substr(index,end_index);
+				console.log(index);
+				console.log(end_index);
 				console.log(content);
+			
+				article_i++
 			}
 		}
 		
