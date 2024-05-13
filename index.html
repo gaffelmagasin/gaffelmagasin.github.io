@@ -16,9 +16,10 @@
 		  return resp.text()
 	   })
 	  .then(function(resp) {
-		console.log(resp);
+		var str = resp;
+		console.log(str);
 
-		console.log(readLines(resp));
+		console.log(str.length);
 	
 	    //document.getElementById('rss-feed').innerHTML = buffer
 	  })
