@@ -11,13 +11,13 @@
 <body>
     
     <script>
-          fetch("data.txt")
-           .then(r=>r.text())
-           .then(text => {
-               lines = text.split("\n");
-           }
-
-          console.log(lines);
+          async function getText(file) {
+            let myObject = await fetch(file);
+            let myText = await myObject.text();
+            return myText;
+          }
+          
+          console.log(getText('data.txt'););
     </script>
 </body>
  
