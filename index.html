@@ -12,7 +12,10 @@
     <script>
 
 	fetch('data.txt')
-	  .then(function(resp) { return resp.text() })
+	  .then(function(resp) { 
+		  return resp.text()
+		  console.log(resp.text());
+	   })
 	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
 	  .then(function(resp) {
 	
