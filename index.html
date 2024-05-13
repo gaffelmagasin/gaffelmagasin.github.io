@@ -3,24 +3,21 @@
  
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-                 initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read File in Browser</title>
 </head>
  
 <body>
     
     <script>
-          async function getText(file) {
+        async function getText(file) {
             let myObject = await fetch(file);
             let myText = await myObject.text();
-            return myText;
-          }
+            return "hi how are you";
+        }
           
 	let allt = getText('data.txt');
-		  
-	let text = allt;
-	const myArray = text.split(" ");
+	const myArray = allt.split(" ");
 		  
         console.log(myArray);
     </script>
