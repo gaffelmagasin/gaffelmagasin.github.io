@@ -12,7 +12,7 @@
     <script>
         function readTextFile(filepath) {
 		var str = "";
-		var txtFile = new File(filepath);
+		var txtFile = new File(["data"],filepath);
 		txtFile.open("r");
 		while (!txtFile.eof) {
 			// read each line of text
