@@ -8,22 +8,33 @@
 </head>
  
 <body>
-    
+    <div class ="rss-feed"></div>
     <script>
 
-	var artiklar;
-        
-	fetch("data.txt")
-	    .then(function (res) {
-	        return res.text();
-	    })
-	    .then(function (data) {
-	        console.log(data)
-		
-	    })
-	    
-	console.log("artiklar:" + artiklar);
-	console.log(typeof artiklar);
+	fetch('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml')
+	  .then(function(resp) { return resp.text() })
+	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
+	  .then(function(resp) {
+	
+	    const items = resp.getElementsByTagName('item')
+	    let buffer = "";
+	    for (var x = 0; x < items.length && x < 5; x++) {
+	
+	      const title = items[x].getElementsByTagName('title')[0].textContent
+	      const date = items[x].getElementsByTagName('pubDate')[0].textContent
+	      const content = items[x].getElementsByTagName('description')[0].textContent
+	      
+	      buffer += `
+	      <div style="
+	        margin:10px; padding: 5px; background: #ebebebff; border-left: 4px solid #a2a2a2ff;
+	      ">
+	        <div>${title}</div>
+	        <div style="font-size:small">${date}</div>
+	        <div style="font-size:small">${content}</div>
+	      </div>`
+	    }
+	    document.getElementById('rss-feed').innerHTML = buffer
+	  })
 	
 
     </script>
