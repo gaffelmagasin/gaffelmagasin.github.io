@@ -10,13 +10,16 @@
 <body>
     
     <script>
-        fetch("data.txt")
+
+	var artiklar = ""
+        
+	fetch("data.txt")
 	    .then(function (res) {
 	        return res.text();
 	    })
 	    .then(function (data) {
-	        var artiklar = data;
-		    console.log(data);
+	        artiklar = data;
+		console.log(data);
 	    });
 
 	const artikel_array = artiklar.split("/§");
