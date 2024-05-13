@@ -1,0 +1,42 @@
+artikel: 1
+titel: "FÖR HAWAIISKJORTAN I TIDEN"
+ingress: "Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys."
+text: "Under en diskussion med min kollega om hur Johan Glans lyckats se så ung ut trots sin höga ålder (49 år för övrigt) 
+kom vi fram till att han måste leva ett ganska stressfritt liv. Komikeryrket kräver ju att man arbetar max 2 timmar om dagen, 
+dessutom får man dricka öl på jobbet, det är till och med uppmuntrat. Denna förklaring får man dessvärre avfärda, turnera runt 
+med buss, pissiga hotell och dylikt samt uppträda i hålor som Hässleholm, Örkelljunga och Sveg tär nog något ordentligt på en. 
+Nedslagen stod jag där tills det uppenbarade sig för mig, tydligt på bilden syns svaret: han har ju hawaiiskjorta på sig. 
+Är hawaiiskjortan nyckeln till ett stressfritt liv?
+/n
+Idag (18 augusti) är det Hawaiiskjortans dag, ett plagg som på sistone blivit allt mer kontroversiellt, ta exempelvis nyheten 
+om Vaktmästaren Ulf, som sa upp sig i protest efter att skolan han arbetade på vägrade låta honom gå klädd i färgglada skjortor. 
+Personligen tycker jag att detta var en skam för hela riket och hög tid att hawaiiskjortan får de lovord den förtjänar.
+/n
+Hawaiiskjortan började säljas under namnet aloha-shirt runt 1935, under en (minst sagt) turbulent tid. Var den ett svar på det 
+rådande världsläget, ett barn av sin tid? Oavsett om den skapades som stresslindring eller mer troligt som ett svar på den 
+ökande hawaiiturismen kan man inte motstå att dra kopplingar.
+/n
+Som plagg utstrålar hawaiiskjortan tydligt en avspändhet hos bäraren, en avspändhet som säger att ägaren har en obekymrad syn på 
+tillvaron och en uppknäppt attityd till det där med sysselsättning och idogt arbete. Bäraren kan vara hur ordnad som helst annars, 
+men just i kväll, virad i denna skjorta, gäller andra regler; det är ju för fan semester.
+/n
+Tillbaks till frågan, att se avspänd ut gör emellertid inte en själv avspänd. Däremot kommer omgivningen att anpassa sig, som följd 
+slipper ägaren bli anförtrodd tunga uppgifter. Fundera själv, kommer du i en krävande situation först gå till en klädd i vår vän 
+hawaiiskjortan eller någon mer propert klädd?
+/n
+Jag äger själv en Hawaiiskjorta (i sann turistanda spontanköpt till överpris i Berlin (det var 35°C)) som, även om jag sällan använder 
+den, onekligen äger en överväldigande avspändhet. Att fundera på arbetssökan, global uppvärmning och situationen i Jemen är omöjligt i 
+denna röda bomullsdräkt med palmer på. Istället kan man lugnt sitta och fundera över om det vore godast med en öl eller med en cider till. 
+Aldrig har man sett någon i Hawaiiskjorta slåss med någon främling som utmanat hans komplex, inte heller har någon någonsin blivit attackerad 
+iklädd en Hawaiiskjorta (antagligen). Plagget fungerar uppenbarligen som skyddsnät mot all form av konfrontation.
+/n
+Är hawaiiskjortan lösningen på psykisk ohälsa och nyckeln till världsfred? Antagligen inte (men onekligen en intressant tankeställare), den 
+lyckades trots allt inte stoppa det stundande världskriget. Hawaiiskjortan finns dock alltid här för oss, när det är dags att koppla av i 
+någon vecka efter en lång tids arbete. Hawaiiskjortan finns här, för Sverige, i tiden."
+
+§
+
+artikel: 2
+titel: "Test"
+ingress: "ingressingressingrosso - ali alonso"
+text: "hjälp"
