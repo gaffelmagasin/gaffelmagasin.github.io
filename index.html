@@ -23,7 +23,7 @@
 		var i = 0;
 		var looks = 0;
 		while(i < str.length && looks < 50){
-			var index = str.indexOf("<artikel>");
+			var index = str.indexOf("<artikel>",i);
 			console.log(index);
 			i = index+1;
 			if(index == -1){
