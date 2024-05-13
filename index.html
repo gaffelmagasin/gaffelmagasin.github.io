@@ -10,20 +10,15 @@
 <body>
     
     <script>
-        function readTextFile(filepath) {
-		var str = "";
-		var txtFile = new File(["data"],filepath);
-		txtFile.open("r");
-		while (!txtFile.eof) {
-			// read each line of text
-			str += txtFile.readln() + "\n";
-		}
-		return str;
-	}
+        fetch("data.txt")
+	    .then(function (res) {
+	        return res.text();
+	    })
+	    .then(function (data) {
+	        console.log(data);
+	    });
 
-	console.log(readTextFile("data.txt"));
-	//let allt = getText('data.txt');
-	//const myArray = allt.split(" ");
+	
 		  
 
     </script>
