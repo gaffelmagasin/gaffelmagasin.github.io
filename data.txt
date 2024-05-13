@@ -1,5 +1,5 @@
-<rss>
-<channel>
+
+
 <item>
   <titel> FÖR HAWAIISKJORTAN I TIDEN <titel>
   <ingress> Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys. </ingress>
@@ -10,5 +10,4 @@
   <ingress> ingressingressingrosso - ali alonso </ingress>
   <text> hjälp </text>
 </item>
-</channel>
-</rss>
+
