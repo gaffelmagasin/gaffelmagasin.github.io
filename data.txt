@@ -34,7 +34,7 @@ iklädd en Hawaiiskjorta (antagligen). Plagget fungerar uppenbarligen som skydds
 lyckades trots allt inte stoppa det stundande världskriget. Hawaiiskjortan finns dock alltid här för oss, när det är dags att koppla av i 
 någon vecka efter en lång tids arbete. Hawaiiskjortan finns här, för Sverige, i tiden."
 
-/§
+§
 
 artikel: 2
 titel: "Test"
