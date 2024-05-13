@@ -15,7 +15,7 @@
 	  .then(function(resp) { 
 		  return resp.text()
 	   })
-	  //.then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
+	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
 	  .then(function(resp) {
 	
 	    const items = resp.getElementsByTagName('item')
