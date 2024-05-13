@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read File in Browser</title>
+    <title>GAFFEL</title>
 </head>
  
 <body>
     
     <script>
-        async function getText(file) {
-            let myObject = await fetch(file);
-            let myText = await myObject.text();
-            return "hi how are you";
-        }
+        
 
-	console.log(getText('data.txt'));
+	console.log(readAsText('data.txt'));
 	    
 	//let allt = getText('data.txt');
 	//const myArray = allt.split(" ");
