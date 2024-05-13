@@ -15,10 +15,11 @@
 	        return res.text();
 	    })
 	    .then(function (data) {
-	        console.log(data);
+	        var artiklar = data;
+		    console.log(data);
 	    });
 
-	const artikel_array = data.split("/§");
+	const artikel_array = artiklar.split("/§");
 		  
 
     </script>
