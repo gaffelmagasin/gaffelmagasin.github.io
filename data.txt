@@ -5,9 +5,5 @@
   <ingress> Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys. </ingress>
   <text> ext </text>
 </item>
-<item>
-  <titel>Test</titel>
-  <ingress> ingressingressingrosso - ali alonso </ingress>
-  <text> hjälp </text>
-</item>
+
 
