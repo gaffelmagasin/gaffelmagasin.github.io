@@ -5,38 +5,15 @@
      </head>
      <body>
           <p>Gaffel</p>
-          <div id="rss-feed"></div>
+          
           <script>
-               const url = 'https://feeds.feedburner.com/gaffelmagasinsuperhemlig/jdk5KckZnGp';
+               const url = 'http://localhost/data.txt';
+               jQuery.get(url, function(data) {
+                    var myvar = data;
+               });
 
-               fetch(url)
-                 .then(function(resp) { return resp.text() })
-                 .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
-                 .then(function(resp) {
-                      
-                   const items = resp.getElementsByTagName('item')
-                   let buffer = "";
-                   for (var x = 0; x < items.length && x < 5; x++) {
-               		                                     	
-                     const title = items[x].getElementsByTagName('title')[0].textContent
-                     const content = items[x].getElementsByTagName('description')[0].textContent
-                     
-                     const content_split_array = content.split("0§0");
-                     const ingress = content_split_array[0]
-                     const breadtext = content_split_array[1]
-                     
-                     
-                     buffer += `
-                     <div style="
-                       margin:10px; padding: 5px; background: #ebebebff; border-left: 4px solid #a2a2a2ff;
-                     ">
-                       <div>${title}</div>
-                       <div style="font-size:small">${ingress}</div>
-              
-                     </div>`
-                   }
-                   document.getElementById('rss-feed').innerHTML = buffer
-                 })
+               console.log(myvar);
+                 
           </script>
      </body>
 </html>
