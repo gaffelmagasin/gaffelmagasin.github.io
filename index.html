@@ -7,13 +7,13 @@
           <p>Gaffel</p>
           
           <script>
-               const url = 'http://localhost/data.txt';
-               jQuery.get(url, function(data) {
-                    var myvar = data;
-               });
-
-               console.log(myvar);
-                 
+               fetch("data.txt");
+                 .then((res) => res.text());
+                 .then((text) => {
+                   console.log(text);
+                  })
+                 .catch((e) => console.error(e));
+ 
           </script>
      </body>
 </html>
