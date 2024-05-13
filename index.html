@@ -10,10 +10,18 @@
 <body>
     
     <script>
-        fetch("data.txt")
-		.then(r=>r.text())
-		.then(text => {lines = text.split("\n")}
-	
+        function readTextFile(filepath) {
+		var str = "";
+		var txtFile = new File(filepath);
+		txtFile.open("r");
+		while (!txtFile.eof) {
+			// read each line of text
+			str += txtFile.readln() + "\n";
+		}
+		return str;
+	}
+
+	console.log(readTextFile('data.txt'));
 	//let allt = getText('data.txt');
 	//const myArray = allt.split(" ");
 		  
