@@ -21,8 +21,12 @@
 
 		console.log(str.length);
 		
-		for (let i = 0; i < str.length; i++) {
-		  console.log("P");
+		while(i < str.length){
+			var index = str.indexOf("artikel");
+			i = index;
+			if(index == -1){
+				i = str.length;
+			}
 		}
 		
 	
