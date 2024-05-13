@@ -17,7 +17,7 @@
 	   })
 	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
 	  .then(function(resp) {
-	
+		console.log(resp);
 	    const items = resp.getElementsByTagName('item')
 	    let buffer = "";
 	    for (var x = 0; x < items.length && x < 5; x++) {
