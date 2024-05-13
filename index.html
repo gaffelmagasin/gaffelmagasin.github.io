@@ -13,7 +13,6 @@
 
 	fetch('data.txt')
 	  .then(function(resp) { 
-		  console.log(resp.text());
 		  return resp.text()
 	   })
 	  .then(function(xml) { return (new window.DOMParser()).parseFromString(xml, "text/xml") })
