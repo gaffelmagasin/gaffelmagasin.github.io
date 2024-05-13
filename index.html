@@ -11,8 +11,11 @@
 <body>
     
     <script>
-          var textFile = readFile( "C:\\data.txt", "t" );
-          print( "The value of textFile is: " + textFile );
+          fetch("data.txt")
+          .then(r=>r.text())
+          .then(text => {
+              lines = text.split("\n")
+          }
     </script>
 </body>
  
