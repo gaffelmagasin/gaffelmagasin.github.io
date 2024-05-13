@@ -11,8 +11,8 @@
 <body>
     
     <script>
-          fetch("data.txt");
-           .then(r=>r.text());
+          fetch("data.txt")
+           .then(r=>r.text())
            .then(text => {
                lines = text.split("\n");
            }
