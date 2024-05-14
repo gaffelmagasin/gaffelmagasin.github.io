@@ -32,7 +32,7 @@
 		.blog_row {
 			margin: 1%;
 			float: left;
-			background: #000000ff;
+			background: #00000000;
 			width: 40%;
 		}
 		.blog_img{
@@ -128,10 +128,17 @@
 	    for(let i = 0; i<article_i; i++){
 			var div_id = "aid" + i.toString()
 			var element = document.getElementById(div_id); //grab the element
-			element.onclick = function(){
+			element.onmouseover = function(){
 				var div_id2 = "aid" + i.toString()
 				var element2 = document.getElementById(div_id2);
 				element2.style.background = "#FFFFFFFF";
+				console.log(i)
+				console.log(div_id)
+			}
+		    	element.onmouseout = function(){
+				var div_id2 = "aid" + i.toString()
+				var element2 = document.getElementById(div_id2);
+				element2.style.background = "#000000FF";
 				console.log(i)
 				console.log(div_id)
 			}
