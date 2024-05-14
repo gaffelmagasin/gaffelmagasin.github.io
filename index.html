@@ -15,9 +15,6 @@
 		let start_index = str.indexOf("<" + tag + ">",start) + tag.length + 2;
 		let end_index =   str.indexOf("</" + tag + ">",start);
 		
-		console.log("<" + tag + ">");
-		console.log("</" + tag + ">");
-		
 		if(start_index == -1 || end_index == -1){return -1;}
 		let content = str.substring(start_index,end_index);
 		return content;
