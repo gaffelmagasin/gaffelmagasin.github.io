@@ -12,11 +12,11 @@
     <script>
 
 	function content_of_tag(str,tag,start){
-		let start_index_c = str.indexOf("<" + tag + ">",start) + tag.length + 2;
-		let end_index_c =   str.indexOf("</" + tag + ">",start);
-		if(start_index_c == -1 || end_index_c == -1){return -1;}
-		let content_c = str.substring(start_index_c,end_index_c);
-		return content_c;
+		let start_index = str.indexOf("<" + tag + ">",start) + tag.length + 2;
+		let end_index =   str.indexOf("</" + tag + ">",start);
+		if(start_index == -1 || end_index == -1){return -1;}
+		let content = str.substring(start_index_c,end_index_c);
+		return content;
 	}
 
 	var buffer = ``
