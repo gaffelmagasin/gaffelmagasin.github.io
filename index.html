@@ -12,10 +12,10 @@
     <script>
 
 	function content_of_tag(str,tag,start){
-		var start_index = str.indexOf("<" + tag + ">",start) + tag.length + 2;
-		var end_index =   str.indexOf("</" + tag + ">",start);
+		let start_index = str.indexOf("<" + tag + ">",start) + tag.length + 2;
+		let end_index =   str.indexOf("</" + tag + ">",start);
 		if(start_index == -1 || end_index == -1){return -1;}
-		var content = str.substring(start_index,end_index);
+		let content = str.substring(start_index,end_index);
 		return content;
 	}
 
