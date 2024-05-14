@@ -1,5 +1,5 @@
 <artikel>
-  <index>[0001]</index>
+  <in66dex>[0001]</index>
   <titel>Titel1</titel>
   <ingress>ingressen1</ingress>
 </artikel>
@@ -13,5 +13,4 @@
 <artikel>
   <index>[0003]</index>
   <titel>Titel3</titel>
-  <ingress>ingressen3</ingress>
 </artikel>
