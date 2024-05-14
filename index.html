@@ -14,7 +14,7 @@
 	function content_of_tag(str,tag,start){
 		var start_index = str.indexOf("<" + tag + ">",index) + tag.length() + 2;
 		var end_index =   str.indexOf("</" + tag + ">",index);
-		
+		if(start_index == -1 || end_index == -1){return -1;}
 		var content = str.substring(start_index,end_index);
 		return content;
 	}
@@ -47,7 +47,10 @@
 				var content = a_str.substring(start_index,end_index);
 
 				console.log(content);
-			
+
+				var titel = content_of_tag("titel",start_index,end_index);
+				return titel;
+				
 				article_i++
 			}
 		}
