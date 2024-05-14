@@ -128,7 +128,7 @@
 	    for(let i = 0; i<article_i; i++){
 			var div_id = "aid" + i.toString()
 			var element = document.getElementById(div_id); //grab the element
-			element.onmouseover = function(){
+			element.onclick = function(){
 				document.getElementById(div_id).style.background = "#FFFFFFFF";
 			}
 		}
