@@ -12,7 +12,11 @@
     <script>
 
 	function content_of_tag(str,tag,start){
+		var start_index = str.indexOf("<" + tag + ">",index) + tag.length() + 2;
+		var end_index =   str.indexOf("</" + tag + ">",index);
 		
+		var content = str.substring(start_index,end_index);
+		return content;
 	}
 
 	var buffer = ``
