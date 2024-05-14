@@ -3,7 +3,7 @@ hej
 </artikel>
 
 <artikel>
-Hejdå
+<titel>En fin text</titel>
 </artikel>
 
 <artikel>
