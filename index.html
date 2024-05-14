@@ -12,7 +12,10 @@
 		  src: url(Newsagent-Regular.ttf) format("truetype");
 		}
 		.blog_cont{
-			
+			height: 100%;
+			margin:10px; 
+			padding: 5px; 
+			background: #ebebebff;
 		}
 		.blog_row {
 			float: left;
@@ -78,7 +81,7 @@
 				//console.log(titel);
 				//console.log(preamble);
 
-				buffer += `<div style="margin:10px; padding: 5px; background: #ebebebff;">
+				buffer += `<div class = blog_cont>
 					<div class = blog_row>
      						<div class = "blog_title">${titel}</div>
 			        		<div style="font-size:small">${preamble}</div>
