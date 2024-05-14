@@ -11,7 +11,19 @@
 		  font-family: newsagent;
 		  src: url(Newsagent-Regular.ttf) format("truetype");
 		}
-		.blogg_titel {
+		.blog_cont{
+			
+		}
+		.blog_row {
+			float: left;
+			background: #ff0000ff;
+		}
+		.blog_img{
+			float: right;
+			width: 200px;
+			background: #ffff00ff;
+		}
+		.blog_title {
 		  font-family: newsagent;
 		  font-size: 50px;
 		}
@@ -67,8 +79,13 @@
 				//console.log(preamble);
 
 				buffer += `<div style="margin:10px; padding: 5px; background: #ebebebff;">
-			        	<div class = "blogg_titel">${titel}</div>
-			        	<div style="font-size:small">${preamble}</div>
+					<div class = blog_row>
+     						<div class = "blog_title">${titel}</div>
+			        		<div style="font-size:small">${preamble}</div>
+      					</div>
+	   				<div class = blog_img>
+	
+ 					</div>
 			        </div>`
 
 				
