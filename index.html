@@ -11,7 +11,7 @@
 		  font-family: newsagent;
 		  src: url(Newsagent-Regular.ttf) format("truetype");
 		}
-		h1 {
+		.blogg_titel {
 		  font-family: newsagent;
 		  font-size: 500;
 		}
@@ -67,7 +67,7 @@
 				//console.log(preamble);
 
 				buffer += `<div style="margin:10px; padding: 5px; background: #ebebebff;">
-			        <h1>${titel}</h1>
+			        <div class = "blogg_titel">${titel}</div>
 			        <div style="font-size:small">${preamble}</div>
 			      </div>`
 
