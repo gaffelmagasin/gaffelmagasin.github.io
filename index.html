@@ -14,6 +14,10 @@
 	function content_of_tag(str,tag,start){
 		let start_index = str.indexOf("<" + tag + ">",start) + tag.length + 2;
 		let end_index =   str.indexOf("</" + tag + ">",start);
+		
+		console.log(start_index);
+		console.log(end_index);
+		
 		if(start_index == -1 || end_index == -1){return -1;}
 		let content = str.substring(start_index,end_index);
 		return content;
@@ -29,7 +33,6 @@
 		var a_str = resp;
 		console.log(a_str);
 
-		console.log(a_str.length);
 		var i = 0;
 		var looks = 0;
 		var article_i = 0
