@@ -126,10 +126,10 @@
 	    document.getElementById('blogg_inlägg').innerHTML = buffer
 
 	    for(let i = 0; i<article_i; i++){
-
-			var element = document.getElementById("aid" + i.toString()); //grab the element
+			var div_id = "aid" + i.toString()
+			var element = document.getElementById(div_id); //grab the element
 			element.onclick = function(){
-				console.log(i);
+				document.getElementById(div_id).style.background = #FFFFFFFF;
 			}
 		}
 	  })
