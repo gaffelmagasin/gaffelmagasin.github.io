@@ -1,11 +1,17 @@
 <artikel>
-hej
+  <index>[0001]</index>
+  <titel>Titel1</titel>
+  <ingress>ingressen1</ingress>
 </artikel>
 
 <artikel>
-  <titel>goop</titel>
+  <index>[0002]</index>
+  <titel>Titel2</titel>
+  <ingress>ingressen2</ingress>
 </artikel>
 
 <artikel>
-ciao
+  <index>[0003]</index>
+  <titel>Titel3</titel>
+  <ingress>ingressen3</ingress>
 </artikel>
