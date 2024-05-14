@@ -11,30 +11,36 @@
     <div id ='blogg_inlägg'></div>
     <script>
 
+	function content_of_tag(str,tag,start){
+		
+	}
+	    
 	fetch('data.txt')
 	  .then(function(resp) { 
 		  return resp.text()
 	   })
 	  .then(function(resp) {
-		var str = resp;
+		var a_str = resp;
 		console.log(str);
 
 		console.log(str.length);
 		var i = 0;
 		var looks = 0;
 		var article_i = 0
-		while(i < str.length){
-			var index = str.indexOf("<artikel>",i);
+		while(i < a_str.length){
+			var index = a_str.indexOf("<artikel>",i);
 			
 			i = index+1;
 			if(index == -1){
-				i = str.length;
+				i = a_str.length;
 			}
 			else{
-				var end_index = str.indexOf("</artikel>",index);
-				var content = str.substring(index,end_index);
+				var start_index = index+9
+				var end_index = a_str.indexOf("</artikel>",index);
 				
-				console.log(index);
+				var content = a_str.substring(start_index,end_index);
+				
+				console.log(start_index);
 				console.log(end_index);
 				console.log(content);
 			
