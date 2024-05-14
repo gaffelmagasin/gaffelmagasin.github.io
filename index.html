@@ -126,7 +126,7 @@
 	    document.getElementById('blogg_inlägg').innerHTML = buffer
 
 	    for(let i = 0; i<article_i; i++){
-			const divElement = document.querySelector(i);
+			const divElement = document.querySelector("aid" + i.toString);
 			
 			// Add a click event listener to the div element
 			divElement.addEventListener('click', () => {
