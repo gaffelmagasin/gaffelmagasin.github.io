@@ -129,7 +129,9 @@
 			var div_id = "aid" + i.toString()
 			var element = document.getElementById(div_id); //grab the element
 			element.onclick = function(){
-				element.style.background = "#FFFFFFFF";
+				var div_id2 = "aid" + i.toString()
+				var element2 = document.getElementById(div_id2);
+				element2.style.background = "#FFFFFFFF";
 				console.log(i)
 				console.log(div_id)
 			}
