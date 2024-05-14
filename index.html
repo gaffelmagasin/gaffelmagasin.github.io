@@ -48,8 +48,12 @@
 
 				console.log(content);
 
+				var article_index = content_of_tag(content,"index",0);
 				var titel = content_of_tag(content,"titel",0);
+				var preamble = content_of_tag(content,"ingress",0);
+				console.log(article_index);
 				console.log(titel);
+				console.log(preamble);
 				
 				article_i++
 			}
