@@ -40,6 +40,11 @@
 		.blog_title {
 		  font-family: newsagent;
 		  font-size: 100px;
+		  color: #FFFFFFFF;
+		}
+		.blog_preamble{
+			font-size = 20px;
+			color: #FFFFFFFF;
 		}
 	</style>
 </head>
@@ -95,8 +100,8 @@
 
 				buffer += `<div class = blog_cont>
 					<div class = blog_row>
-     						<div class = "blog_title">${titel}</div>
-			        		<div style="font-size:small">${preamble}</div>
+     						<div class = blog_title>${titel}</div>
+			        		<div class = blog_preamble>${preamble}</div>
       					</div>
 					<img src = "https://i.imgur.com/4RzXsjc.png" class = blog_img></img>
 			        </div>`
