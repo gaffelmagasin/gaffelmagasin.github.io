@@ -108,20 +108,22 @@
 				//console.log(titel);
 				//console.log(preamble);
 
-				var isOnDiv = false;
-				$(blog_cont).mouseenter(function(){isOnDiv=true;});
-				$(blog_cont).mouseleave(function(){isOnDiv=false;});
-
-				console.log(isOnDiv);
 				
-				buffer += `<div class = blog_cont>
+				
+				buffer += `<div class = blog_cont id = ${article_i}>
 					<img src = "https://i.imgur.com/4RzXsjc.png" class = blog_img></img>
      					<div class = blog_row>
      						<div class = blog_title>${titel}</div>
 			        		<div class = blog_preamble>${preamble}</div>
       					</div>
 			        </div>`
-
+				
+				//var element = document.getElementById("article_i");
+				//if (element.parentNode.querySelector(":hover") == element) {
+				    //Mouse is inside element
+				//} else {
+				    //Mouse is outside element
+				//}
 				
 				article_i++
 			}
