@@ -60,17 +60,19 @@
             var preamble = content_of_tag(a_str,"ingress",start_index);
             var text = content_of_tag(a_str,"text",start_index);
 
-            console.log([titel, preamble, text]);
-              
-            buffer = `<div>
-                        <div class = titel>${titel}</div>
-                        <div>${preamble}</div>
-                         <div>${text}</div>
-                    </div>
-                </div>`
-          //console.log(buffer);
-          document.getElementById('artikel').innerHTML = buffer;
-          
+            if(start_index != -1){
+                buffer = `<div>
+                            <div class = titel>${titel}</div>
+                            <div>${preamble}</div>
+                             <div>${text}</div>
+                        </div>
+                    </div>`
+              //console.log(buffer);
+              document.getElementById('artikel').innerHTML = buffer;
+            }
+            else{
+                buffer = `<p>det är inte du det är jag, den här artikeln finns inte</p>`
+            }
           });
             
           </script>
