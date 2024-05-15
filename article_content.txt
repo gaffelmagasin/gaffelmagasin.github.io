@@ -1,7 +1,8 @@
 [rostig-renault]
 <titel>TITEL</titel>
 <ingress>ingressen är det viktigaste i en artikel</ingress>
-<text>Detta är texten till 
-rostig renault</text>
+<skribent> Nils </skribent>
+<bild>https://i.imgur.com/4RzXsjc.png</bild>
+<text>Detta är texten till rostig renault</text>
 
 [/]
