@@ -1,5 +1,5 @@
 [rostig-renault]
-<titel>TITEL</titel>
+<titel>Den överväldigande sublimiteten i en rostig renault</titel>
 <ingress>ingressen är det viktigaste i en artikel</ingress>
 <skribent> Nils </skribent>
 <bild>https://i.imgur.com/4RzXsjc.png</bild>
