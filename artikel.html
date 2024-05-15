@@ -48,6 +48,11 @@
 
                 color: #000000FF;
             }
+            .blogg_bild{
+                width: 100%;
+                height: auto;
+                
+            }
             
         </style>
     </head>
@@ -91,7 +96,7 @@
               
             if(start_index != -1){
                 buffer = `<div>
-                            <img src = ${bild}></img>
+                            <img src = ${bild} class = blogg_bild></img>
                             <div class = titel>${titel}</div>
                             <div class = ingress>${preamble}</div>
                              <div class = bröd>${text}</div>
