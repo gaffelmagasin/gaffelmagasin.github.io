@@ -85,6 +85,8 @@
 				var ingress = content_of_tag(a_str,"ingress",0);
 				var skribent = content_of_tag(a_str,"skribent",0);
 				var bild = content_of_tag(a_str,"bild",0);
+
+				console.log(bild);
 				
 				var new_html = `<div>
 					<img src = bild class = blog_img id = 'bild' + article_name></img>
@@ -100,7 +102,6 @@
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#044827FF";
-					console.log("nudd");
 				}
 			    	element.onmouseout = function(){
 					var element2 = document.getElementById(div_id);
