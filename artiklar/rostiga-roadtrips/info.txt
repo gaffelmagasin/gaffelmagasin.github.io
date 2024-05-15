@@ -1,2 +1,4 @@
 <titel> Den överväldigande sublimiteten i en rostig renault </titel>
+<bild>https://i.imgur.com/8NA83BC.png</bild>
 <ingress>Vissa konstupplevelser är så överväldigande att man förändras av dem, det tycker i alla fall Nils Hagberg som sett SVT:s nya serie Rostiga Roadtrips. Och funnit sig själv.</ingress>
+<skribent>Nils Hagberg</skribent>
