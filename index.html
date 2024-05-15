@@ -22,7 +22,7 @@
 		
 		.blog_area{
 			background: #010101ff;
-			margin-left: 5vw;
+			margin-left: 5px;
 			width: clamp(50px,90vw,1000px);
 			padding: 5px;
 		}
@@ -148,6 +148,8 @@
 				console.log(div_id)
 			}
 		    	element.onclick = function(){
+				var article_index_to_open = substring(article_index_array[i],1,article_index_array[i].length-1);
+				console.log(article_index_to_open);
 				
 			}
 		}
