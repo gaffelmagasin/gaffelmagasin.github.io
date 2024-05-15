@@ -60,6 +60,12 @@
 </head>
  
 <body>
+	<script>
+		function open_article(str){
+			window.location.href = 'https://gaffelmagasin.github.io/artikel' + '?=' + str;
+			
+		}
+	</script>
     <div id ='blogg_inlägg' class = blog_area></div>
     <!-- <iframe id="game-iframe" src="https://bolibompa-cdn.dojnaz.net/svt/spel/drakens-varld" width="600" height="500" title="drakens-varld"></iframe> -->
 	<script>
@@ -147,7 +153,7 @@
 				var get_string = article_index_array[i]
 				var article_index_to_open = get_string.substring(1,get_string.length-1);
 				console.log(article_index_to_open);
-				window.location.href = 'http://www.google.com';
+				open_article(article_index_to_open)
 			}
 		}
 	  })
