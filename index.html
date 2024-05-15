@@ -86,6 +86,7 @@
 		var i = 0;
 		var looks = 0;
 		var article_i = 0
+		var article_index_array = []
 		while(i < a_str.length){
 			var index = a_str.indexOf("<artikel>",i);
 			
@@ -102,6 +103,7 @@
 				//console.log(content);
 
 				var article_index = content_of_tag(content,"index",0);
+				article_index_array.push(article_index);
 				var titel = content_of_tag(content,"titel",0);
 				titel = titel.toUpperCase();
 				var preamble = content_of_tag(content,"ingress",0);
@@ -126,6 +128,8 @@
 	
 	    document.getElementById('blogg_inlägg').innerHTML = buffer
 
+		console.log(article_index_array);
+		  
 	    for(let i = 0; i<article_i; i++){
 			var div_id = "aid" + i.toString()
 			var element = document.getElementById(div_id); //grab the element
@@ -142,6 +146,9 @@
 				element2.style.background = "#000000FF";
 				console.log(i)
 				console.log(div_id)
+			}
+		    	element.onclick = function(){
+				
 			}
 		}
 	  })
