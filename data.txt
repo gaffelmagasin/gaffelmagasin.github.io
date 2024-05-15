@@ -1,5 +1,5 @@
 <artikel>
-  <in66dex>[0001]</index>
+  <index>[rostig-renault]</index>
   <titel>Den överväldigande sublimiteten i en rostig renault</titel>
   <ingress>Vissa konstupplevelser är så överväldigande att man förändras av dem, det tycker i alla fall Nils Hagberg som sett SVT:s nya serie Rostiga Roadtrips. Och funnit sig själv.</ingress>
 </artikel>
