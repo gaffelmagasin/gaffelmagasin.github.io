@@ -88,10 +88,10 @@
 				var bild = content_of_tag(a_str,"bild",0);
 				
 				var new_html = `<div>
-					<img src = ${bild} class = blog_img id = ${'bild' + article_name}></img>
+					<img src = ${bild} class = blog_img id = ${'bild' + div_id}></img>
      					<div class = blog_row>
-     						<div class = blog_title id = ${'titel' + article_name}>${titel}</div>
-			        		<div class = blog_preamble id = ${'ingress' + article_name}>${ingress}</div>
+     						<div class = blog_title id = ${'titel' + div_id}>${titel}</div>
+			        		<div class = blog_preamble id = ${'ingress' + div_id}>${ingress}</div>
       					</div>
 			        </div>`
 
@@ -102,8 +102,8 @@
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#FFFFFFFF";
 
-					var titel_el = document.getElementById('titel'+article_name);
-					var ingress_el = document.getElementById('ingress'+article_name);	
+					var titel_el = document.getElementById('titel'+div_id);
+					var ingress_el = document.getElementById('ingress'+div_id);	
 					titel_el.style.color = "#000000FF";
 					ingress_el.style.color = "#000000FF";
 				}
@@ -111,13 +111,12 @@
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#000000FF";
 
-					var titel_el = document.getElementById('titel'+article_name);
-					var ingress_el = document.getElementById('ingress'+article_name);
+					var titel_el = document.getElementById('titel'+div_id);
+					var ingress_el = document.getElementById('ingress'+div_id);
 					titel_el.style.color = "#FFFFFFFF";
 					ingress_el.style.color = "#FFFFFFFF";
 				}
 			    	element.onclick = function(){
-					console.log(article_name);
 					open_article(article_name)
 				}
 			});
