@@ -79,7 +79,7 @@
 
 				var a_str = resp;
 				
-				var titel = content_of_tag(a_str,"titel",0);
+				var titel = content_of_tag(a_str,"titel",0).toUpperCase();
 				var ingress = content_of_tag(a_str,"ingress",0);
 				
 				var new_html = `<div class = blog_cont>
@@ -93,6 +93,20 @@
 				 document.getElementById(div_id).innerHTML = new_html;
 				
 			});
+
+			var element = document.getElementById(div_id); //grab the element
+			element.onmouseover = function(){
+				var element2 = document.getElementById(div_id);
+				element2.style.background = "#044827FF";
+			}
+		    	element.onmouseout = function(){
+				var element2 = document.getElementById(div_id);
+				element2.style.background = "#000000FF";
+			}
+		    	element.onclick = function(){
+				console.log(article_index_to_open);
+				open_article(article_name)
+			}
 		}
 	</script>
     <div id ='blogg_inlägg' class = blog_area>
