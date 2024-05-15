@@ -2,6 +2,11 @@
 <html>
     <head>
         <style>
+            @font-face {
+    		  font-family: morfeta;
+    		  src: url(MorfetaGealmord-5158V.otf) format("opentype");
+    		}
+            
             body{
                 background-color: #044827FF;
             }
@@ -12,6 +17,12 @@
                 justify-content: center;
 
                 width: clamp(100px,95vw, 1000px);
+            }
+            .titel{
+                  font-family: morfeta;
+        		  font-size: clamp(10px,10vw,100px);
+        		  line-height: 83%;
+        		  color: #000000FF;
             }
         </style>
     </head>
@@ -52,7 +63,7 @@
             console.log([titel, preamble, text]);
               
             buffer = `<div>
-                        <div>${titel}</div>
+                        <div class = titel>${titel}</div>
                         <div>${preamble}</div>
                          <div>${text}</div>
                     </div>
