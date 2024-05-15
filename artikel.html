@@ -5,6 +5,17 @@
     </head>
     <body>
         <script>
+        function content_of_tag(str,tag,start){
+    		let start_index = str.indexOf("<" + tag + ">",start);
+    		let end_index =   str.indexOf("</" + tag + ">",start);
+    		
+    		if(start_index == -1 || end_index == -1){return -1;}
+    		let content = str.substring(start_index + tag.length + 2,end_index);
+    		return content;
+    	}
+            
+        var buffer = ``
+            
         fetch('article_content.txt')
     	  .then(function(resp) { 
     		  return resp.text()
@@ -18,7 +29,18 @@
             var index_in_url = url.indexOf('artikel?=') + 9
             var tag = url.substring(index_in_url,url.length)
 
-            console.log(tag)
+            var start_index = a_str.indexOf(tag)
+              
+            var titel = content_of_tag(a_str,"titel",0);
+            var preamble = content_of_tag(a_str,"ingress",0);
+            var text = content_of_tag(a_str,"text",0);
+              
+            buffer += `<div>
+                        <div>${titel}</div>
+                        <div>${preamble}</div>
+                         <div>${text}</div>
+                    </div>
+                </div>`
           });
           </script>
     </body>
