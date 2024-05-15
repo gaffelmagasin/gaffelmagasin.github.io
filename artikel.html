@@ -25,7 +25,7 @@
         		  line-height: 83%;
         		  color: #000000FF;
                   
-                  padding-top: 100px;
+                  padding-top: 2%;
                   margin-left: 3%;    
             }
             
@@ -65,6 +65,8 @@
             var preamble = content_of_tag(a_str,"ingress",start_index);
             var text = content_of_tag(a_str,"text",start_index);
 
+            document.title = titel;
+              
             if(start_index != -1){
                 buffer = `<div>
                             <div class = titel>${titel}</div>
