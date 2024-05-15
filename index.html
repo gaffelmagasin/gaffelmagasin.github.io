@@ -74,7 +74,6 @@
 		}
 
 		function draw_article_button(div_id, article_name){
-			var new_html = ``
 			
 			fetch('artiklar/' + article_name + '/info.txt')
 			.then(function(resp){return resp.text()})
@@ -85,7 +84,7 @@
 				var titel = content_of_tag(a_str,"titel",0).toUpperCase();
 				var ingress = content_of_tag(a_str,"ingress",0);
 				
-				new_html = `<div class = blog_cont>
+				var new_html = `<div class = blog_cont>
 					<img src = "https://i.imgur.com/4RzXsjc.png" class = blog_img></img>
      					<div class = blog_row>
      						<div class = blog_title>${titel}</div>
@@ -93,25 +92,24 @@
       					</div>
 			        </div>`
 
-				 
-				
+				 document.getElementById(div_id).innerHTML = new_html;
+			
+				var element = document.getElementById(div_id); //grab the element
+				element.onmouseover = function(){
+					var element2 = document.getElementById(div_id);
+					element2.style.background = "#044827FF";
+				}
+			    	element.onmouseout = function(){
+					var element2 = document.getElementById(div_id);
+					element2.style.background = "#000000FF";
+				}
+			    	element.onclick = function(){
+					console.log(article_name);
+					open_article(article_name)
+				}
 			});
 			
-			document.getElementById(div_id).innerHTML = new_html;
 			
-			var element = document.getElementById(div_id); //grab the element
-			element.onmouseover = function(){
-				var element2 = document.getElementById(div_id);
-				element2.style.background = "#044827FF";
-			}
-		    	element.onmouseout = function(){
-				var element2 = document.getElementById(div_id);
-				element2.style.background = "#000000FF";
-			}
-		    	element.onclick = function(){
-				console.log(article_name);
-				open_article(article_name)
-			}
 		}
 	</script>
 	
