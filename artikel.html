@@ -4,6 +4,23 @@
         <p>vilken artikel</p>
     </head>
     <body>
-        <!-- the content goes here -->
+        <script>
+        fetch('article_content.txt')
+    	  .then(function(resp) { 
+    		  return resp.text()
+    	   })
+    	  .then(function(resp) {
+    		var a_str = resp;
+    		console.log(a_str);
+    
+    				//buffer += `<div class = blog_cont id = ${"aid" + article_i.toString()}>
+    				//	<img src = "https://i.imgur.com/4RzXsjc.png" class = blog_img></img>
+         				//	<div class = blog_row>
+         				//		<div class = blog_title>${titel}</div>
+    			        //		<div class = blog_preamble>${preamble}</div>
+          			//		</div>
+    			  //      </div>`
+          }
+          </script>
     </body>
 </html>
