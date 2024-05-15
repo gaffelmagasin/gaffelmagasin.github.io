@@ -76,7 +76,7 @@
 
 		function draw_article_button(div_id, article_name){
 			fetch('artiklar/' + article_name + '/info.txt')
-			.then(function(resp){return rest.text()})
+			.then(function(resp){return resp.text()})
 			.then(function(resp){
 
 				var a_str = resp;
