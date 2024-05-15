@@ -54,7 +54,7 @@
             var index_in_url = url.indexOf('artikel?=') + 9
             var tag = url.substring(index_in_url,url.length)
 
-            var start_index = a_str.indexOf(tag)
+            var start_index = a_str.indexOf('[' + tag + ']')
               
             var titel = content_of_tag(a_str,"titel",start_index);
             var preamble = content_of_tag(a_str,"ingress",start_index);
@@ -68,11 +68,13 @@
                         </div>
                     </div>`
               //console.log(buffer);
-              document.getElementById('artikel').innerHTML = buffer;
+              
             }
             else{
                 buffer = `<p>det är inte du det är jag, den här artikeln finns inte</p>`
             }
+
+            document.getElementById('artikel').innerHTML = buffer;
           });
             
           </script>
