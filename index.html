@@ -99,17 +99,17 @@
 				var element = document.getElementById(div_id); //grab the element
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
-					element2.style.background = "#0FFFFFFFF";
+					element2.style.background = "#FFFFFFFF";
 
-					document.getElementById('titel'+article_name).style.color = #FFFFFFFF;
-					document.getElementById('ingress'+article_name).style.color = #FFFFFFFF;
+					document.getElementById('titel'+article_name).style.color = "#FFFFFFFF";
+					document.getElementById('ingress'+article_name).style.color = "#FFFFFFFF";
 				}
 			    	element.onmouseout = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#000000FF";
 
-					document.getElementById('titel'+article_name).style.color = #000000FF;
-					document.getElementById('ingress'+article_name).style.color = #000000FF;
+					document.getElementById('titel'+article_name).style.color = "#000000FF";
+					document.getElementById('ingress'+article_name).style.color = "#000000FF";
 				}
 			    	element.onclick = function(){
 					console.log(article_name);
