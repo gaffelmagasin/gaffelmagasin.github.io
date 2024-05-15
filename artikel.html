@@ -7,6 +7,8 @@
     		  font-family: morfeta;
     		  src: url(MorfetaGealmord-5158V.otf) format("opentype");
     		}
+
+            
             
             body{
                 background-color: #044827FF;
@@ -27,6 +29,14 @@
                   
                   padding-top: 2%;
                   margin-left: 3%;    
+            }
+            .ingress{
+                  font-family: tahoma;
+                  font-weight: bold;
+                  
+                  padding-top: 2%;
+                  margin-left: 3%; 
+                  color: #000000FF;
             }
             
         </style>
@@ -70,7 +80,7 @@
             if(start_index != -1){
                 buffer = `<div>
                             <div class = titel>${titel}</div>
-                            <div>${preamble}</div>
+                            <div class = ingress>${preamble}</div>
                              <div>${text}</div>
                         </div>
                     </div>`
