@@ -12,6 +12,13 @@
     	  .then(function(resp){
     		var a_str = resp;
     		console.log(a_str);
+            var url =window.location.href;
+            console.log(url);
+
+            var index_in_url = url.indexOf('artikel?=') + 9
+            var tag = url.substring(index_in_url,url.length())
+
+                
           });
           </script>
     </body>
