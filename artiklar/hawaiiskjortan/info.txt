@@ -1,1 +1,2 @@
 <titel>Hawaiiskjortan</titel>
+<ingress>Ingressen för hawaiiskjortan</ingress>
