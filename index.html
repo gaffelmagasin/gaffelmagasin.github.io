@@ -74,6 +74,8 @@
 		}
 
 		function draw_article_button(div_id, article_name){
+			var new_html = ``
+			
 			fetch('artiklar/' + article_name + '/info.txt')
 			.then(function(resp){return resp.text()})
 			.then(function(resp){
@@ -83,7 +85,7 @@
 				var titel = content_of_tag(a_str,"titel",0).toUpperCase();
 				var ingress = content_of_tag(a_str,"ingress",0);
 				
-				var new_html = `<div class = blog_cont>
+				new_html = `<div class = blog_cont>
 					<img src = "https://i.imgur.com/4RzXsjc.png" class = blog_img></img>
      					<div class = blog_row>
      						<div class = blog_title>${titel}</div>
