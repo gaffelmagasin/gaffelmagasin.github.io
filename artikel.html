@@ -4,6 +4,10 @@
         <p>vilken artikel</p>
     </head>
     <body>
+        <div id="artikel">
+            
+        </div>
+        
         <script>
         function content_of_tag(str,tag,start){
     		let start_index = str.indexOf("<" + tag + ">",start);
@@ -42,6 +46,8 @@
                     </div>
                 </div>`
           });
+
+            document.getElementById('blogg_inlägg').innerHTML = buffer
           </script>
     </body>
 </html>
