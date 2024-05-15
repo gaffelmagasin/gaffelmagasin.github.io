@@ -1,7 +1,7 @@
 [rostig-renault]
 <titel>Den överväldigande sublimiteten i en rostig renault</titel>
-<ingress>ingressen är det viktigaste i en artikel</ingress>
-<skribent> Nils </skribent>
+<ingress>Vissa konstupplevelser är så överväldigande att man förändras av dem, det tycker i alla fall Nils Hagberg som sett SVT:s nya serie Rostiga Roadtrips. Och funnit sig själv.</ingress>
+<skribent> Nils Hagberg </skribent>
 <bild>https://i.imgur.com/4RzXsjc.png</bild>
 <text>Detta är texten till rostig renault</text>
 
