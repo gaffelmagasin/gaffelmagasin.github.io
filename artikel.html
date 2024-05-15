@@ -17,9 +17,7 @@
     		let content = str.substring(start_index + tag.length + 2,end_index);
     		return content;
     	}
-            
-        var buffer = ``
-            
+
         fetch('article_content.txt')
     	  .then(function(resp) { 
     		  return resp.text()
@@ -41,15 +39,17 @@
 
             console.log([titel, preamble, text]);
               
-            buffer += `<div>
+            buffer = `<div>
                         <div>${titel}</div>
                         <div>${preamble}</div>
                          <div>${text}</div>
                     </div>
                 </div>`
+          //console.log(buffer);
+          document.getElementById('artikel').innerHTML = buffer;
+          
           });
-            console.log(buffer);
-            document.getElementById('artikel').innerHTML = buffer;
+            
           </script>
     </body>
 </html>
