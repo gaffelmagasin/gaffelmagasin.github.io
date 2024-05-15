@@ -137,18 +137,15 @@
 				var div_id2 = "aid" + i.toString()
 				var element2 = document.getElementById(div_id2);
 				element2.style.background = "#044827FF";
-				console.log(i)
-				console.log(div_id)
 			}
 		    	element.onmouseout = function(){
 				var div_id2 = "aid" + i.toString()
 				var element2 = document.getElementById(div_id2);
 				element2.style.background = "#000000FF";
-				console.log(i)
-				console.log(div_id)
 			}
 		    	element.onclick = function(){
-				var article_index_to_open = substring(article_index_array[i],1,article_index_array[i].length-1);
+				var get_string = article_index_array[i]
+				var article_index_to_open = get_string.substring(,1,get_string.length-1);
 				console.log(article_index_to_open);
 				
 			}
