@@ -100,21 +100,14 @@
 				var element = document.getElementById(div_id); //grab the element
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
-					element2.style.background = "#FFFFFFFF";
+					element2.style.background = "#00000000";
 
-					var titel_el = document.getElementById('titel'+div_id);
-					var ingress_el = document.getElementById('ingress'+div_id);	
-					titel_el.style.color = "#000000FF";
-					ingress_el.style.color = "#000000FF";
 				}
 			    	element.onmouseout = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#000000FF";
 
-					var titel_el = document.getElementById('titel'+div_id);
-					var ingress_el = document.getElementById('ingress'+div_id);
-					titel_el.style.color = "#FFFFFFFF";
-					ingress_el.style.color = "#FFFFFFFF";
+
 				}
 			    	element.onclick = function(){
 					open_article(article_name)
