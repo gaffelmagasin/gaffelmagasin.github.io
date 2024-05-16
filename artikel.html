@@ -77,7 +77,7 @@
 
         var index_in_url = url.indexOf('artikel?=') + 9
         var tag = url.substring(index_in_url,url.length)
-            
+        var buffer = `` 
         fetch('artiklar/' + tag + '/info.txt')
     	  .then(function(resp) { 
     		  return resp.text()
@@ -104,9 +104,9 @@
                 //buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
             
 
-                document.getElementById('om_artikeln').innerHTML = buffer;
+               
           });
-            
+           document.getElementById('om_artikeln').innerHTML = buffer;
           </script>
     </body>
 </html>
