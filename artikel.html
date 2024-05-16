@@ -77,7 +77,7 @@
 
         var index_in_url = url.indexOf('artikel?=') + 9
         var tag = url.substring(index_in_url,url.length)
-        var buffer = `` 
+        
         fetch('artiklar/' + tag + '/info.txt')
     	  .then(function(resp) { 
     		  return resp.text()
@@ -90,7 +90,7 @@
             var preamble = content_of_tag(a_str,"ingress",0);
             var bild = content_of_tag(a_str,"bild",0);
             var skribent = content_of_tag(a_str,"skribent",0);
-              
+            var buffer = `` 
             document.title = titel;
               
             
@@ -103,10 +103,12 @@
            
                 //buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
             
-
-               
+               document.getElementById('om_artikeln').innerHTML = buffer;
+ 
+          })
+          .catch(err => {
+               console.log('caught it!',err);
           });
-           document.getElementById('om_artikeln').innerHTML = buffer;
           </script>
     </body>
 </html>
