@@ -90,8 +90,15 @@
             var preamble = content_of_tag(a_str,"ingress",0);
             var bild = content_of_tag(a_str,"bild",0);
             var skribent = content_of_tag(a_str,"skribent",0);
-            var buffer = `` 
-            document.title = titel;
+            
+            var buffer = ``   
+            
+            if(titel == -1 && preamble == -1){
+                buffer = `<div class = titel>Det är inte du det är jag</div><div class = ingress>Den här artikeln finns inte, är du ledsen över detta så hör av dig på gaffel.magasin@gmail.com</div>`
+                document.title = 'o_o';
+            }
+            else{
+                document.title = titel;
               
             
                 buffer = `<div>
@@ -101,14 +108,11 @@
                         </div>
                     </div>`
            
-                //buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
-            
-               document.getElementById('om_artikeln').innerHTML = buffer;
- 
+                
+            }
+            document.getElementById('om_artikeln').innerHTML = buffer;
+             
           })
-          .catch(err => {
-               console.log('caught it!',err);
-          });
           </script>
     </body>
 </html>
