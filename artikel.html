@@ -78,7 +78,7 @@
         var index_in_url = url.indexOf('artikel?=') + 9
         var tag = url.substring(index_in_url,url.length)
             
-        fetch('artiklar/' + tag + '/info.html')
+        fetch('/artiklar/' + tag + '/info.html')
     	  .then(function(resp) { 
     		  return resp.text()
     	   })
