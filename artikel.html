@@ -11,7 +11,7 @@
             
             
             body{
-                background-color: #044827FF;
+                background-color: #000000FF;
             }
             .artikel_hållare{
                 background: #FFFFFFFF;
@@ -57,8 +57,9 @@
         </style>
     </head>
     <body>
-        <div id='artikel' class = artikel_hållare>
-            
+        <div class = artikel_hållare>
+            <div id = 'om_artikeln'></div>
+            <div id = 'innehåll'></div>
         </div>
         
         <script>
@@ -71,26 +72,24 @@
     		return content;
     	}
 
-        fetch('article_content.txt')
+        var url =window.location.href;
+        console.log(url);
+
+        var index_in_url = url.indexOf('artikel?=') + 9
+        var tag = url.substring(index_in_url,url.length)
+            
+        fetch('artiklar/' + tag + '/info.html')
     	  .then(function(resp) { 
     		  return resp.text()
     	   })
     	  .then(function(resp){
     		var a_str = resp;
     		console.log(a_str);
-            var url =window.location.href;
-            console.log(url);
-
-            var index_in_url = url.indexOf('artikel?=') + 9
-            var tag = url.substring(index_in_url,url.length)
-
-            var start_index = a_str.indexOf('[' + tag + ']')
-              
-            var titel = content_of_tag(a_str,"titel",start_index);
-            var preamble = content_of_tag(a_str,"ingress",start_index);
-            var text = content_of_tag(a_str,"text",start_index);
-            var bild = content_of_tag(a_str,"bild",start_index);
-            var skribent = content_of_tag(a_str,"skribent",start_index);
+                       
+            var titel = content_of_tag(a_str,"titel",0);
+            var preamble = content_of_tag(a_str,"ingress",0);
+            var bild = content_of_tag(a_str,"bild",0);
+            var skribent = content_of_tag(a_str,"skribent",0);
               
             document.title = titel;
               
@@ -99,17 +98,14 @@
                             <img src = ${bild} class = blogg_bild></img>
                             <div class = titel>${titel}</div>
                             <div class = ingress>${preamble}</div>
-                             <div class = bröd>${text}</div>
                         </div>
                     </div>`
-              //console.log(buffer);
-              
             }
             else{
                 buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
             }
 
-            document.getElementById('artikel').innerHTML = buffer;
+            document.getElementById('om_artikeln').innerHTML = buffer;
           });
             
           </script>
