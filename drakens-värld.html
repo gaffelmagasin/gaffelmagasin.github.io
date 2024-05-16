@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+            background: #044827FF;
+            margin: 0px;
+            padding: 0px;
+          }
+          .game{
+            width :1200px;
+            height= 1000px;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        <div id = 'web-header'><script> 
+      		fetch('header.html')
+      			.then(function(resp){return resp.text()})
+      			.then(function(resp){
+      				document.getElementById('web-header').innerHTML = resp;
+  			});
+  		
+  	</script></div>
+        <div class = game>
+          <iframe id="game-iframe" src="https://bolibompa-cdn.dojnaz.net/svt/spel/drakens-varld">
+
+        </div>
+    </body>
+</html>
