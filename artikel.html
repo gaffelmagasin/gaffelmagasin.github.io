@@ -93,19 +93,18 @@
               
             document.title = titel;
               
-            if(start_index != -1){
+            
                 buffer = `<div>
                             <img src = ${bild} class = blogg_bild></img>
                             <div class = titel>${titel}</div>
                             <div class = ingress>${preamble}</div>
                         </div>
                     </div>`
-            }
-            else{
-                buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
-            }
+           
+                //buffer = `<div class = titel>det är inte du det är jag, den här artikeln finns inte</div>`
+            
 
-            document.getElementById('om_artikeln').innerHTML = buffer;
+                document.getElementById('om_artikeln').innerHTML = buffer;
           });
             
           </script>
