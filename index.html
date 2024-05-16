@@ -115,7 +115,11 @@
 		<div class = gaffel_logga>
 			<img src = "bilder/logga_hel_ny.png" class = gaffel_logga_bild></img>
 			<p id = 'slogan'">sveriges farligaste popkulturmagasin</p>
-			<script>document.getElementById('slogan').innerHTML = `någonting annat`</script>
+			<script>
+				var slogan_array = ['sveriges farligaste popkulturmagasin','sveriges farligaste popkulturmagasin','din kajplats i etern','pedagogiska underhållning i en trivsam miljö'];
+				var ny_slogan = slogan_array[Math.floor(Math.random(slogan_array.length))];
+				document.getElementById('slogan').innerHTML = ny_slogan;
+			</script>
 		</div>
 	</div>
 	
