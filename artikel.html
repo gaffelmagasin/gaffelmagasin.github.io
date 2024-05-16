@@ -11,6 +11,8 @@
             
             
             body{
+                margin: 0px;
+                padding: 0px;
                 background-color: #000000FF;
             }
             .artikel_hållare{
@@ -54,6 +56,15 @@
         </style>
     </head>
     <body>
+        <div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+		
+    	</script></div>
+        
         <div class = artikel_hållare>
             <div id = 'om_artikeln'></div>
             <div class = bröd id = 'innehåll'></div>
