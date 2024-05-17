@@ -126,6 +126,23 @@
 	</div>
 	
 	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		console.log(detectMob())
+		
 		function open_article(str){
 			window.location.href = 'https://gaffelmagasin.github.io/artikel' + '?=' + str;
 		}
@@ -153,7 +170,10 @@
 
 				var imgw = 55;
 				var roww = 40;
-				if(small == true){imgw = 100 roww = 100}
+				if(small == true){
+					imgw = 100;
+					roww = 100;
+				}
 				
 				var new_html = `<div>
 					<img src = ${bild} class = blog_img id = ${'bild' + div_id} style = "width: ${imgw}%;"></img>
