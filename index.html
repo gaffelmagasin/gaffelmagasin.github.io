@@ -138,7 +138,7 @@
 			return content;
 		}
 
-		function draw_article_button(div_id, article_name){
+		function draw_article_button(div_id, article_name,small){
 			
 			fetch('artiklar/' + article_name + '/info.txt')
 			.then(function(resp){return resp.text()})
@@ -150,10 +150,12 @@
 				var ingress = content_of_tag(a_str,"ingress",0);
 				var skribent = content_of_tag(a_str,"skribent",0);
 				var bild = content_of_tag(a_str,"bild",0);
+
+				var imgw = 55;
+				if(small == true){imgw = 100}
 				
 				var new_html = `<div>
-					<img src = ${bild} class = blog_img id = ${'bild' + div_id}></img>
-     					<br>
+					<img src = ${bild} class = blog_img id = ${'bild' + div_id} style = "width: ${imgw}%;"></img>
 	  				<div class = blog_row>
      						<div class = blog_title id = ${'titel' + div_id}>${titel}</div>
 			        		<div class = blog_preamble id = ${'ingress' + div_id}>${ingress}</div>
@@ -184,9 +186,9 @@
 	</script>
 	
     	<div id ='blogg_inlägg' class = blog_area>
-		<div id = 'main1' class = blog_cont><script>draw_article_button('main1','rostiga-roadtrips')</script></div>
-		<div id = 'main2' class = blog_cont><script>draw_article_button('main2','hawaiiskjortan')</script></div>
-		<div id = 'main3' class = blog_cont><script>draw_article_button('main3','rostiga-roadtrips')</script></div>   
+		<div id = 'main1' class = blog_cont><script>draw_article_button('main1','rostiga-roadtrips',true)</script></div>
+		<div id = 'main2' class = blog_cont><script>draw_article_button('main2','hawaiiskjortan',false)</script></div>
+		<div id = 'main3' class = blog_cont><script>draw_article_button('main3','rostiga-roadtrips',true)</script></div>   
 	 </div>
  
 
