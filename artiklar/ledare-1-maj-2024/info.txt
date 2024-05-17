@@ -1,4 +1,4 @@
 <titel>INFÖR EN 31:A APRIL!</titel>
-<bild>https://i.imgur.com/8NA83BC.png</bild>
+<bild>https://i.imgur.com/kFevfUM.png</bild>
 <ingress>Hur undviker man bakfylla på självaste första maj? Gaffels chefredaktör Nils Hagberg har ett förslag.</ingress>
 <skribent>Nils Hagberg</skribent>
