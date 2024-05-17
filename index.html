@@ -58,12 +58,12 @@
 		.blog_title {
 		  padding-top: 1%;
 		  font-family: morfeta;
-		  font-size: clamp(10px,3vw,40px);
+		  font-size: clamp(10px,4%,40px);
 		  line-height: 83%;
 		  color: #FFFFFFFF;
 		}
 		.blog_preamble{
-			font-size: clamp(5px,2vw,20px);
+			font-size: clamp(5px,2%,20px);
 			color: #FFFFFFFF;
 		}
 
@@ -141,7 +141,7 @@
 		    });
 		}
 
-		console.log(detectMob())
+		var isMobile = detectMob();
 		
 		function open_article(str){
 			window.location.href = 'https://gaffelmagasin.github.io/artikel' + '?=' + str;
