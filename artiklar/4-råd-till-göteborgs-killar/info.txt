@@ -1,4 +1,4 @@
 <titel>4 RÅD TILL GÖTEBORGS ALLA KILLAR</titel>
-<bild>https://i.imgur.com/8NA83BC.png</bild>
+<bild>https://i.imgur.com/jChtvEh.png</bild>
 <ingress>Den tidigare tiktok-celebritéten Vilgot Andersson från självaste Huvfudstaden har spolat upp i vår saltstänkta stad. Men mötet med Göteborg innebär en slående kulturkrock. Som självutnämnd Stockholmsreporter försöker han här ta i tu med stadens killar.</ingress>
 <skribent>Vilgot Andersson</skribent>
