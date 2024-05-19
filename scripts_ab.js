@@ -33,7 +33,8 @@ function open_article(str){
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
 					text_style_preamble = `font-size: clamp(10px,6vw,40px);`
 				}
-				var new_html = `.blog_cont{
+				var new_html = `<style>
+    				.blog_cont{
 					margin-bottom: 10px;
 					background: #000000ff;
 				}
@@ -63,7 +64,8 @@ function open_article(str){
 				.blog_preamble{
 					font-size: clamp(5px,3vw,18px);
 					color: #FFFFFFFF;
-				}`
+				}
+    				</style>`
 				
 				new_html += `<div>
 					<img src = ${bild} class = blog_img id = ${'bild' + div_id} style = "width: ${imgw}%;"></img>
