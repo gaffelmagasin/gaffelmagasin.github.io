@@ -33,8 +33,39 @@ function open_article(str){
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
 					text_style_preamble = `font-size: clamp(10px,6vw,40px);`
 				}
+				var new_html = `.blog_cont{
+					margin-bottom: 10px;
+					background: #000000ff;
+				}
+				.blog_row {
+					margin: 3%;
+					float: left;
+					background: #00000000;
+					width: 40%;
+				}
+				.blog_img{
+					float: right;
+					width: 55%;
+					background: #505050ff;
+				}
+				.blog_cont::after{
+				    content: "";
+				    display: table;
+				    clear: both;
+				}
+				.blog_title {
+				  padding-top: 1%;
+				  font-family: morfeta;
+				  font-size: clamp(10px,4vw,38px);
+				  line-height: 83%;
+				  color: #FFFFFFFF;
+				}
+				.blog_preamble{
+					font-size: clamp(5px,3vw,18px);
+					color: #FFFFFFFF;
+				}`
 				
-				var new_html = `<div>
+				new_html += `<div>
 					<img src = ${bild} class = blog_img id = ${'bild' + div_id} style = "width: ${imgw}%;"></img>
 	  				<div class = blog_row style = "width: ${roww}%;">
      						<div class = blog_title id = 	${'titel' + div_id} 	style = 	"${text_style_title}">	 ${titel}	</div>
