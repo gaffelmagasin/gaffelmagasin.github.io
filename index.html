@@ -70,6 +70,25 @@
 		}
 		
 	</style>
+
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+	</script>
 </head>
  
 <body>
@@ -129,24 +148,7 @@
 			color: #FFFFFFFF;
 		}
 	</style>
-	<script>
-		function detectMob() {
-		    const toMatch = [
-		        /Android/i,
-		        /webOS/i,
-		        /iPhone/i,
-		        /iPod/i,
-		        /BlackBerry/i,
-		        /Windows Phone/i
-		    ];
-    
-		    return toMatch.some((toMatchItem) => {
-			return navigator.userAgent.match(toMatchItem);
-		    });
-		}
-
-		var isMobile = detectMob();
-	</script>
+	
 	<script>
 		function open_article(str){
 			window.location.href = 'https://gaffelmagasin.github.io/artikel' + '?=' + str;
