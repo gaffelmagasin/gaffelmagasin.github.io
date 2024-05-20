@@ -56,6 +56,8 @@
 
 		.gaffel_logga{
 			margin: auto;
+			position: absolute;
+			top: 50%;
 			background: #044827FF;
 			padding: 20px 40px;
 			font-family: helvetica_bold;
@@ -190,7 +192,7 @@
 			<div id = 'main6' class = blog_cont><script>draw_article_button('main6','hawaiiskjortan',isMobile)</script></div>
 		 </div>
 
-		<div id = 'artiklar_side'  class = side_div">
+		<div id = 'artiklar_side'  class = side_div>
 			<script>
 				var ny_html = `
 					<a href = "index.html" class = sid_cont>ARTIKLAR</a>
@@ -198,7 +200,7 @@
 					<a href = "index.html" class = sid_cont>MODE</a>
 					<a href = "index.html" class = sid_cont>RECENSIONER</a>
      					`
-				if(!is_mobile && window.innerWidth > 1200){
+				if(true){
 					document.getElementById('artiklar_side').innerHTML = ny_html;
 				}
 			</script>
