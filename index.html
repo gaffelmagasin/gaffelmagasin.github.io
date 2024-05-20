@@ -202,7 +202,7 @@
 					<a href = "index.html" class = sid_cont>MODE</a>
 					<a href = "index.html" class = sid_cont>RECENSIONER</a>
      					`
-				if(true){
+				if(!is_mobile && window.innerWidth > 1000){
 					document.getElementById('artiklar_side').innerHTML = ny_html;
 				}
 			</script>
