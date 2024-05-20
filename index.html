@@ -189,12 +189,22 @@
 			<div id = 'main5' class = blog_cont><script>draw_article_button('main5','snöns-brödraskap',isMobile)</script></div>
 			<div id = 'main6' class = blog_cont><script>draw_article_button('main6','hawaiiskjortan',isMobile)</script></div>
 		 </div>
-		<div class = side_div>
-			<a href = "index.html" class = sid_cont>ARTIKLAR</a>
-			<a href = "index.html" class = sid_cont>KULTUR</a>
-			<a href = "index.html" class = sid_cont>MODE</a>
-			<a href = "index.html" class = sid_cont>RECENSIONER</a>
+
+		<div id = 'artiklar_side'  class = side_div">
+			<script>
+				var ny_html = `
+					<a href = "index.html" class = sid_cont>ARTIKLAR</a>
+					<a href = "index.html" class = sid_cont>KULTUR</a>
+					<a href = "index.html" class = sid_cont>MODE</a>
+					<a href = "index.html" class = sid_cont>RECENSIONER</a>
+     					`
+				if(!is_mobile && window.innerWidth > 1200){
+					document.getElementById('artiklar_side').innerHTML = ny_html;
+				}
+			</script>
+			
 		</div>
+
 	</div>
 </body>
  
