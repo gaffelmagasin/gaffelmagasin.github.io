@@ -1,0 +1,42 @@
+<style>
+  .side_div{
+    float: left;
+    margin-left: 3vw;
+    width: 300px;
+    height: 100%;
+    background: black;
+  }
+  .sid_cont{
+          font-family: Helvetica-Bold;
+          color: white;
+          text-align: left;
+          text-decoration: none;
+          font-size: 28px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-indent: 15px;
+        }
+
+        .sid_cont:hover {
+          background-color: white;
+          color: black;
+        }
+</style>
+
+<div id = 'artiklar_side'  class = side_div>
+  <script>
+    var ny_html = `
+      <a href = "index.html" class = sid_cont>ARTIKLAR</a>
+      <a href = "index.html" class = sid_cont>KULTUR</a>
+      <a href = "index.html" class = sid_cont>MODE</a>
+      <a href = "index.html" class = sid_cont>RECENSIONER</a>
+          `
+    console.log([isMobile,window.innerWidth]);
+    if(!isMobile && window.innerWidth > 1500){
+      document.getElementById('artiklar_side').innerHTML = ny_html;
+    }
+  </script>
+
+</div>
