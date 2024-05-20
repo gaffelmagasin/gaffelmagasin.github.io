@@ -171,14 +171,14 @@
 			<div id = 'main6' class = blog_cont><script>draw_article_button('main6','hawaiiskjortan',isMobile)</script></div>
 		 </div>
 
-		<div id = 'sid_grej'><script> 
+		<section id = 'sid_grej'><script> 
 			fetch('sid_info.html')
 				.then(function(resp){return resp.text()})
 				.then(function(resp){
 					document.getElementById('sid_grej').innerHTML = resp;
 				});
 			
-		</script></div>
+		</script></section>
 		
 		
 
