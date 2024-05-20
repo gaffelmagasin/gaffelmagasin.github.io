@@ -1,5 +1,5 @@
 <titel>Behövs fler modeinfluencers efter stiljournalen</titel>
 <bild>https://i.imgur.com/veC5I3D.png</bild>
-<ingress>"Hur bär man smoking på rätt sätt? Hur klär man sig till en elegant lunch? Dessa är frågor som jag en gång inte visste svaret på." Albin Carlsson berättar om sin favoritpodd.</ingress>
+<ingress>"Hur bär man smoking på rätt sätt? Hur klär man sig till en elegant lunch? Dessa är frågor som jag en gång inte visste svaret på." Albin Carlsson berättar om sin favoritpodd 'stiljournalen'.</ingress>
 <skribent>Albin Carlsson</skribent>
 
