@@ -36,10 +36,13 @@ function open_article(str){
 				var new_html = ``
 				
 				new_html += `<div>
-					<img src = ${bild} class = blog_img id = ${'bild' + div_id} style = "width: ${imgw}%;"></img>
-	  				<div class = blog_row style = "width: ${roww}%;">
-     						<div class = blog_title id = 	${'titel' + div_id} 	style = 	"${text_style_title}">	 ${titel}	</div>
-			        		<div class = blog_preamble id = ${'ingress' + div_id} 	style = 	"${text_style_preamble}">${ingress}	</div>
+					<img src = ${bild} id = ${'bild' + div_id} 
+     						style = "width: ${imgw}%; float: right; background: #000000FF;">
+	   				</img>
+	  				
+       					<div style = "width: ${roww}%; margin: 3%; float: left; background: #00000000;">
+     						<div class = blog_title id = 	${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_title}"   > ${titel}	</div>
+			        		<div class = blog_preamble id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
       					</div>
 			        </div>`
 
