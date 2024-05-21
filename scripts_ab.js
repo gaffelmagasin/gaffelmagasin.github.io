@@ -52,7 +52,7 @@ function open_article(str){
 				element.style.background = "#000000FF";
 				element.style.margin = "15px";
 				element.style.width = "100%";
-				element.style.height = "100%";
+				element.style.height = "auto";
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#00000000";
