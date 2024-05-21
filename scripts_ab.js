@@ -35,7 +35,7 @@ function open_article(str){
 				}
 				var new_html = ``
 				
-				new_html += `<div style = "margin-down: 10px; background: #000000FF">
+				new_html += `<div>
 					<img src = ${bild} id = ${'bild' + div_id} 
      						style = "width: ${imgw}%; float: right; background: #000000FF;">
 	   				</img>
@@ -49,6 +49,8 @@ function open_article(str){
 				 document.getElementById(div_id).innerHTML = new_html;
 			
 				var element = document.getElementById(div_id); //grab the element
+				element.style.background = "#000000FF";
+				element.style.margin: "15px";
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#00000000";
