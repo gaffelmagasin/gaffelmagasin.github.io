@@ -24,7 +24,7 @@ function open_article(str){
 				var bild = content_of_tag(a_str,"bild",0);
 
 				var text_style_title = `font-size: clamp(10px,4vw,40px)`
-				var text_style_preamble = `font-size: clamp(5px,3vw,20px);`
+				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
 				var imgw = 53;
 				var roww = 38;
 				if(small == true){
@@ -42,7 +42,7 @@ function open_article(str){
 	  				
        					<div style = "width: ${roww}%; margin: 3%; float: left;">
      						<div id = ${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
-			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; font-size: clamp(5px,2vw,19px) width: 95%;	${text_style_preamble}"> ${ingress}	</div>
+			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
       					</div>
 			        </div>`
 
