@@ -50,7 +50,7 @@ function open_article(str){
 			
 				var element = document.getElementById(div_id); //grab the element
 				
-
+				element.style.background = "#00000000";
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
 					element2.style.background = "#00000000";
