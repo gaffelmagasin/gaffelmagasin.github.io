@@ -35,7 +35,7 @@ function open_article(str){
 				}
 				var new_html = ``
 				
-				new_html += `<div style: "margin-down: 10px; background: #000000FF">
+				new_html += `<div style = "margin-down: 10px; background: #000000FF">
 					<img src = ${bild} id = ${'bild' + div_id} 
      						style = "width: ${imgw}%; float: right; background: #000000FF;">
 	   				</img>
