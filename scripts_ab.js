@@ -41,8 +41,8 @@ function open_article(str){
 	   				</img>
 	  				
        					<div style = "width: ${roww}%; margin: 3%; float: left; background: #00000000;">
-     						<div class = blog_title id = 	${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_title}"   > ${titel}	</div>
-			        		<div class = blog_preamble id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
+     						<div id = ${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
+			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
       					</div>
 			        </div>`
 
