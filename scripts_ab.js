@@ -35,7 +35,7 @@ function open_article(str){
 				}
 				var new_html = ``
 				
-				new_html += `<div style = "width:100%; height: clamp(15px,27vw,300px);">
+				new_html += `<div style = "width:100%; height: auto;">
 					<img src = ${bild} id = ${'bild' + div_id} 
      						style = "width: ${imgw}%; float: right; background: #000000FF;">
 	   				</img>
@@ -49,8 +49,7 @@ function open_article(str){
 				 document.getElementById(div_id).innerHTML = new_html;
 			
 				var element = document.getElementById(div_id); //grab the element
-				element.style.background = "#000000FF";
-				element.style.margin = "15px";
+				
 
 				element.onmouseover = function(){
 					var element2 = document.getElementById(div_id);
