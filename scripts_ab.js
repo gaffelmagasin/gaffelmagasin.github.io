@@ -42,7 +42,7 @@ function open_article(str){
 	  				
        					<div style = "width: ${roww}%; margin: 3%; float: left;">
      						<div id = ${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
-			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
+			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; clamp(5px,2vw,19px) width: 95%;	${text_style_preamble}"> ${ingress}	</div>
       					</div>
 			        </div>`
 
