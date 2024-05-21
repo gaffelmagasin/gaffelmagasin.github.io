@@ -22,9 +22,6 @@
 		  src: url(font/Helvetica-Bold.ttf) format("truetype");
 		}
 
-		   
-		
-		
 		body{
 			background-color: #044827FF;
 			
@@ -171,15 +168,17 @@
 		        }
 		</style>
 		
-		<div id = 'artiklar_side'  class = side_div>
+		<div id = 'artiklar_side'>
 		  <script>
 		    var ny_html = `
-		      <a href = "kultur.html" class = sid_cont>KULTUR</a>
-		      <a href = "mode.html" class = sid_cont>MODE</a>
-		      <a href = "recensioner.html" class = sid_cont>RECENSIONER</a>
-		          `
+      			<div class = side_div>
+		     	 <a href = "kultur.html" class = sid_cont>KULTUR</a>
+		     	 <a href = "mode.html" class = sid_cont>MODE</a>
+		      	 <a href = "recensioner.html" class = sid_cont>RECENSIONER</a>
+		        </div>
+	   		`
 		    console.log([isMobile,window.innerWidth]);
-		    if(!isMobile && window.innerWidth > 1500 && false){
+		    if(!isMobile && window.innerWidth > 1500){
 		      document.getElementById('artiklar_side').innerHTML = ny_html;
 		    }
 		  </script>
