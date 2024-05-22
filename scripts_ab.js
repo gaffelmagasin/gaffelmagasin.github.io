@@ -21,8 +21,11 @@ function open_article(str){
 				var titel = content_of_tag(a_str,"titel",0).toUpperCase();
 				var ingress = content_of_tag(a_str,"ingress",0);
 				var skribent = content_of_tag(a_str,"skribent",0);
+				var datum = content_of_tag(a_str,"datum",0);
 				var bild = content_of_tag(a_str,"bild",0);
 
+				var data = skribent + `<wbr>`+ datum;
+				
 				var text_style_title = `font-size: clamp(10px,4vw,40px)`
 				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
 				var imgw = 53;
@@ -43,7 +46,8 @@ function open_article(str){
        					<div style = "width: ${roww}%; margin: 3%; float: left;">
      						<div id = ${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
 			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
-      					</div>
+      						<div style = "font-family: helvetica_bold;font-weight: 400; font-size: 1em;line-height: 1em;padding: 2%;margin-top: 5%;margin-left: 5%; margin-right: 5%; color: black;background: white ;width: 40%;">${data}</div>
+	   				</div>
 			        </div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
