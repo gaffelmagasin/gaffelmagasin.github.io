@@ -24,7 +24,7 @@ function open_article(str){
 				var datum = content_of_tag(a_str,"datum",0);
 				var bild = content_of_tag(a_str,"bild",0);
 
-				var data = skribent + `&emsp;<wbr>`+ datum;
+				var data = skribent;
 				
 				var text_style_title = `font-size: clamp(10px,4vw,40px)`
 				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
@@ -46,7 +46,7 @@ function open_article(str){
        					<div style = "width: ${roww}%; margin: 2%; float: left;">
      						<div id = ${'titel' + div_id} 	style = "color: #FFFFFFFF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
 			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFFFFFF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
-      						<div style = "font-family: helvetica_bold;font-weight: 400; font-size: clamp(5px,2.5vw,25px);line-height: clamp(5px,2.5vw,25px);padding: 2%;margin-top: 5%; margin-bottom: 0px; color: black;background: white ;width: auto;">${data}</div>
+      						<div style = "font-family: helvetica_bold;font-weight: 400; font-size: clamp(5px,2vw,20px);line-height: clamp(5px,2vw,20px);padding: 2%;margin-top: 5%; margin-bottom: 0px; color: black;background: white ;width: auto;">${data}</div>
 	   				</div>
 			        </div>`
 
