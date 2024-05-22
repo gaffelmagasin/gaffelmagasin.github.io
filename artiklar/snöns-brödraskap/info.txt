@@ -2,3 +2,4 @@
 <bild>https://i.imgur.com/Z79q8Kq.png</bild>
 <ingress>Love Wickelgren Svensby har sett en film. "Snöns brödraskap" heter den. I denna text får ni följa hans resa genom filmen och sig själv.</ingress>
 <skribent>Love Wickelgren Svensby</skribent>
+<datum>23 april 2024</datum>
