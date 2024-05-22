@@ -2,3 +2,4 @@
 <bild>https://i.imgur.com/Vibv8dg.png</bild>
 <ingress>Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys.</ingress>
 <skribent> Nils Hagberg</skribent>
+<datum>18 augusti 2023</datum>
