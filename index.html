@@ -45,6 +45,13 @@
 			font-weight: 400;
 			margin: 15px;
 		}
+		h2{
+			font-family: helvetica_bold;
+			font-size: 50px;
+			color: white;
+			font-weight: 400;
+			margin: 15px;
+		}
 		
 		.blog_area{
 			background: #01010100;
@@ -138,8 +145,14 @@
 	<script src = "scripts_ab.js"></script>
     	
 	<div class = tidning>
-		<div id = 'blickfång'><script>draw_article_button('blickfång','bowie-var-först',isMobile)</script></div>
+		
+		<div id = 'top' style = "width: 95%;">
+			<h2>UTVALT</h2>
+			<div id = 'blickfång'><script>draw_article_button('blickfång','bowie-var-först',isMobile)</script></div>	
+		</div>
+		
 		<div id ='blogg_inlägg' class = blog_area>
+			<h2>Senaste artiklar</h2>
 			<div id = 'main7'><script>draw_article_button('main7','bowie-var-först',isMobile)</script></div>
 			<div id = 'main6'><script>draw_article_button('main6','stiljournalen',isMobile)</script></div>
 			<div id = 'main5'><script>draw_article_button('main5','ölreportaget',isMobile)</script></div>
