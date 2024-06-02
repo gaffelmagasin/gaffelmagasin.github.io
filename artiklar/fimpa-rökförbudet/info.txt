@@ -1,0 +1,5 @@
+<titel>Fimpa Ölförbudet</titel>
+<bild>https://i.imgur.com/Fq5nlEo.png</bild>
+<ingress></ingress>
+<skribent>Olle Ordqvist</skribent> 
+<datum>2 Juni 2024</datum>
