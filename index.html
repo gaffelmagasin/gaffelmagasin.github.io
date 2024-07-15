@@ -229,11 +229,11 @@
 
 	</div>
 
-	<div id = 'web-header'><script> 
-		fetch('header.html')
+	<div id = 'footer'><script> 
+		fetch('footer.html')
 			.then(function(resp){return resp.text()})
 			.then(function(resp){
-				document.getElementById('web-header').innerHTML = resp;
+				document.getElementById('footer').innerHTML = resp;
 			});
 		
 	</script></div>
