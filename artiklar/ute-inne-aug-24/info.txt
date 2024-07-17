@@ -1,0 +1,5 @@
+<titel>Ute-Inne-Listan Augusti</titel>
+<bild>https://i.imgur.com/IHAYpu1.png</bild>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (Augusti).</ingress>
+<skribent>Redaktionen</skribent> 
+<datum>17 juli 2024</datum>
