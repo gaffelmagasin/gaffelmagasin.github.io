@@ -1,5 +1,5 @@
 <titel>Göteborgs Cyklister</titel>
 <bild>https://i.imgur.com/rLBcsmP.png</bild>
-<ingress>"Jag drömmer om cyklar och knark" sjöng göteborgsbandet Hästpojken, men hur står det egentligen till emd stadens cyklister, Albin G Carlsson har svaret.</ingress>
+<ingress>"Jag drömmer om cyklar och knark" sjöng göteborgsbandet Hästpojken, men hur står det egentligen till med stadens cyklister, Albin G Carlsson har svaret.</ingress>
 <skribent>Albin G Carlsson</skribent> 
 <datum>24 juni 2024</datum>
