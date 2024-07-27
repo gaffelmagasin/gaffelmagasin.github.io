@@ -57,7 +57,16 @@
 		}
 
 
+		.gaffel_logga{
+			margin: auto;
 
+			background: #00000000;
+			padding: 20px 20px;
+			font-family: helvetica_bold;
+			color: white;
+			font-size: clamp(15px,15vw,150px);
+			text-align: center;
+		}
 		
 		
 	</style>
@@ -66,14 +75,6 @@
  
 <body>
 	
-	<div id = 'web-header'><script> 
-		fetch('header.html')
-			.then(function(resp){return resp.text()})
-			.then(function(resp){
-				document.getElementById('web-header').innerHTML = resp;
-			});
-		
-	</script></div>
 
 	<div class = banner>
 		<div class = gaffel_logga>
