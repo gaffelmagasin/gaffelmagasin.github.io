@@ -57,7 +57,15 @@
         </style>
     </head>
     <body>
-	
+
+	<script>
+		const d = new Date();
+		let day = d.getDay();
+		if(day == 0){
+			window.location.href = 'https://gaffel.nu/closed';
+		}
+	</script>
+	    
         <div class = head_div>
             <div class = left_div>
             <a href="/" class = logga>
