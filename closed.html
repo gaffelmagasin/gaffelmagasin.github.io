@@ -23,7 +23,7 @@
 		}
 
 		body{
-			background-color: #000000FF;
+			background-color: #DCEAE9FF;
 			
 			margin: 0px;
 			padding: 0px;
@@ -76,8 +76,26 @@
 <body>
 	
 
-	<img src = "bilder/stängt.png" style = "width: 100%"></img>
-	
+	<img src = "bilder/stängt_dator.png" style = "width: 100%" id = "bild"></img>
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+		if(isMobile){document.getElementById("bild").src = "bilder/stängt_mobil.jpg";}
+	</script>
 </body>
  
 </html>
