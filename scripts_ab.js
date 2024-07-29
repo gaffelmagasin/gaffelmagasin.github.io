@@ -50,7 +50,7 @@ function open_article(str){
 
 				//porträtt
 				
-					new_html += `<img src = "https://i.imgur.com/Y955Yz7.png" style = "width: 30%; height 30%; position: absolute; left: 30%; z-index: 2;"> </img>`
+					new_html += `<img src = "https://i.imgur.com/Y955Yz7.png" style = "width: 10%; height 10%; position: absolute; left: 30%; z-index: 2;"> </img>`
 				
 				
 				//text
