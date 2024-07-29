@@ -49,9 +49,9 @@ function open_article(str){
 	   				</img>`
 
 				//porträtt
-				
-					new_html += `<img src = "https://i.imgur.com/Y955Yz7.png" style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
-				
+				if(portrait){
+					new_html += `<img src = ${portrait} style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
+				}
 				
 				//text
 				new_html +=`<div style = "width: ${roww}%; margin: 2%; float: left;">
