@@ -24,6 +24,8 @@ function open_article(str){
 				var datum = content_of_tag(a_str,"datum",0);
 				var bild = content_of_tag(a_str,"bild",0);
 
+				var portrait = content_of_tag(a_str,"porträtt",0)
+				
 				var data = skribent;
 				
 				var text_style_title = `font-size: clamp(10px,4vw,40px)`
@@ -39,13 +41,20 @@ function open_article(str){
    					text_style_writer = `clamp(10px,4vw,40px)`
 				}
 				var new_html = ``
-				
+
+				//bild
 				new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">
 					<img src = ${bild} id = ${'bild' + div_id} 
      						style = "width: ${imgw}%; float: right; background: #000000FF;">
-	   				</img>
-	  				
-       					<div style = "width: ${roww}%; margin: 2%; float: left;">
+	   				</img>`
+
+				//porträtt
+				
+					new_html += `<img src = "https://i.pinimg.com/474x/5b/0a/77/5b0a771ee7d48a6738f1ab27c0636a4a.jpg" style = "position: relative, z-index: 2"> </img>`
+				
+				
+				//text
+				new_html +=`<div style = "width: ${roww}%; margin: 2%; float: left;">
      						<div id = ${'titel' + div_id} 	style = "color: #FFFEF7FF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
 			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
       						<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>
