@@ -172,12 +172,13 @@
 		}
 		var new_html = ``
 		
-		new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">
-			<img src =  "https://i.imgur.com/cq8QUJv.png"
-				style = "width: ${imgw}%; float: right; background: #044827FF;">
-			</img>
-			
-			<div style = "width: ${roww}%; margin: 2%; float: left;">
+		new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+		if(isMobile == false){
+			new_html += 	`<img src =  "https://i.imgur.com/cq8QUJv.png"
+					style = "width: ${imgw}%; float: right; background: #044827FF;">
+					</img>`
+		}
+		new_html += `<div style = "width: ${roww}%; margin: 2%; float: left;">
 				
 				<div style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> GAFFEL är ett magasin skapat AV ungar från kulturmedelklassen FÖR ungar från kulturmedelklassen, vi ger dig allt du behöver veta om pop, kultur och popkultur. <br><br>Redaktionen:<br>Chefredaktör: Nils Hagberg<br>Oansvarig utgivare: Elias Rågholm<br>Allt-i-Allo: Albin G Carlsson<br><br>Kungliga slottet, 107 70 Stockholm<br>
 </div>
