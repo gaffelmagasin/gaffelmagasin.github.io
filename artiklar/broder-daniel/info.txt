@@ -1,5 +1,6 @@
 <titel>Det är dags att släppa Broder Daniel</titel>
 <bild>https://i.imgur.com/coh6RvI.png</bild>
 <ingress>"Förra veckan skedde ett brott, för vissa av samma grad som mordet på Statsminister Olof Palme, plakatet till 'spela shoreline-stenen' i Slottskogen stals" Nils Hagberg om Broder Daniel.</ingress>
-<skribent>Nils Hagberg</skribent> 
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
 <datum>27 juli 2024</datum>
