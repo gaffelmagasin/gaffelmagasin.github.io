@@ -50,7 +50,7 @@ function open_article(str){
 
 				//porträtt
 				if(portrait != "-1" && !small){
-					new_html += `<img src = porträtt/${portrait}.png style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
+					new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
 				}
 				
 				//text
