@@ -1,5 +1,6 @@
 <titel>Recension: En del av dig</titel>
 <bild>https://i.imgur.com/4ZjsgNB.png</bild>
 <ingress>"Det är en gröt av bekanta bilder, story-beats och scener i vilka många av dess mest intressanta kännetecken går förlorade." Love Wickelgren Svensby om Sigge Eklund och Michaela Hamiltons film En del av dig</ingress>
-<skribent>Love Wickelgren Svensby</skribent> 
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
 <datum>24 juni 2024</datum>
