@@ -24,7 +24,7 @@ function open_article(str){
 				var datum = content_of_tag(a_str,"datum",0);
 				var bild = content_of_tag(a_str,"bild",0);
 
-				var portrait = "porträtt/"+content_of_tag(a_str,"porträtt",0)+".png"
+				var portrait = content_of_tag(a_str,"porträtt",0)
 				
 				var data = skribent;
 				
@@ -50,7 +50,7 @@ function open_article(str){
 
 				//porträtt
 				if(portrait != "-1" && !small){
-					new_html += `<img src = ${portrait} style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
+					new_html += `<img src = porträtt/${portrait}.png style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
 				}
 				
 				//text
