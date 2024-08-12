@@ -24,7 +24,7 @@ function open_article(str){
 				var datum = content_of_tag(a_str,"datum",0);
 				var bild = content_of_tag(a_str,"bild",0);
 
-				var portrait = content_of_tag(a_str,"porträtt",0)
+				var portrait = "porträtt/"+content_of_tag(a_str,"porträtt",0)+".png"
 				
 				var data = skribent;
 				
