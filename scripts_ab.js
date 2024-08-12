@@ -49,7 +49,7 @@ function open_article(str){
 	   				</img>`
 
 				//porträtt
-				if(portrait != "-1"){
+				if(portrait != "-1" && !small){
 					new_html += `<img src = ${portrait} style = "width: 17%; height 17%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`
 				}
 				
