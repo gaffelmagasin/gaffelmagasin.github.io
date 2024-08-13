@@ -1,6 +1,6 @@
 <titel>Mest IT-factor i kungafamiljen?</titel>
 <bild>https://i.imgur.com/0r0IZI4.png</bild>
-<ingress>"Kraven på dagens kungligheter har uppenbarligen rasat kraftigt. Monarkistiska blaskor sväljer med hull och hår allt vad de gör utan att kritiskt granska deras förmåga att vara det." Nils Hagberg undersöker vem i kungafamiljen som har mest it-factor.</ingress>
+<ingress>"Kraven på dagens kungligheter har uppenbarligen rasat kraftigt. Monarkistiska blaskor sväljer med hull och hår allt vad de gör utan att kritiskt granska deras förmåga att vara det."</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
 <datum>13 juni 2024</datum>
