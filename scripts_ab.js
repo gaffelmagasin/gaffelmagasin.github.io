@@ -43,9 +43,9 @@ function open_article(str){
 				var new_html = ``
 
 				//bild
-				new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
-					<div style = "height: 100%; width: ${imgw}%; float: right;; background: #FFFEF7FF;">
-     						<!--<img src = ${bild} id = ${'bild' + div_id} style = "width = auto; height: auto;"></img>-->
+				new_html += `<div style = "width: 100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
+					<div style = "height: 100%; width: ${imgw}%; float: right; background: #FFFEF7FF;">
+     						<img src = ${bild} id = ${'bild' + div_id} style = "width: auto; height: auto;"></img>
 	   				</div>`
 
 				//porträtt
