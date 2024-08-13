@@ -56,10 +56,11 @@ function open_article(str){
 				
 				//text
 				new_html +=`<div style = "width: ${roww}%; margin: 2%; float: left;">
-     						<div id = ${'titel' + div_id} 	style = "color: #FFFEF7FF; width: 95%; padding-top: 1%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
-			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>
-      						<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>
-	   				</div>
+     						<div id = ${'titel' + div_id} 	style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
+			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>`
+      				if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
+	   			
+       				new_html+=	`</div>
 			        </div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
