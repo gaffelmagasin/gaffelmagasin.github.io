@@ -32,7 +32,7 @@ function open_article(str){
 				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
 				var text_style_writer = `clamp(5px,2vw,20px)`
 				var imgw = 53;
-				var roww = 38;
+				var roww = 35;
 				if(small == true){
 					imgw = 100;
 					if(portrait != "-1"){roww = 70;}else{roww = 100;}
@@ -50,7 +50,7 @@ function open_article(str){
 
 				//porträtt
 				if(portrait != "-1"){
-					if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%; position: absolute; left: 38%; bottom: 0px; z-index: 2;"> </img>`}
+					if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%; position: absolute; left: 34%; bottom: 0px; z-index: 2;"> </img>`}
 					else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%; position: absolute; right: 0%; bottom: 0px; z-index: 2;"> </img>`}
 				}
 				
