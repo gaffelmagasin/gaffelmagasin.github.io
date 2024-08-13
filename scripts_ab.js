@@ -35,7 +35,7 @@ function open_article(str){
 				var roww = 38;
 				if(small == true){
 					imgw = 100;
-					roww = 100;
+					roww = 70;
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
 					text_style_preamble = `font-size: clamp(10px,6vw,40px);`
    					text_style_writer = `clamp(10px,4vw,40px)`
