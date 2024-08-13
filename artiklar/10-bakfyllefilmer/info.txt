@@ -2,5 +2,4 @@
 <bild>https://i.imgur.com/13wNDDW.png</bild>
 <ingress>Det är lördag idag. Du kanske är bakfull, sånt händer. Och vad hjälper om inte en bra film? Gaffel står som vanligt på DIN sida och väljer att lista 10 bra bakfyllefilmer.</ingress>
 <skribent>Redaktionen</skribent>
-<porträtt>nils_spg</porträtt>
 <datum>25 maj 2024</datum>
