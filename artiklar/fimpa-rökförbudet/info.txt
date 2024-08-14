@@ -1,5 +1,6 @@
 <titel>Fimpa rökförbudet</titel>
 <bild>https://i.imgur.com/Fq5nlEo.png</bild>
 <ingress>"Rökning gör bra upplevelser bättre; rökning gör snygga människor ännu snyggare. Det finns ingen människa som inte blir snyggare av att ha en cigarett i sin hand eller käft." Olle Ordqvist om rökförbudet.</ingress>
-<skribent>Olle Ordqvist</skribent> 
+<skribent>Olle Ordqvist</skribent>
+<porträtt>olle_spg</porträtt>
 <datum>2 Juni 2024</datum>
