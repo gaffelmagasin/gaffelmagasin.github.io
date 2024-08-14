@@ -1,5 +1,6 @@
 <titel>Stockholms cyklister</titel>
 <bild>https://i.imgur.com/bM5gMbw.png</bild>
 <ingress>Gaffels stockholmskorrespondent Vilgot Andersson har gjort en grävande undersökning över Slussens olika typer av cyklister.</ingress>
-<skribent>Vilgot Andersson</skribent> 
+<skribent>Vilgot Andersson</skribent>
+<porträtt>vilgot_spg</porträtt>
 <datum>11 Juli 2024</datum>
