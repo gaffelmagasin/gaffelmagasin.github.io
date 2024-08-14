@@ -33,7 +33,7 @@ function open_article(str){
 				var text_style_writer = `clamp(5px,2vw,20px)`
 				var imgw = 53;
 				var roww = 38;
-				if(porträtt != "-1"){roww = 30;}
+				if(portrait != "-1"){roww = 30;}
 				if(small == true){
 					imgw = 100;
 					if(portrait != "-1"){roww = 68;}else{roww = 100;}
