@@ -1,5 +1,6 @@
 <titel>Bowie var först</titel>
 <bild>https://i.imgur.com/LGLJKQw.png</bild>
 <ingress>"Men sanningen stirrar mig stint i ögat när filmen är över. Det har aldrig varit lättare att vara en allkonstnär". Vilgot Andersson om David Bowie</ingress>
-<skribent>Vilgot Andersson</skribent> 
+<skribent>Vilgot Andersson</skribent>
+<porträtt>vilgot_spg</porträtt>
 <datum>23 maj 2024</datum>
