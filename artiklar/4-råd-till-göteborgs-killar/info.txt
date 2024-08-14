@@ -2,4 +2,5 @@
 <bild>https://i.imgur.com/jChtvEh.png</bild>
 <ingress>Den tidigare tiktok-celebritéten Vilgot Andersson från självaste Huvfudstaden har spolat upp i vår saltstänkta stad. Men mötet med Göteborg innebär en slående kulturkrock.</ingress>
 <skribent>Vilgot Andersson</skribent>
+<porträtt>vilgot_spg</porträtt>
 <datum>30 april 2024</datum>
