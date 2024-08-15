@@ -1,6 +1,6 @@
 <titel>Att gå vilse</titel>
 <bild>https://i.imgur.com/8En0BZT.png</bild>
-<ingress>Love Wickelgren Svenskby berättar om en cykeltur i Kina och funderar över vilsegångens plats hos resenären.</ingress>
+<ingress>Love Wickelgren Svenskby berättar om en cykeltur i Shanghai och funderar över vilsegångens plats hos resenären.</ingress>
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
 <datum>11 augusti 2024</datum>
