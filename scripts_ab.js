@@ -40,7 +40,7 @@ function open_article(str){
 					if(portrait != "-1"){roww = 68;}else{roww = 100;}
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
 					text_style_preamble = `font-size: clamp(10px,5vw,35px);`
-					preamble_line_height = 0.98;
+					preamble_line_height = 1;
    					text_style_writer = `clamp(8px,0vw,30px)`
 				}
 				var new_html = ``
