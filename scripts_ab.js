@@ -30,7 +30,7 @@ function open_article(str){
 				
 				var text_style_title = `font-size: clamp(10px,4vw,40px)`
 				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
-				var text_style_writer = `clamp(5px,2vw,20px)`
+				var text_style_writer = `clamp(5px,1.5vw,15px)`
 				var imgw = 53;
 				var roww = 38;
 				if(portrait != "-1"){roww = 30;}
@@ -39,7 +39,7 @@ function open_article(str){
 					if(portrait != "-1"){roww = 68;}else{roww = 100;}
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
 					text_style_preamble = `font-size: clamp(10px,5vw,35px);`
-   					text_style_writer = `clamp(10px,4vw,40px)`
+   					text_style_writer = `clamp(8px,0vw,30px)`
 				}
 				var new_html = ``
 
