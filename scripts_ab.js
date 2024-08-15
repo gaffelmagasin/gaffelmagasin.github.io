@@ -10,7 +10,7 @@ function open_article(str){
 			return content;
 		}
 
-		function draw_article_button(div_id, article_name,small){
+		function draw_article_button(div_id, article_name,small, use_preamble = true){
 			
 			fetch('artiklar/' + article_name + '/info.txt')
 			.then(function(resp){return resp.text()})
@@ -55,12 +55,19 @@ function open_article(str){
 					else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%; position: absolute; right: 0%; bottom: 0px; z-index: 2;"> </img>`}
 				}
 				
-				//text
-				new_html +=`<div style = "width: ${roww}%; margin: 3%; float: left;">
-     						<div id = ${'titel' + div_id} 	style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}	</div>
-			        		<div id = ${'ingress' + div_id} 	style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress}	</div>`
-      				if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
+				//start
+				new_html +=`<div style = "width: ${roww}%; margin: 3%; float: left;">`
+     				
+					//titel
+		 			new_html += `<div id = ${'titel' + div_id} style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}</div>`
+				       
+					//ingress
+		     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
+	      				
+					//name
+					if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
 	   			
+				//slut
        				new_html+=	`</div>
 			        </div>`
 
