@@ -66,7 +66,7 @@ function open_article(str){
 	      				
 					//name
 					if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
-	   			
+	   				else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
 				//slut
        				new_html+=	`</div>
 			        </div>`
