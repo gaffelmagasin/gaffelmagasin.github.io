@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan September</titel>
+<bild>https://i.imgur.com/qIiNlSE.png</bild>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (September).</ingress>
+<skribent>Redaktionen</skribent> 
+<datum>15 Augusti 2024</datum>
