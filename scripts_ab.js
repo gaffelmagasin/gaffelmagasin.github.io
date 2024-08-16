@@ -47,7 +47,7 @@ function open_article(str){
 
 				//bild
 				new_html += `<div style = "width: 100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
-					<div style = "min-height: auto; position: absolute; top: 0px; bottom: 0px; right: 0px; width: ${imgw}%; float: right; background-color: #FFFEF7FF;">
+					<div style = "height: 100%; width: ${imgw}%; float: right; background-color: #FFFEF7FF;">
      						<img src = ${bild} id = ${'bild' + div_id} style = "width: 100%; height: auto;"></img>
 	   				</div>`
 
