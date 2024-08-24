@@ -1,0 +1,6 @@
+<titel>Turistortens klagan</titel>
+<bild>https://i.imgur.com/c6l6OQ6.png</bild>
+<ingress>Nils Hagberg är trött på alla som klagar på turister och ger några förslag på hur man kan bli rik på dem</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_Spg</porträtt>
+<datum>24 Augusti 2024</datum>
