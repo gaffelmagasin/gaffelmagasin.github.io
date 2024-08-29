@@ -186,7 +186,8 @@
     		var a_str = resp;
                        
 		var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
-
+		var b_str = b_str.replaceAll('#ffffff','#fffef7');
+		  
 		    let f = ".png";
 		    let img_num = b_str.split(f).length - 1;
 		    console.log(img_num);
