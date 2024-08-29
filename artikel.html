@@ -187,7 +187,7 @@
                        
 		var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
 	
-		var n_img = b_str.match('/.png/g').length;
+		var n_img = (b_str.match('/.png/g')).length;
 		console.log(n_img);
 		  
 		 console.log(b_str); 
