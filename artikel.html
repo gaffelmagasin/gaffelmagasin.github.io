@@ -191,7 +191,18 @@
 		    let img_num = b_str.split(f).length - 1;
 		    console.log(img_num);
 
-		
+		var wi = 0
+		for (let i = 0; i < img_num; i++) {
+		  	wi = b_str.indexOf(` width:`,wi);
+			console.log(wi);
+			var hi = b_str.indexOf(` height:`,wi);
+			console.log(hi);
+
+			wi2 = b_str.indexOf(`"width:`,wi);
+			console.log(wi2);
+			var hi2 = b_str.indexOf(` height:`,wi2);
+			console.log(hi2);
+		}
 		  
 		 console.log(b_str); 
            	 document.getElementById('innehåll').innerHTML = b_str;
