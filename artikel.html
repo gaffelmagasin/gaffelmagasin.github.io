@@ -186,8 +186,9 @@
     		var a_str = resp;
     		console.log(a_str);
                        
-            
-            document.getElementById('innehåll').innerHTML = a_str;
+	var b_str = a_str.replaceAll('images/','artiklar/' + tag)
+		  
+            document.getElementById('innehåll').innerHTML = b_str;
              
           })
           </script>
