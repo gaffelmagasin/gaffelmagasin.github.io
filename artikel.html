@@ -205,11 +205,15 @@
 			var hi2 = b_str.indexOf(` height:`,wi2);
 			var e_hi2 = b_str.indexOf(`;`,hi2);
 
-			b_str = b_str.replaceAll(b_str.substring(wi,e_wi),'100%');
-			b_str = b_str.replaceAll(b_str.substring(hi,e_hi),'auto');
-
-			b_str = b_str.replaceAll(b_str.substring(wi2,e_wi2),'100%');
-			b_str = b_str.replaceAll(b_str.substring(hi2,e_hi2),'auto');
+			var w = b_str.substring(wi,e_wi);
+			var h = b_str.substring(hi,e_hi);
+			var w2 = b_str.substring(wi2,e_wi2);
+			var h2 = b_str.substring(hi2,e_hi2);
+			
+			b_str = b_str.replaceAll(w,'100%');
+			b_str = b_str.replaceAll(h,'auto');
+			b_str = b_str.replaceAll(w2,'100%');
+			b_str = b_str.replaceAll(h2,'auto');
 
 			
 		}
