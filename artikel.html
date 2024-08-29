@@ -187,8 +187,11 @@
                        
 		var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
 	
-		var n_img = (b_str.match('/.png/g')).length();
+		var n_img = (b_str.match('/.png/g'));
+		
 		console.log(n_img);
+
+		n_img = n_img.length;
 		  
 		 console.log(b_str); 
            	 document.getElementById('innehåll').innerHTML = b_str;
