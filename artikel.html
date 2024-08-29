@@ -186,12 +186,10 @@
     		var a_str = resp;
                        
 		var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
-	
-		var n_img = (b_str.match('/a/g'));
-		
-		console.log(n_img);
 
-		n_img = n_img.length;
+		    let f = ".png";
+		    let img_num = b_str.split(f).length - 1;
+		    console.log(img_num);
 		  
 		 console.log(b_str); 
            	 document.getElementById('innehåll').innerHTML = b_str;
