@@ -194,14 +194,23 @@
 		var wi = 0
 		for (let i = 0; i < img_num; i++) {
 		  	wi = b_str.indexOf(` width:`,wi);
-			console.log(wi);
+			var e_wi = b_str.indexOf(`;`,wi);
+			
 			var hi = b_str.indexOf(` height:`,wi);
-			console.log(hi);
+			var e_hi = b_str.indexOf(`;`,hi);
+			
 
 			wi2 = b_str.indexOf(`"width:`,wi);
-			console.log(wi2);
+			var e_wi2 = b_str.indexOf(`;`,wi2);
 			var hi2 = b_str.indexOf(` height:`,wi2);
-			console.log(hi2);
+			var e_hi2 = b_str.indexOf(`;`,hi2);
+
+			console.log(b_str.substr(wi,e_wi));
+			console.log(b_str.substr(hi,e_hi));
+			console.log(b_str.substr(wi2,e_wi2));
+			console.log(b_str.substr(hi2,e_hi2));
+
+			
 		}
 		  
 		 console.log(b_str); 
