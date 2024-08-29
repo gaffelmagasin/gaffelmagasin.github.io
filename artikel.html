@@ -190,6 +190,12 @@
 		    let f = ".png";
 		    let img_num = b_str.split(f).length - 1;
 		    console.log(img_num);
+
+		  var i = 0
+		    repeat(img_num){
+			   i = b_str.indexOf('.png',i+1);
+			   console.log(i);
+		    }
 		  
 		 console.log(b_str); 
            	 document.getElementById('innehåll').innerHTML = b_str;
