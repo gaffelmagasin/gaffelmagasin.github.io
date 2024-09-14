@@ -1,5 +1,5 @@
 <titel>Inne-Ute-Listan Oktober</titel>
 <bild>https://i.imgur.com/hGJJoGL.png</bild>
-<ingress>Medborgare hör upp! Gaffel presenterar vad som är ute och vad som är inne för nästa månad (Oktber).</ingress>
+<ingress>Medborgare hör upp! Gaffel presenterar vad som är ute och vad som är inne för nästa månad (Oktober).</ingress>
 <skribent>Redaktionen</skribent> 
 <datum>14 September 2024</datum>
