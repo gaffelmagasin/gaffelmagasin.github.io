@@ -1,0 +1,6 @@
+<titel>5 snutfilmer för snuthatare</titel>
+<bild>https://i.imgur.com/GrfY7uk.png</bild>
+<ingress>Nils Hagberg berättar om några filmer han tycker om.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>23 September 2024</datum>
