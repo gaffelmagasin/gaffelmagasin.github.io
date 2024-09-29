@@ -44,38 +44,34 @@ function open_article(str){
    					text_style_writer = `clamp(8px,0vw,30px)`
 				}
 				var new_html = ``
-				//start
-				new_html += `<div>`
-				
-				//text
-					new_html +=`<div style = "width: ${roww}%; margin: 3%;">`
-	     				
-						//titel
-			 			new_html += `<div id = ${'titel' + div_id} style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}</div>`
-					       
-						//ingress
-			     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "line-height: ${preamble_line_height}; color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
-		      				
-						//name
-						if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
-		   				else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
-					
-					new_html += `</div>`
+
+				//bild
+				new_html += `<div style = "width: 100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
+
+     						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto; display: table-row; float: right;"></img>`
+
 
 				//porträtt
-					if(portrait != "-1"){
-						if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%"> </img>`}
-						else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%"> </img>`}
-					}
+				if(portrait != "-1"){
+					if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%; position: absolute; left: 32%; bottom: 0px; z-index: 2;"> </img>`}
+					else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%; position: absolute; right: 0%; bottom: 0px; z-index: 2;"> </img>`}
+				}
 				
-				//bild
-					new_html += `<div style = "width: 100%; height: auto; display: block; margin-bottom: 10px; position: relative;">
-
-     						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto;"></img>
-					    </div>`
-				
+				//start
+				new_html +=`<div style = "width: ${roww}%; margin: 3%; float: left;">`
+     				
+					//titel
+		 			new_html += `<div id = ${'titel' + div_id} style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}</div>`
+				       
+					//ingress
+		     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "line-height: ${preamble_line_height}; color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
+	      				
+					//name
+					if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
+	   				else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
 				//slut
-       				new_html+=`</div>`
+       				new_html+=	`</div>
+			        </div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
 			
