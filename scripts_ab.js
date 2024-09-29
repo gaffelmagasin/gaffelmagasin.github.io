@@ -47,9 +47,9 @@ function open_article(str){
 
 				//bild
 				new_html += `<div style = "width: 100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
-					<div style = "height: 100%; width: ${imgw}%; float: right; background-color: #FFFEF7FF;">
-     						<img src = ${bild} id = ${'bild' + div_id} style = "width: 100%; height: auto; display: table-row"></img>
-	   				</div>`
+
+     						<img src = ${bild} id = ${'bild' + div_id} style = "width: 100%; height: auto; display: table-row float: right"></img>
+
 
 				//porträtt
 				if(portrait != "-1"){
