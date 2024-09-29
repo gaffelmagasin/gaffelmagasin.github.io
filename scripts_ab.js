@@ -71,8 +71,8 @@ function open_article(str){
 				//bild
 					new_html += `<div style = "width: 100%; height: auto; display: block; margin-bottom: 10px; position: relative;">
 
-     						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto;"></img>`
-					    `</div>
+     						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto;"></img>
+					    </div>`
 				
 				//slut
        				new_html+=</div>`
