@@ -75,7 +75,7 @@ function open_article(str){
 					    </div>`
 				
 				//slut
-       				new_html+=</div>`
+       				new_html+=`</div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
 			
