@@ -45,6 +45,9 @@ function open_article(str){
 				}
 				var new_html = ``
 				//start
+				new_html += `<div>`
+				
+				//text
 				new_html +=`<div style = "width: ${roww}%; margin: 3%;">`
      				
 					//titel
@@ -69,10 +72,10 @@ function open_article(str){
 				new_html += `<div style = "width: 100%; height: auto; display: block; margin-bottom: 10px; position: relative;">
 
      						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto;"></img>`
-
+					    `</div>
 				
 				//slut
-       				new_html+=	`</div>
+       				new_html+=	
 			        </div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
