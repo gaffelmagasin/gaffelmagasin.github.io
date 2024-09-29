@@ -48,35 +48,34 @@ function open_article(str){
 				new_html += `<div>`
 				
 				//text
-				new_html +=`<div style = "width: ${roww}%; margin: 3%;">`
-     				
-					//titel
-		 			new_html += `<div id = ${'titel' + div_id} style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}</div>`
-				       
-					//ingress
-		     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "line-height: ${preamble_line_height}; color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
-	      				
-					//name
-					if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
-	   				else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
-				
-				
+					new_html +=`<div style = "width: ${roww}%; margin: 3%;">`
+	     				
+						//titel
+			 			new_html += `<div id = ${'titel' + div_id} style = "color: #FFFEF7FF; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 83%;${text_style_title}"> ${titel}</div>`
+					       
+						//ingress
+			     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "line-height: ${preamble_line_height}; color: #FFFEF7FF; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
+		      				
+						//name
+						if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: #FFFEF7FF; width: 80%;">${data}</div>`}
+		   				else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
+					
+					new_html += `</div>`
 
 				//porträtt
-				if(portrait != "-1"){
-					if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%"> </img>`}
-					else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%"> </img>`}
-				}
+					if(portrait != "-1"){
+						if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%"> </img>`}
+						else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%"> </img>`}
+					}
 				
 				//bild
-				new_html += `<div style = "width: 100%; height: auto; display: block; margin-bottom: 10px; position: relative;">
+					new_html += `<div style = "width: 100%; height: auto; display: block; margin-bottom: 10px; position: relative;">
 
      						<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto;"></img>`
 					    `</div>
 				
 				//slut
-       				new_html+=	
-			        </div>`
+       				new_html+=</div>`
 
 				 document.getElementById(div_id).innerHTML = new_html;
 			
