@@ -1,0 +1,6 @@
+<titel>Bokmässan 2023</titel>
+<bild>https://i.imgur.com/gLlG6Om.png</bild>
+<ingress>Nils Hagberg hade annat för sig under årets bokmässa och har därför skrivit om förra årets</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>1 Oktober 2024</datum>
