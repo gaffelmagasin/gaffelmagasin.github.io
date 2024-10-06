@@ -1,0 +1,6 @@
+<titel>Kenta, Stoffe och Sverige</titel>
+<bild>https://i.imgur.com/ZQm6rfQ.png</bild>
+<ingress>"Två för allmänheten osynliga medborgare som nu står i rampljuset på filmduken" Elsa Bolander skriver om Stefan Jarl och Jan Lindqvists trilogiklassiker.</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<datum>6 Oktober 2024</datum>
