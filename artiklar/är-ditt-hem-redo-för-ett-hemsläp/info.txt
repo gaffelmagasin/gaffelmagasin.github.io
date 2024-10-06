@@ -2,4 +2,5 @@
 <bild>https://i.imgur.com/wqvvf3c.png</bild>
 <ingress>Ska vi hem till dig, mig eller var och en till sig? Det är inte alltid så lätt att svara på, Elsa Bolander har därför gjort en lista över hur din inredning kan påverka ett potentiellt ragg.</ingress>
 <skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
 <datum>27 augusti 2024</datum>
