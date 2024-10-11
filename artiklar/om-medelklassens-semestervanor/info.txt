@@ -1,6 +1,6 @@
 <titel>Om medelklassens semestervanor</titel>
 <bild>https://i.imgur.com/PWbUImY.png</bild>
-<ingress>"Det är som att medelklassen har uppfunnit en sorts omvänd behovstrappa à la Maslow" Theodor Vogel om medelklassens medelklassens drömsemester.</ingress>
+<ingress>"Det är som att medelklassen har uppfunnit en sorts omvänd behovstrappa à la Maslow" Theodor Vogel om medelklassens drömsemester.</ingress>
 <skribent>Theodor Vogel</skribent>
 <porträtt>theodor_spg</porträtt>
 <datum>11 Oktober 2024</datum>
