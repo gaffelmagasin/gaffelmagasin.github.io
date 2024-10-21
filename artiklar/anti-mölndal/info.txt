@@ -1,0 +1,6 @@
+<titel>Anti-Mölndal</titel>
+<bild>https://i.imgur.com/VxxPTLL.png</bild>
+<ingress>Elsa Bolander tycker Mölndal liknar en skärseld och skapar nyordet "metallplockepinn"</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<datum>23 Oktober 2024</datum>
