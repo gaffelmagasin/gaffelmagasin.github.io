@@ -1,5 +1,5 @@
 <titel>Anti-Mölndal</titel>
-<bild>https://i.imgur.com/VxxPTLL.png</bild>
+<bild>https://i.imgur.com/kZls2ey.png</bild>
 <ingress>Elsa Bolander tycker Mölndal liknar en skärseld och skapar nyordet "metallplockepinn"</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
