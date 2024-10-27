@@ -70,9 +70,14 @@
 			  background: black;
 			  background-image: url("bilder/ny_tavlor_komp.png");
 			  background-repeat: no-repeat;
-			  background-position-x: center;
+			  background-position: center center;
 			  background-attachment: fixed;
 			  background-size: cover;
+
+			   @media (max-width: @iphone-screen) {
+			        background-attachment: scroll;
+			    }
+						
 			  height: 700px;
 			  margin: 0px;
 			  padding: 0px;
