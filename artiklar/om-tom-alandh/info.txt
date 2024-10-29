@@ -1,6 +1,6 @@
 <titel>Om Tom Alandh</titel>
 <bild>https://i.imgur.com/y9yK6GH.png</bild>
-<ingress>Nils Hagberg har vågat skrivit en seriös artikel om dokumentärfilmaren och journalisten Tom Alandh.</ingress>
+<ingress>Nils Hagberg har vågat sig ur ironin och skrivit en seriös artikel om dokumentärfilmaren och journalisten Tom Alandh.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
 <datum>29 Oktober 2024</datum>
