@@ -1,5 +1,5 @@
 <titel>Inne-Ute-Listan December</titel>
-<bild>https://i.imgur.com/9wLvx71.png</bild>
+<bild>https://i.imgur.com/67fK3kl.png</bild>
 <ingress>Sveriges måttstock Gaffel presenterar vad som är ute och vad som är inne för årets sista månad (december).</ingress>
 <skribent>Redaktionen</skribent> 
 <datum>14 November 2024</datum>
