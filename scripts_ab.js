@@ -39,7 +39,7 @@ function open_article(str){
 					imgw = 100;
 					if(portrait != "-1"){roww = 68;}else{roww = 100;}
 					text_style_title = `font-size: clamp(20px,8vw,80px)`
-					text_style_preamble = `font-size: clamp(10px,5vw,35px);`
+					text_style_preamble = `font-size: clamp(10px,4.5vw,35px);`
 					preamble_line_height = 1;
    					text_style_writer = `clamp(8px,0vw,30px)`
 				}
@@ -64,7 +64,7 @@ function open_article(str){
 		 			new_html += `<div id = ${'titel' + div_id} style = "color: white; width: 95%; padding-top: 2%; font-family: morfeta; font-size: clamp(10px,4vw,38px); line-height: 100%;${text_style_title}"> ${titel}</div>`
 				       
 					//ingress
-		     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
+		     			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "font-family: georgia; line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
 	      				
 					//name
 					if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: white; width: 80%;">${data}</div>`}
