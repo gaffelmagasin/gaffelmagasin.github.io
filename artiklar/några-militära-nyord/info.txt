@@ -1,0 +1,6 @@
+<titel>Några militära nyord</titel>
+<bild>https://i.imgur.com/IbZ4cqO.png</bild>
+<ingress>" I det militära finns ett säreget språkbruk som för många verkar ålderdomligt och uppblåst." Theodor Vogel listar några militära nyord</ingress>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theodor_spg</porträtt>
+<datum>21 November 2024</datum>
