@@ -1,0 +1,6 @@
+<titel>En kort historia om dönern</titel>
+<bild>https://i.imgur.com/hxNeJQ0.png</bild>
+<ingress>Olle Ordqvist har efter flera månaders vistelse upptäckt det berlin är mest känt för (efter muren) och berättar lite om det</ingress>
+<skribent>Olle Ordqvist</skribent>
+<porträtt>olle_spg</porträtt>
+<datum>2 December 2024</datum>
