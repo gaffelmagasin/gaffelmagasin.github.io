@@ -60,11 +60,20 @@
         <p>Click card to flip.</p>
 
         <script>
+            function getRandomInt(max) {
+              return Math.floor(Math.random() * max);
+            }
+            
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
               card.addEventListener( 'click', function() {
                 card.classList.toggle('is-flipped');
-                  document.getElementById("cf").innerHTML = "New text!";
+                  text = ["ett","två","tre","fyra","fem","sex"]
+                  
+                  var i = getRandomInt(5);
+                  var t = text[i]
+                  
+                  document.getElementById("p").innerHTML = t;
               });
             });
         </script>
