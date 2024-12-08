@@ -64,7 +64,7 @@
               return Math.floor(Math.random() * max);
             }
 
-            const flip = false;
+            var flip = false;
             
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
@@ -73,6 +73,8 @@
                   text = ["ett","två","tre","fyra","fem","sex"];
 
                   flip = !flip;
+
+                  console.log(flip);
                   
                   var i = getRandomInt(5);
                   var t = text[i]
