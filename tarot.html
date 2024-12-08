@@ -3,27 +3,151 @@
 
     <head>
         <style>
-            body{
-                background-color: red;
-            }
+            @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
             
-          .random_button{
-              margin-left: auto;
-              margin-right: auto;
-              display: block;
-
-              width:  clamp(30px,30%,80px);
-              height: clamp(30px,30%,80px);'
-              background-color: white;
-              border-radius: 50%;
-              padding: 10px;
-          }
+            html,body
+              background rgba(38, 40, 43, 1.0)
+              display flex
+              align-items center
+              justify-content center
+              height 100vh
+              margin 0
+              flex-direction column
+              color #aaa
+              font-family 'Indie Flower', cursive
+              h2
+                margin 2rem
+                text-align center
+            .card
+              perspective 100vw
+              .front,.back
+                border 1px solid rgba(0,0,0,0.75)
+                border-radius 2vmin
+                box-shadow inset 0 0 21px 3px rgba(0,0,0,0.25),
+                  0 0 1px 2px rgba(0,0,0,0.5)
+                width 36vmin
+                height 46vmin
+                background-size 20px 20px, 100% 100%
+                background-repeat repeat, no-repeat
+                backface-visibility hidden
+                transition transform 1s cubic-bezier(0,.92,.53,.97)
+              .back
+                position absolute
+                top 0; left 0
+                transform rotateY(-180deg)
+              .front
+                transform rotateY(0deg)
+              &:hover .back
+                transform rotateY(0deg)
+              &:hover .front
+                transform rotateY(180deg)
         </style>
     
     </head>
     
     <body>
-        <img src = "https://cdn-icons-png.flaticon.com/512/60/60879.png" class = "random_button"></img>
+        h2 Click Run to Generate New Card
+        .card
+          .front
+          .back
+        h2 Hover Over Card to Flip
+
+        <script>
+                    const style = document.createElement('style'),
+              r = ()=> Math.floor(Math.random()*2),
+              generatePattern = ()=>{
+                const x1y1=r(),x2y1=r(),x3y1=r(),
+                      x1y2=r(),x2y2=r(),x3y2=r(),
+                      x1y3=r(),x2y3=r(),x3y3=r(),
+                      m1=r(),m2=r(),m3=r(),m4=r();
+        
+                return [
+                  [x1y1,x2y1,x3y1,m1,x3y1,x2y1,x1y1],
+                  [x1y2,x2y2,x3y2,m2,x3y2,x2y2,x1y2],
+                  [x1y3,x2y3,x3y3,m3,x3y3,x2y3,x1y3],
+                  [  m1,  m2,  m3,m4,  m3,  m2,  m1],
+                  [x1y3,x2y3,x3y3,m3,x3y3,x2y3,x1y3],
+                  [x1y2,x2y2,x3y2,m2,x3y2,x2y2,x1y2],
+                  [x1y1,x2y1,x3y1,m1,x3y1,x2y1,x1y1]
+                ];
+              },
+              getHexFromRgb = ({r,g,b})=>{
+                const hr = r.toString(16).padStart(2,'0'),
+                      hg = g.toString(16).padStart(2,'0'),
+                      hb = b.toString(16).padStart(2,'0');
+                
+                return `#${hr}${hg}${hb}`;
+              },
+              getHslFromRgb = ({r,g,b})=>{
+                r/=255;g/=255;b/=255;
+                let max = Math.max(r,g,b),
+                    min = Math.min(r,g,b),
+                    delta = max-min,
+                    h,s,l=(max+min)/2;
+        
+                // make sure it's not achromatic (gray)
+                if(!delta){
+                  h = s = 0;
+                }else{
+                  s = delta/(1-Math.abs(2*l-1));
+                  if(max===r){
+                    h = 60*(((g-b)/delta)%6);
+                  }else if(max===g){
+                    h = 60*((b-r)/delta+2);
+                  }else{ //max===b
+                    h = 60*((r-g)/delta+4);
+                  } //end if
+                  if(h<0) h = 360+h;
+                } //end if
+                return {h,s,l};
+              },
+              getRgbFromHsl = ({h,s,l})=>{
+                let C = (1 - Math.abs(2*l - 1))*s,
+                    X = C*(1 - Math.abs(h/60%2 - 1)),
+                    m = l - C/2,
+                    loc = (type)=>{
+                      if(h<60) return Math.round(([C,X,0][type]+m)*255);
+                      if(h<120) return Math.round(([X,C,0][type]+m)*255);
+                      if(h<180) return Math.round(([0,C,X][type]+m)*255);
+                      if(h<240) return Math.round(([0,X,C][type]+m)*255);
+                      if(h<300) return Math.round(([X,0,C][type]+m)*255);
+                      return Math.round(([C,0,X][type]+m)*255);
+                    };
+        
+                const [r,g,b] = [loc(0),loc(1),loc(2)];
+                
+                return {r,g,b};
+              },
+              generateColors = ()=>{
+                const r = Math.floor(Math.random()*100+100),
+                      g = Math.floor(Math.random()*100+100),
+                      b = Math.floor(Math.random()*100+100),
+                      base = getHexFromRgb({r,g,b}),
+                      {h,s,l} = getHslFromRgb({r,g,b}),
+                      light = getHexFromRgb(getRgbFromHsl({h,s,l: l+0.15>1?1:l+0.15}));
+                
+                return [base,light];
+              },    
+              generateSvg = color=>{
+                const pattern = generatePattern(),
+                      prefix = 'data:image/svg+xml;utf-8,',
+                      svgStart = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" height="20" width="20" style="fill:${color}">`,
+                      svgEnd = '</svg>';
+                
+                return prefix+encodeURIComponent(svgStart+
+                  pattern.map((row,y)=>{
+                    return row.map((rect,x)=>{
+                      return rect?`<rect x="${x}" y="${y}" width="1.1" height="1.1"></rect>`:'';
+                    }).join('');
+                  }).join('')+
+                  svgEnd);
+              },
+              colorsFront = generateColors(),
+              colorsBack = generateColors();
+        
+        style.innerHTML = `.card .back{background-image: url(${generateSvg(colorsBack[0])}),linear-gradient(90deg, ${colorsBack[0]} 0%, ${colorsBack[1]} 20%, ${colorsBack[1]} 80%, ${colorsBack[0]} 100%)}.card .front{background-image: url(${generateSvg(colorsFront[0])}),linear-gradient(90deg, ${colorsFront[0]} 0%, ${colorsFront[1]} 20%, ${colorsFront[1]} 80%, ${colorsFront[0]} 100%)}`;
+        document.body.appendChild(style);
+        </script>
     </body>
 
 </html>
