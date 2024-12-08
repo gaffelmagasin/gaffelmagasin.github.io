@@ -65,24 +65,24 @@
             }
 
             var flip = false;
+            text = ["ett","två","tre","fyra","fem","sex"];
             
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
               card.addEventListener( 'click', function() {
                 card.classList.toggle('is-flipped');
-                  text = ["ett","två","tre","fyra","fem","sex"];
-
+  
                   flip = !flip;
 
-                  console.log(flip);
-                  
-                  var i = getRandomInt(5);
-                  var t = text[i]
-
-                  console.log(i);
-                  console.log(t);
-                  
-                  document.getElementById("text").innerHTML = t;
+                  if(!flip){
+                      var i = getRandomInt(5);
+                      var t = text[i]
+    
+                      console.log(i);
+                      console.log(t);
+                      
+                      document.getElementById("text").innerHTML = t;
+                  }
               });
             });
         </script>
