@@ -68,10 +68,13 @@
             [...cards].forEach((card)=>{
               card.addEventListener( 'click', function() {
                 card.classList.toggle('is-flipped');
-                  text = ["ett","två","tre","fyra","fem","sex"]
+                  text = ["ett","två","tre","fyra","fem","sex"];
                   
                   var i = getRandomInt(5);
                   var t = text[i]
+
+                  console.log(i);
+                  console.log(t);
                   
                   document.getElementById("p").innerHTML = t;
               });
