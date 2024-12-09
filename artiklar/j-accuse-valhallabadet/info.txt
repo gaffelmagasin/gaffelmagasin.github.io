@@ -1,0 +1,6 @@
+<titel>J'accuse Valhallabadet</titel>
+<bild>https://i.imgur.com/qFlkHZR.png</bild>
+<ingress>Nils Hagberg bryr sig inte om rivningen av Valhallabadet men tydligen om de som gör det.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>9 December 2024</datum>
