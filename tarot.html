@@ -116,7 +116,32 @@
 			});
 		
     	</script></div>
-        
+
+	<img src = "/bilder/tarot/tarot banner.png" id = "banner"></img>
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+		if(isMobile){
+
+                      document.getElementById("banner").src = "/bilder/tarot/tarot banner mobil.png";
+                  }
+		
+	</script>
+	    
         <div class = "framer">
             <p class = "intr">Framför dig har du en maskin som kan spå hur ditt 2025 kommer att bli. Det är bara att klicka på kortet, är man inte nöjd kan man klicka igen.</p>
 	      <div class="scene scene--card">
