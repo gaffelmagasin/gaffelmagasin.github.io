@@ -27,7 +27,7 @@
               cursor: pointer;
               transform-style: preserve-3d;
               transform-origin: center right;
-              transition: transform 1s;
+              transition: transform 2s;
             }
 
             .kort{
@@ -84,7 +84,7 @@
             }
 
             var flip = false;
-            text = ["ett","två","tre","fyra","fem","sex"];
+
             bild = ["narren","magikern","påverskan","kejsarinnan","kejsaren","påven","de älskande","vagnen","justitia","eremiten","lyckans hjul","styrkan","den hängde","döden", "måttfullhet","döden","djävulen","plutus","stjärnan","månen","solen","yttersta domen","världen"]
             
             var cards = document.querySelectorAll('.card');
@@ -95,7 +95,7 @@
                   flip = !flip;
 
                   if(flip){
-                      var i = getRandomInt(5);
+                      var i = getRandomInt(21);
                       var b = bild[i]
     
                       console.log(i);
