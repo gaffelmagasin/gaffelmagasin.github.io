@@ -27,18 +27,23 @@
               
               margin-left: auto;
               margin-right: auto;
-              width: clamp(51.2px,76.8vw,256px);
-              height: clamp(80.6px,120.9vw,403px);
+              width: clamp(51.2px,76.8vw,384px);
+              height: clamp(80.6px,120.9vw,604.5px);
 
 	      margin-top: 50px;
             }
-
+	    .intr{
+		    text-align: center;
+		    font-family: "Times New Roman", Times, serif;
+		    font-size: 1.5em;
+	    }
+		
 	    .beskrivning{
 		    color: white;
 		    opacity: 0;
 		    text-align: center;
 		    font-family: "Times New Roman", Times, serif;
-		    font-size: 2em;
+		    font-size: 1.5em;
 	    }
 
 	     .beskrivning.is-flipped{
@@ -109,7 +114,8 @@
     	</script></div>
         
         <div class = "framer">
-            <div class="scene scene--card">
+            <p id= "text" class = "beskrivning">text</p>
+	      <div class="scene scene--card">
               <div class="card">
                 <div class="card__face card__face--front" id="cf">
                     <img src = "/bilder/tarot/tarot_bakgrund.png" class = "kort"></img>    
