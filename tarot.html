@@ -8,10 +8,14 @@
               display: inline-block;
               width: 200px;
               height: 260px;
-            /*   border: 1px solid #CCC; */
-              margin-left: auto;
-              margin-right: auto;
+              border: 1px solid #CCC;
+
               perspective: 1000%;
+            }
+
+            .framer{
+                margin-left: auto;
+                margin-right: auto;
             }
             
             .card {
@@ -52,11 +56,13 @@
         </style>
     </head>
     <body>
-        <div class="scene scene--card">
-          <div class="card">
-            <div class="card__face card__face--front" id="cf">front</div>
-            <div class="card__face card__face--back" id="cb">back</div>
-          </div>
+        <div class = "framer">
+            <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front" id="cf">front</div>
+                <div class="card__face card__face--back" id="cb">back</div>
+              </div>
+            </div>
         </div>
         <p id= "text">Click card to flip.</p>
 
