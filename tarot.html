@@ -70,7 +70,9 @@
                 <div class="card__face card__face--front" id="cf">
                     <img src = "/bilder/tarot/tarot_bakgrund.png" class = "kort"></img>    
                 </div>
-                <div class="card__face card__face--back" id="cb">back</div>
+                <div class="card__face card__face--back" id="cb">
+                    <img src = "/bilder/tarot/tarot_bakgrund.png" class = "kort" id = "k"></img> 
+                </div>
               </div>
             </div>
         </div>
@@ -83,6 +85,7 @@
 
             var flip = false;
             text = ["ett","två","tre","fyra","fem","sex"];
+            bild = ["narren","magikern","påverskan","kejsarinnan","kejsaren","påven","de älskande","vagnen","justitia","eremiten",lyckans hjul","styrkan","den hängde","döden", "måttfullhet","döden","djävulen","plutus","stjärnan","månen","solen","yttersta domen","världen"]
             
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
@@ -93,12 +96,13 @@
 
                   if(flip){
                       var i = getRandomInt(5);
-                      var t = text[i]
+                      var b = bild[i]
     
                       console.log(i);
                       console.log(t);
                       
-                      document.getElementById("text").innerHTML = t;
+                      document.getElementById("text").innerHTML = b;
+                      document.getElementById("k").src = "/bilder/tarot/" + "b" + ".png";
                   }
               });
             });
