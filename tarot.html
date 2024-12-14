@@ -54,7 +54,6 @@
 		    font-size: 1.1em;
 		    margin-top: 15px;
 		    margin-bottom: 15px;
-		    height: 8em;
 	    }
 
 	     .beskrivning.is-flipped{
@@ -127,7 +126,12 @@
 		  margin-top: 0px;
 		  margin-left: auto;
               	  margin-right: auto;
+		  opacity: 0;
 		}
+		button.is-flipped{
+		    animation: fadeIn 3s;
+		     opacity: 1;
+	     	}
 		
         </style>
     </head>
@@ -179,9 +183,8 @@
               </div>
             </div>
 	    <p id= "text" class = "beskrivning">text</p>
-		<button>tell your friends</button>
-	    <br>
-	    <br>
+	    <button id = "knapp">tell your friends</button>
+
         </div>
         
 
@@ -226,6 +229,7 @@
               card.addEventListener( 'click', function() {
 		card.classList.toggle('is-flipped');
 		document.getElementById("text").classList.toggle('is-flipped');
+		document.getElementById("knapp").classList.toggle('is-flipped');
   
                   flip = !flip;
 
