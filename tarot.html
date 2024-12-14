@@ -52,8 +52,8 @@
 		    text-align: center;
 		    font-family: "Times New Roman", Times, serif;
 		    font-size: 1.1em;
-		    margin-top: 15px;
-		    margin-bottom: 15px;
+		    margin-top: 25px;
+		    margin-bottom: 25px;
 	    }
 
 	     .beskrivning.is-flipped{
@@ -63,6 +63,11 @@
 		
 	     @keyframes fadeIn {
 		0% { opacity: 0; }
+		100% { opacity: 1; }
+	     }
+	      @keyframes fadeInSlow {
+		0% { opacity: 0; }
+		50% { opacity: 0; }
 		100% { opacity: 1; }
 	     }
 		
@@ -129,7 +134,7 @@
 		  opacity: 0;
 		}
 		button.is-flipped{
-		    animation: fadeIn 3s;
+		    animation: fadeInSlow 4s;
 		     opacity: 1;
 	     	}
 		
