@@ -104,6 +104,17 @@
               transform: rotateY(180deg);
             }
 
+		.button {
+		  background-color: #04AA6D; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		}
+		
         </style>
     </head>
     <body>
@@ -154,6 +165,8 @@
               </div>
             </div>
 	    <p id= "text" class = "beskrivning">text</p>
+		<p><button>tell your friends</button></p>
+		<p class="result"></p>
         </div>
         
 
@@ -188,14 +201,13 @@
             });
         </script>
 
-	<p><button>Share MDN!</button></p>
-	<p class="result"></p>
+	
 
 	<script>
 		const shareData = {
-		  title: "MDN",
-		  text: "Learn web development on MDN!",
-		  url: "https://developer.mozilla.org",
+		  title: "TAROTMASKINEN",
+		  text: "bli spådd",
+		  url: "https://gaffel.nu/tarot",
 		};
 		
 		const btn = document.querySelector("button");
