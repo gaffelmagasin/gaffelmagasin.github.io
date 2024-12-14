@@ -191,7 +191,34 @@
             var flip = false;
 
             bild = ["narren","magikern","påverskan","kejsarinnan","kejsaren","påven","de älskande","vagnen","justitia","eremiten","lyckans hjul","styrkan","den hängde","döden", "måttfullhet","döden","djävulen","plutus","stjärnan","månen","solen","yttersta domen","världen"]
-            
+
+	    text = [
+		    "I ditt öde står skrattet skrivet. Du kommer att börja med riktigt hack ståupp. Ditt set består av ytlig igenkänningshumor, publiksnack som gör folk obekväma, skillnader mellan tjejer och killar samt bomba på Big Ben.",
+		    "Hokus pokus filiokus. Korttrick blir din nya paradhäst på krogen, oväntat nog går det hem hos folk. Låt dock inte dina nya ockulta krafter ta över ditt liv eftersom det fortfarande är lite töntigt med magi.",
+		    "Chakran är i toppform, gudomliga uppenbarelser väntar dig. I dina visioner kommer en tidigare borgerlig statsminister uppenbara sig och ställa dig inför ett val. Betänk länge, välj väl.",
+		    "Efter en kortare psykos i vilken du tror att du är den fjärde inkarnationen i följden: Theodora av Bysans, Katarina den Store och Joséphine de Beauharnais kommer du få en ny förståelse för det enkla oadliga livet och flytta ut till landet för att bli statare.",
+		    "Le suzerain? C’est le roi. Du kommer att bli rojalist trots att det inte längre ger en många fördelar i samhället. Möjliga monarker att hänge dig åt inkluderar: Drottning Margrethe II av Danmark, Oba Ewuare II av Benin, Kung Abdullah II av Jordanien eller Drottning Kristina från Young Royals.",
+		    "Katolicism, en miljard människor kan väl inte ha fel? 2025 är året du börjar med helgondyrkan, mariakulter och transsubstination. Vatikanen är numer ditt själsliga hemland. Om du redan råkar vara katolik kommer du istället konvertera till Heavens Gate.",
+		    "L’amour, c'est fou. Du kommer pussa en liten groda som blir en prins som både är lång och får dig att skratta. Dessvärre vet du inte vilken groda så det lär ta några försök.",
+		    "Ett nytt intresse för bilar, snart kan du talk-the-talk om B-stolpar, vinkelväxlar, trumbromsen, differentialväxeln och Toyotabilar.",
+		    "Rättvisan skola segra! Du kommer ha en kortare flört med syndikalistiska idéer och skriva en intressant men totalt oläsbar essä om rättvisebegreppet hos Kant och Marx.",
+		    "Överge civilisationen. Du kommer välja natur över kultur och överge stadslivet. Möjliga tillflyktsorter: Haparanda, Arvika, Härnösand, Dorotea, Fårö.",
+		    "Du är fjädern i Fru Fortunas hatt. Det är dags att satsa, du kommer börja hänga på travbanan, bingoklubbarna och ditt lokala mahjongställe. När året är slut kommer vinsterna och förlusterna gå på ett ut, men du kommer att ha haft kul på vägen.",
+		    "BÄNK \nPRESS\n Dags att bli enorm.",
+		    `:(`,
+		    "Aj, aj aj. Det här ser inte bra ut. I värsta fall: ond bråd död, möjligtvis genom en giftpilsattack. I mer metaforisk mening: bli av med jobbet, bli dumpad, stuka foten. Hur som helst är det trist.",
+		    "Nykterism väntar. Du kommer må bättre rent fysiskt men dina vänner inser långsamt att de bara tycker om dig när både du och de är fulla.",
+		    "He's been down at the crossroad. Rackaren är framme igen, du kommer att synda något så fruktansvärt mycket: otrohet, snatteri och piratkopiering står på schemat.",
+		    "Money talks. Plutus är gud över de rikedomar du kommer att erhålla på ett mer eller mindre etiskt sätt. Möjliga vägar: dropshipping, betalda samarbeten, sol-och-vårande på Gotland, blodsdiamanter. Pengarna kommer tyvärr leda till ditt förfall enligt den klassiska dramaturgin.",
+		    "Time to go big. Du är nästa Sabrina Carpenter och det här året för med sig ditt stora break, låtsläpp, spelningar och musiksamarbeten. Det slutar inte så bra dock, efter du redan har signat kommer du tyvärr förstå varför skivbolaget Luger heter som det gör.",
+		    "Din rymden-fas inleds någon gång i mars (referens). Hobbyastronomen i dig kommer inte att hålla tyst om nebulosor, exoplaneter eller möjliga intergalaktiska rymdskepp.",
+		    "Solen står i zenit och du är solen. Gassa i strålningen så mycket du kan, töm en solskyddstub om dagen. Glöm bort UV:t. Bli farligt brun. Lev.",
+		    "Låter värre än vad det är. Du kommer att bli kallad till rättegång, straffskalan är max en månad på kåken. Se det som en semester, bli påläst och vältränad.",
+		    "En gång var jag på en gaybar i Berlin som hette Heile Welt. Åk dit! De har rökrum där bak! I alla fall, ditt år kommer att bestå av världsliga ting som: bord, grus och lägenheter och inte så mycket om andliga ting som: oblat, ikoner och skapelsemyter."
+	    ]
+	    gör = []
+	    undvik = []
+		
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
               card.addEventListener( 'click', function() {
@@ -203,11 +230,12 @@
                   if(flip){
                       var i = getRandomInt(23);
                       var b = bild[i]
-    
+		      var t = text[i]
+			  
                       console.log(i);
                       console.log(b);
                       
-                      document.getElementById("text").innerHTML = b;
+                      document.getElementById("text").innerHTML = t;
                       document.getElementById("k").src = "/bilder/tarot/" + b + ".png";
                   }
               });
