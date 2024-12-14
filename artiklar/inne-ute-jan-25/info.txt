@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan Januari</titel>
+<bild>https://i.imgur.com/Ie2Lz79.png</bild>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa års första månad (Januari).</ingress>
+<skribent>Redaktionen</skribent> 
+<datum>15 December 2024</datum>
