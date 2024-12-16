@@ -226,8 +226,8 @@
 		    "Låter värre än vad det är. Du kommer att bli kallad till rättegång, straffskalan är max en månad på kåken. Se det som en semester, bli påläst och vältränad.",
 		    "En gång var jag på en gaybar i Berlin som hette Heile Welt. Åk dit! De har rökrum där bak! I alla fall, ditt år kommer att bestå av världsliga ting som: bord, grus och lägenheter och inte så mycket om andliga ting som: oblat, ikoner och skapelsemyter."
 	    ]
-	    gör = []
-	    undvik = []
+	    gör = ["Dikter, Mössor, Längdskidor","Gråzoner, Karaoke, Räddningstjänster","Virkning, paradoxer, Science Fiction","Popmusik, Keps på sniskan, Utombordare","Navelskådning, Vykort, Brädspel","Hela havet stormar, Solglasögon, Tjejcigg","Armhävningar, Fåraherdning, Gavel","Stunts, Ekolokalisering, Fonetik","Dockskåp, Allitteration, Husgeråd","Parafrasering, Avslut, Djurgården","Sparbössa, Nässprej, Plastväxter","Förflyttningar, The Wire, Soppa","Ingenting, Vykort, Saltstänk","Göteborgskoloristerna, K-märkning, Bokstaven Q","Provskytte, Uppklarning, Gåshud","Pärmar, Glömska, Parkbänkar","Östblock, Kobingo, Saft","Påhopp, Avledningar, Hanna Hellquist","Mirakel, Femtedelar, Utomhus","Påverkan, ℅, Misär","PQ-formeln, Fraktionsbildning, Återvinning","Gå hem, Sidospår, Listor"]
+	    undvik = ["Hängmattor, Crème brulé, Mönster","Korsdrag, Sockor, Ekobrott","Mannagryn, Sjuhäradsbygden, P3","Krigsspel, Öresund, Personliga attacker","Byfånar, Temakortlekar, Jonatan Unge","Nöjesfält, Handstöpta ljus, Norrlands guld","Lantmäteri, Antika Egypten, Gudsförnekelse","Nagelfarande, Konstrundor, Spa","Proppskåp, Serietidningar, Dimma","Katakeser, Mörkläggning, Gåtor","Huvud, Axlar, Knän & Tår","Instagram, Matkedjor, Morgondagen","Morsning korsning, Huvudvärk, Snabel-A","Kväden, Mys, Lovisa","Kommerser, Krukmakare, Sangviniker","Den gråa hjärnsubstansen, Kolavippen, Kåseri","Sommelier, Tungotal, Märkligheter","Analysandar, Sandlådor, Brevinkast","A-aktier, Gråterskor, Möjligheter","Undvikning, Containerdykning, Låsdyrkning","Komplikationer, Återföreningar, Övertid","Tarotkort, Hemsidor, Popkulturmagasin"]
 		
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
@@ -242,11 +242,14 @@
                       var i = getRandomInt(22);
                       var b = bild[i]
 		      var t = text[i]
+
+		      var g = gör[i]
+	              var u = undvik[i]
 			  
                       console.log(i);
                       console.log(b);
                       
-                      document.getElementById("text").innerHTML = t;
+                      document.getElementById("text").innerHTML = t + "\n\n" + "Gör:" + g + "\n\n" + "Undvik:" + u;
                       document.getElementById("k").src = "/bilder/tarot/" + b + ".png";
                   }
               });
