@@ -1,0 +1,6 @@
+<titel>A day at the races</titel>
+<bild>https://i.imgur.com/3XDhuRZ.png</bild>
+<ingress>"utanför fönstret sker kapplöpning på en större travbana för min underhållnings skull" Nils Hagberg har varit på trav och vill berätta om det.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>26 December 2024</datum>
