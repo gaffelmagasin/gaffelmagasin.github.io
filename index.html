@@ -202,6 +202,25 @@
 			</div>
 		</div>
 
+		<div id="tarot"></div>
+		<script>
+		var new_html = `<a href = "gaffel.nu/tarot>"`
+		
+		new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+		if(isMobile == false){
+			new_html += 	`<img src =  "https://i.imgur.com/RJpJTpc.png"
+					style = "width: 100%; float: right;">
+					</img>`
+		}
+		else{
+			new_html += 	`<img src =  "https://i.imgur.com/k6yAj15.png"
+					style = "width: 100%; float: right; background: black;">
+					</img>`
+		}
+		new_html += "</a>"
+		document.getElementById("tarot").innerHTML = new_html;
+		</script>
+		
 
 		<div id = "info" style = "background: black;">
 		<script>
