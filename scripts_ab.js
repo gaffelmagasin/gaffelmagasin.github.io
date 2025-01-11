@@ -28,7 +28,7 @@ function open_article(str){
 				
 				var data = skribent;
 				
-				var text_style_title = `font-size: clamp(10px,3vw,40px)`
+				var text_style_title = `font-size: clamp(10px,3vw,35px)`
 				var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
 				var preamble_line_height = 0.92;
 				var text_style_writer = `clamp(5px,1.5vw,15px)`
