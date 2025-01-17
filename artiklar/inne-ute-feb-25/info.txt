@@ -1,4 +1,4 @@
-<titel>Inne-Ute-Listan Januari</titel>
+<titel>Inne-Ute-Listan Februari</titel>
 <bild>https://i.imgur.com/Isr1f8e.png</bild>
 <ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (Februari).</ingress>
 <skribent>Redaktionen</skribent> 
