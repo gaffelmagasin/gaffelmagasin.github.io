@@ -1,6 +1,6 @@
 <titel>La la guldbaggen</titel>
 <bild>https://i.imgur.com/kjZLA0T.png</bild>
-<ingress>Olle Ordqvist blir sur av guldbaggegalan.</ingress>
+<ingress>Olle Ordqvist blir sur när han tittar på guldbaggegalan.</ingress>
 <skribent>Olle Ordqvist</skribent>
 <porträtt>olle_spg</porträtt>
 <datum>23 Januari 2025</datum>
