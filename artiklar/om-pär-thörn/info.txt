@@ -1,0 +1,6 @@
+<titel>Om Pär Thörn och Paragöteborgiana</titel>
+<bild>https://i.imgur.com/3XDhuRZ.png</bild>
+<ingress>Titeln föklarar.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>29 Januari 2024</datum>
