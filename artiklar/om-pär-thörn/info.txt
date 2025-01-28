@@ -1,5 +1,5 @@
 <titel>Om Pär Thörn och Paragöteborgiana</titel>
-<bild>https://i.imgur.com/3XDhuRZ.png</bild>
+<bild>https://i.imgur.com/0JUqSjO.png</bild>
 <ingress>Titeln föklarar.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
