@@ -1,5 +1,5 @@
 <titel>Om Pär Thörn</titel>
-<bild>https://i.imgur.com/0JUqSjO.png</bild>
+<bild>https://i.imgur.com/sOZS7ah.png</bild>
 <ingress>Och Paragöteborgianan. "Likt den mer kända genren göteborgiana så handlar paragöteborgianan om Göteborg men genom semifiktiva, överdrivna, eller övernaturliga versioner."</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
