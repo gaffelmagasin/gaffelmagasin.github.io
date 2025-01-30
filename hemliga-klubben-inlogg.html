@@ -22,8 +22,7 @@
 		}
 
 		body{
-			background-image: url("bilder/hemligklubben_bakgrund_tile.png");
-			background-repeat: repeat;
+			background: black;
 			
 			margin: 0px;
 			padding: 0px;
@@ -54,7 +53,13 @@
 		
 	  </script></div>
 
-    
+	    <script>
+	    document.getElementById('myInput').addEventListener('input', function() {
+	        console.log('Current input value: ' + this.value);
+	    });
+	</script>
+	
+	<input type="text" id="myInput" placeholder="Type something here">
       
 </body>
  
