@@ -37,10 +37,23 @@
 			font-weight: 400;
 			margin: 5px;
 		}
+		.hållare{
+			width: 100%;  
+			height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.titel{
+			color: white;
+			font-family: morfeta;
+			font-size: 4em;
+		}
 		.lösen{
-			margin: auto;
+			margin-left: auto;
+			margin-right: auto;
 			font-family: helvetica_bold;
-			font-size: 2em;
+			font-size: 4em;
 		}
 	</style>
 
@@ -62,9 +75,10 @@
 	        console.log('Current input value: ' + this.value);
 	    });
 	</script>
-	
-	<input type="text" id="myInput" placeholder="Type something here" class="lösen">
-      
+	<div class = "hållare">
+		<p class = "titel">Lösenord:</p>
+		<input type="text" id="myInput" placeholder="" class="lösen">
+        </div>
 </body>
  
 </html>
