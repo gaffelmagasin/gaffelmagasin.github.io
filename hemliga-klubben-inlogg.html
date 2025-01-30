@@ -71,7 +71,6 @@
 			display: block;
 			font-family: helvetica_bold;
 			font-size: clamp(10px,9vw,50px);;
-			width: clamp(100px,80%,500px);
 		}
 	</style>
 
@@ -92,7 +91,7 @@
 	<!--<img src = "https://i.imgur.com/TveKoW8.png" class = "bild"></img>-->
 		<p class = "titel">HEMLIGA KLUBBEN<br>Lösenord:</p>	
 		<input type="text" id="password_input" placeholder="" class="lösen" maxlength="8">
-		<input type="button" onclick="password()" id="skicka" class = "knapp";>Testa</input>
+		<input type="button" onclick="password()" id="skicka" class = "knapp"; value="Skicka"></input>
 	<script>
 		function password(){
 			var t = document.getElementById('password_input').value;
