@@ -101,8 +101,10 @@
 	<script>
 		function password(){
 			var t = document.getElementById('password_input').value;
+			t = t.trim();
+			t = t.toLowerCase();
 			console.log(t);
-			if(t == "tungomål och vändningar"){window.location.href = "/drakens-värld";}
+			if(t == "tungomålochvändningar"){window.location.href = "/drakens-värld";}
 		}
 	</script>
 </body>
