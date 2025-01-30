@@ -105,6 +105,7 @@
 			var t = document.getElementById('password_input').value;
 			t = t.trim();
 			t = t.toLowerCase();
+			t = t.replace(" ","");
 			console.log(t);
 			if(t == "tungomålochvändningar"){window.location.href = "/drakens-värld";}
 		}
