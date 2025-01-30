@@ -68,9 +68,10 @@
 			color: black;
 			margin-left: auto;
 			margin-right: auto;
+			margin-top: 2vw;
 			display: block;
 			font-family: helvetica_bold;
-			font-size: clamp(10px,9vw,50px);;
+			font-size: clamp(4px,5vw,40px);;
 		}
 	</style>
 
@@ -90,13 +91,13 @@
 	
 	<!--<img src = "https://i.imgur.com/TveKoW8.png" class = "bild"></img>-->
 		<p class = "titel">HEMLIGA KLUBBEN<br>Lösenord:</p>	
-		<input type="text" id="password_input" placeholder="" class="lösen" maxlength="8">
-		<input type="button" onclick="password()" id="skicka" class = "knapp"; value="Skicka"></input>
+		<input type="text" id="password_input" placeholder="" class="lösen" maxlength="30">
+		<input type="button" onclick="password()" id="skicka" class = "knapp"; value="SKICKA"></input>
 	<script>
 		function password(){
 			var t = document.getElementById('password_input').value;
 			console.log(t);
-			if(t == "TUNGOMÅL & VÄNDNINGAR"){window.location.href = "/drakens-värld";}
+			if(t == "tungomål och vändningar"){window.location.href = "/drakens-värld";}
 		}
 	</script>
 </body>
