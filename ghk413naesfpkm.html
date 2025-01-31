@@ -44,7 +44,13 @@
 </head>
  
 <body>
-
+    	<div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+	  </script></div>
 
 </body>
  
