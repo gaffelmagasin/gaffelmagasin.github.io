@@ -63,7 +63,24 @@
     </head>
     <body>
 
-	
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+	</script>
 	    
         <div class = head_div>
             <div class = left_div>
@@ -71,16 +88,21 @@
               <img src="https://i.imgur.com/jR8JHqv.png" alt="GAFFEL" style="width:50px;height:50px;">
             </a>
             </div> 
-	
-	
-		<div class = left_div>
-	            <a href = "/" class = head_cont>GAFFEL MAGASIN</a>
-	        </div>
 
+		<div id = "knappar"></div>
 		
-            <div class = right_div>
-            <a href = "drakens-värld" class = head_cont>DRAKENS VÄRLD</a>
-            </div>
+		<script>
+			var _html = 	`<div class = left_div>
+			            		<a href = "/" class = head_cont>GAFFEL MAGASIN</a>
+			        	</div>
+
+		           		<div class = right_div>
+		            			<a href = "drakens-värld" class = head_cont>DRAKENS VÄRLD</a>
+		            		</div>`
+			document.getElementById("knappar").innerHTML = _html;
+		</script>
+	
+		
         </div>
     </body>
 </html>
