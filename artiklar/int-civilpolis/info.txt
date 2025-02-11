@@ -1,4 +1,4 @@
-<titel>Gaffel listar:Intervjun med CIVIL POLIS</titel>
+<titel>Intervjun med CIVIL POLIS</titel>
 <bild>https://i.imgur.com/s6yKMKt.png</bild>
 <ingress>Gaffel skickade förra veckan en korrespondent för att intervjua/förhöra bandet/rörelsen CIVIL POLIS</ingress>
 <skribent>Gaffel</skribent>
