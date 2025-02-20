@@ -68,7 +68,7 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "font-family: georgia; line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
 			
 			//name
-			if(!small){new_html +=	`<div style = "font-family: helvetica_bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: white; width: 80%;">${data}</div>`}
+			if(!small){new_html +=	`<div style = "font-family: Atkinson-Bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: white; width: 80%;">${data}</div>`}
 			else{new_html += `<p style = "color: #00000000; margin-bottom: 1%;"></p>`}
 		//slut
 		new_html+=	`</div>
