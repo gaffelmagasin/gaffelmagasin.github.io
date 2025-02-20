@@ -27,9 +27,14 @@
 			});
 		
     </script></div>
+	<script>
+	  function resizeIframe(obj) {
+	    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+	  }
+	</script>
         <div class = game>
-          <iframe id="game-iframe" class = game src="https://bolibompa-cdn.dojnaz.net/svt/spel/drakens-varld">
 
+	<iframe id="game-iframe" class = game src= "https://bolibompa-cdn.dojnaz.net/svt/spel/drakens-varld" style="border-style: none; height: 0; overflow: hidden"onload="resizeIframe(this)" /></iframe>
         </div>
     </body>
 </html>
