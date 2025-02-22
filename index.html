@@ -11,6 +11,80 @@
 	
 	  gtag('config', 'G-HR8REX9FGG');
 	</script>-->
+
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="cookies/silktide-consent-manager.css">
+	<script src="cookies/silktide-consent-manager.js"></script>
+	<script>
+	silktideCookieBannerManager.updateCookieBannerConfig({
+	  background: {
+	    showBackground: false
+	  },
+	  cookieIcon: {
+	    position: "bottomRight"
+	  },
+	  cookieTypes: [
+	    {
+	      id: "analys",
+	      name: "Analys",
+	      description: "<p>Dessa <i>cookies </i>hjälper oss att ta reda på vad på hemsidan som är populärt och inte vilket hjälper oss i vårt subversiva uppdrag mot kulturen.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_analys',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'denied',
+	        });
+	      }
+	    },
+	    {
+	      id: "advertising",
+	      name: "Advertising",
+	      description: "<p>Sälj din data, om du vill.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'granted',
+	          ad_user_data: 'granted',
+	          ad_personalization: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_advertising',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'denied',
+	          ad_user_data: 'denied',
+	          ad_personalization: 'denied',
+	        });
+	      }
+	    }
+	  ],
+	  text: {
+	    banner: {
+	      description: "<p>Gaffel använder <i>cookies</i>&nbsp;för att massövervaka dig i spaningssyfte.</p>",
+	      acceptAllButtonText: "Acceptera alla",
+	      acceptAllButtonAccessibleLabel: "Acceptera alla",
+	      rejectNonEssentialButtonText: "Avvisa ickenödvändiga",
+	      rejectNonEssentialButtonAccessibleLabel: "Avvisa ickenödvändiga",
+	      preferencesButtonText: "Inställningar",
+	      preferencesButtonAccessibleLabel: "Inställningar"
+	    },
+	    preferences: {
+	      title: "Customize your cookie preferences",
+	      description: "<p>Som en fri själ kan du såklart säga nej till att bli massövervakad av Gaffel, än så länge. Välj nedan vilka <i>cookies</i>&nbsp;du vill använda.</p>",
+	      creditLinkText: "Mer om själva rutan",
+	      creditLinkAccessibleLabel: "Mer om själva rutan"
+	    }
+	  }
+	});
+	</script>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
