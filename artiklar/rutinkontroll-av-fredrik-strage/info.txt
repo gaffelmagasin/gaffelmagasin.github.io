@@ -1,0 +1,6 @@
+<titel>Rutinkontroll av Fredrik Strage</titel>
+<bild>https://i.imgur.com/AWWuR7x.png</bild>
+<ingress>Nils Hagberg har tagit reda på vad Fredrik Strage har för sig nu för tiden.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>25 Februari 2025</datum>
