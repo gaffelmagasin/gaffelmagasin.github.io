@@ -1,15 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<!-- Google tag (gtag.js) -->
-	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-HR8REX9FGG"></script>
+		<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HR8REX9FGG"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	
 	  gtag('config', 'G-HR8REX9FGG');
-	</script>-->
+	</script>
+
+	<script>
+	  // Initialize the dataLayer
+	  window.dataLayer = window.dataLayer || [];
+	
+	  // Create the gtag function that pushes to the dataLayer
+	  function gtag() {
+	    dataLayer.push(arguments);
+	  }
+	
+	  // Set consent defaults
+	  gtag('consent', 'default', {
+	    analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
+	    ad_storage: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    ad_user_data: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    ad_personalization: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
+	    security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+	  });
+	</script>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WM4CVP9Q');</script>
+	<!-- End Google Tag Manager -->
+	
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="cookies/silktide-consent-manager.css">
+	<script src="cookies/silktide-consent-manager.js"></script>
+	<script>
+	silktideCookieBannerManager.updateCookieBannerConfig({
+	  background: {
+	    showBackground: false
+	  },
+	  cookieIcon: {
+	    position: "bottomRight"
+	  },
+	  cookieTypes: [
+	    {
+	      id: "analys",
+	      name: "Analys",
+	      description: "<p>Dessa <i>cookies </i>hjälper oss att ta reda på vad på hemsidan som är populärt och inte vilket hjälper oss i vårt subversiva uppdrag mot kulturen.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_analys',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'denied',
+	        });
+	      }
+	    },
+	    {
+	      id: "reklam",
+	      name: "Reklam",
+	      description: "<p>Sälj din data, omm du vill.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'granted',
+	          ad_user_data: 'granted',
+	          ad_personalization: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_advertising',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'denied',
+	          ad_user_data: 'denied',
+	          ad_personalization: 'denied',
+	        });
+	      }
+	    }
+	  ],
+	  text: {
+	    banner: {
+	      description: "<p>Gaffel använder <i>cookies</i>&nbsp;för att massövervaka dig i spaningssyfte.</p>",
+	      acceptAllButtonText: "Acceptera alla",
+	      acceptAllButtonAccessibleLabel: "Acceptera alla",
+	      rejectNonEssentialButtonText: "Avvisa ickenödvändiga",
+	      rejectNonEssentialButtonAccessibleLabel: "Avvisa ickenödvändiga",
+	      preferencesButtonText: "Inställningar",
+	      preferencesButtonAccessibleLabel: "Inställningar"
+	    },
+	    preferences: {
+	      title: "Ändra dina cookies-inställningar",
+	      description: "<p>Som en fri själ kan du såklart säga nej till att bli massövervakad av Gaffel, än så länge. Välj nedan vilka <i>cookies</i>&nbsp;du vill använda.</p>",
+	      creditLinkText: "",
+	      creditLinkAccessibleLabel: ""
+	    }
+	  }
+	});
+	</script>
+
+	    
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
        
