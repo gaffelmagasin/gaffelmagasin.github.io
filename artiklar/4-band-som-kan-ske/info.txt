@@ -1,1 +1,6 @@
-
+<titel>4 Band som kan ske</titel>
+<bild>https://i.imgur.com/ntyBPwX.png</bild>
+<ingress>Love Wickelgren Svensby har listat 4 up-and-coming-som-du-kan-skryta-om-att-du-såg-innan-de-blev-stora band för dig som är fast i Göteborg</ingress>
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
+<datum>12 Mars 2025</datum>
