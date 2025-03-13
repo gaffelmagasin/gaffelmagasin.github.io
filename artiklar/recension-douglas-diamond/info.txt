@@ -1,0 +1,6 @@
+<titel>Recension: Douglas Diamond</titel>
+<bild>https://i.imgur.com/dZwhuet.png</bild>
+<ingress>"En dimma rullar in över publiken. Dess färg är medvetandets." Douglas Diamond är på turné, Albin G Carlsson var av händelse där.</ingress>
+<skribent>Albin G Carlsson</skribent>
+<porträtt>albin_spg</porträtt>
+<datum>12 Februari 2025</datum>
