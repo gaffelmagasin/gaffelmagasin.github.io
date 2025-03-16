@@ -1,5 +1,5 @@
 <titel>Fåglar</titel>
-<bild>https://i.imgur.com/aesq8Lj.png</bild>
+<bild>https://i.imgur.com/Q3EucZ7.png</bild>
 <ingress>Nils Hagberg har tänkt.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
