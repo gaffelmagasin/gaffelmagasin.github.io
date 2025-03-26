@@ -1,6 +1,6 @@
 <titel>Fåglar</titel>
-<bild>https://i.imgur.com/asHz24R.png</bild>
-<ingress>Nils Hagberg har tänkt.</ingress>
+<bild>https://i.imgur.com/ztUMfzG.png</bild>
+<ingress>Nils Hagberg om fåglar.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
 <datum>10 Mars 2025</datum>
