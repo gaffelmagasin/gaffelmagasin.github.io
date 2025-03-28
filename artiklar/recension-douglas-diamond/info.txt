@@ -3,4 +3,4 @@
 <ingress>"En dimma rullar in över publiken. Dess färg är medvetandets." Douglas Diamond är på turné, Albin G Carlsson var av händelse där.</ingress>
 <skribent>Albin G Carlsson</skribent>
 <porträtt>albin_spg</porträtt>
-<datum>15 Februari 2025</datum>
+<datum>15 Mars 2025</datum>
