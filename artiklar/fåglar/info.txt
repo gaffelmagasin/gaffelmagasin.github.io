@@ -3,4 +3,4 @@
 <ingress>Nils Hagberg om fåglar.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
-<datum>10 Mars 2025</datum>
+<datum>25 Mars 2025</datum>
