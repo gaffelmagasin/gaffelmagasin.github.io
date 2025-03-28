@@ -3,4 +3,4 @@
 <ingress>Det är kort, det är kaxigt, det är DISET. Nicole Goncalves försätter Gaffel på främmande vatten med lite klassisk musikjournalistik</ingress>
 <skribent>Nicole Goncalves</skribent>
 <porträtt></porträtt>
-<datum>28 April 2024</datum>
+<datum>28 Mars 2025</datum>
