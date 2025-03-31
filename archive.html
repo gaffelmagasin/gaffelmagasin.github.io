@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HR8REX9FGG"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-HR8REX9FGG');
+	</script>
+
+	<script>
+	  // Initialize the dataLayer
+	  window.dataLayer = window.dataLayer || [];
+	
+	  // Create the gtag function that pushes to the dataLayer
+	  function gtag() {
+	    dataLayer.push(arguments);
+	  }
+	
+	  // Set consent defaults
+	  gtag('consent', 'default', {
+	    analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
+	    ad_storage: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    ad_user_data: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    ad_personalization: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+	    functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
+	    security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+	  });
+	</script>
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WM4CVP9Q');</script>
+	<!-- End Google Tag Manager -->
+	
+	<link rel="stylesheet" id="silktide-consent-manager-css" href="cookies/silktide-consent-manager.css">
+	<script src="cookies/silktide-consent-manager.js"></script>
+	<script>
+	silktideCookieBannerManager.updateCookieBannerConfig({
+	  background: {
+	    showBackground: false
+	  },
+	  cookieIcon: {
+	    position: "bottomRight"
+	  },
+	  cookieTypes: [
+	    {
+	      id: "analys",
+	      name: "Analys",
+	      description: "<p>Dessa <i>cookies </i>hjälper oss att ta reda på vad på hemsidan som är populärt och inte vilket hjälper oss i vårt subversiva uppdrag mot kulturen.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_analys',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          analytics_storage: 'denied',
+	        });
+	      }
+	    },
+	    {
+	      id: "reklam",
+	      name: "Reklam",
+	      description: "<p>Sälj din data, omm du vill.</p>",
+	      required: false,
+	      onAccept: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'granted',
+	          ad_user_data: 'granted',
+	          ad_personalization: 'granted',
+	        });
+	        dataLayer.push({
+	          'event': 'consent_accepted_advertising',
+	        });
+	      },
+	      onReject: function() {
+	        gtag('consent', 'update', {
+	          ad_storage: 'denied',
+	          ad_user_data: 'denied',
+	          ad_personalization: 'denied',
+	        });
+	      }
+	    }
+	  ],
+	  text: {
+	    banner: {
+	      description: "<p>Gaffel använder <i>cookies</i>&nbsp;för att massövervaka dig i spaningssyfte.</p>",
+	      acceptAllButtonText: "Acceptera alla",
+	      acceptAllButtonAccessibleLabel: "Acceptera alla",
+	      rejectNonEssentialButtonText: "Avvisa ickenödvändiga",
+	      rejectNonEssentialButtonAccessibleLabel: "Avvisa ickenödvändiga",
+	      preferencesButtonText: "Inställningar",
+	      preferencesButtonAccessibleLabel: "Inställningar"
+	    },
+	    preferences: {
+	      title: "Ändra dina cookies-inställningar",
+	      description: "<p>Som en fri själ kan du såklart säga nej till att bli massövervakad av Gaffel, än så länge. Välj nedan vilka <i>cookies</i>&nbsp;du vill använda.</p>",
+	      creditLinkText: "",
+	      creditLinkAccessibleLabel: ""
+	    }
+	  }
+	});
+	</script>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Äldre artiklar">
+	<meta name="keywords" content="gaffel, magasin, popkultur, kultur, göteborg">
+	<meta name="msvalidate.01" content="6844FBEEC009DB46FD737B018250EEE8" />
+
+	<meta property="og:image" content="/bilder/gaffel_i_värld_kvadrat.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+	
+	<title>ÄLDRE ARTIKLAR</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="canonical" href="https://gaffel.nu" />
+	
+	<style>
+		@font-face {
+		  font-family: newsagent;
+		  src: url(font/Newsagent-Regular.ttf) format("truetype");
+		}
+		@font-face {
+		  font-family: morfeta;
+		  src: url(font/MorfetaGealmord-5158V.otf) format("opentype");
+		}
+		@font-face {
+		  font-family: helvetica_bold;
+		  src: url(font/Helvetica-Bold.ttf) format("truetype");
+		}
+		 @font-face {
+		  font-family: Atkinson-Bold;
+		  src: url(font/AtkinsonHyperlegible-Bold.ttf) format("truetype");
+		}
+
+		body{
+			background-color: #044827FF;
+			
+			margin: 0px;
+			padding: 0px;
+			max-width: 100vw !important;
+		   	overflow-x: hidden !important;
+		}
+
+		.tidning{
+			margin: auto;
+			margin-top: 15px;
+			width: clamp(50px,90vw,1400px);
+			display: block;
+		}
+
+		h1{
+			font-family: Atkinson-Bold;
+			font-size: 30px;
+			color: white;
+			font-weight: 400;
+			margin: 15px;
+		}
+		h2{
+			font-family: Atkinson-Bold;
+			font-size: 50px;
+			line-height: 40px;
+			color: white;
+			font-weight: 400;
+			margin-top: 35px;
+			margin-bottom: 20px;
+		        margin-left: 0px;
+		}
+		p{
+			color: white;
+		}
+		.blog_area{
+			background: #01010100;
+			width: clamp(50px,90vw,1000px);
+			float: left;
+		}
+
+		.banner{
+			  background: black;
+			  background-image: url("bilder/ny_tavlor_komp.png");
+			  background-repeat: no-repeat;
+			  background-position: center center;
+			  background-attachment: fixed;
+			  background-size: cover;
+						
+			  height: 700px;
+			  margin: 0px;
+			  padding: 0px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+		}
+
+		@media only screen and (max-width: 600px) {
+		  .banner {
+		     	background-attachment: scroll;
+		  }
+		}
+
+		.gaffel_logga{
+			margin: auto;
+
+			background: #044827FF;
+			padding: 20px 40px;
+			font-family: Atkinson-Bold;
+			color: white;
+			font-size: clamp(5px,5vw,25px);
+			text-align: center;
+
+			width: clamp(120px,85vw,600px);
+		}
+		.gaffel_logga_bild{
+			width: inherit;
+			height: auto;
+		}
+		.artikel_knapp{
+			font-family: Atkinson-Bold;
+			font-size: 20px;
+			color: white;
+			margin-top: 5px;
+			font-weight: 400;
+			padding: 10px;
+			background: black;
+			width: clamp(50px,85%,500px);
+			text-decoration: none;
+			  -webkit-user-select: none; /* Safari */
+			  -ms-user-select: none; /* IE 10 and IE 11 */
+			  user-select: none; /* Standard syntax */
+		}
+		.artikel_knapp:hover{
+			background: white;
+			color: black;
+		}
+
+		.socials{
+			text-decoration: none;
+			margin-right: 5px;
+		}
+		
+		
+	</style>
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+	</script>
+</head>
+ 
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM4CVP9Q"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<script src = "script_closed.js"></script>
+	
+	<div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+		
+	</script></div>
+	
+	<script src = "scripts_ab.js"></script>
+	
+	<div class = tidning>
+		
+
+		
+		
+
+		
+		
+		
+		<div id ='blogg_inlägg' class = blog_area>
+			
+			<h2 style = "width: 100%;">ÄLDRE</h2>
+			<div id = 'main46'><script>draw_article_button('main46','4-band-som-kan-ske',isMobile)</script></div>
+			<div id = 'main45'><script>draw_article_button('main45','rutinkontroll-av-fredrik-strage',isMobile)</script></div>	
+			<div id = 'main44'><script>draw_article_button('main44','inne-ute-tidsmaskinen',isMobile)</script></div>
+			<div id = 'main43'><script>draw_article_button('main43','int-civilpolis',isMobile)</script></div>
+			<div id = 'main42'><script>draw_article_button('main42','om-pär-thörn',isMobile)</script></div>
+			<div id = 'main41'><script>draw_article_button('main41','vertikala-cineaster',isMobile)</script></div>	
+			<div id = 'main40'><script>draw_article_button('main40','la-la-guldbaggen',isMobile)</script></div>
+			<div id = 'main39'><script>draw_article_button('main39','a-day-at-the-races',isMobile)</script></div>
+			<div id = 'main38'><script>draw_article_button('main38','några-militära-nyord',isMobile)</script></div>	
+			<div id = 'main37'><script>draw_article_button('main37','j-accuse-valhallabadet',isMobile)</script></div>
+			<div id = 'main36'><script>draw_article_button('main36','multituden-i-en-hotellfrukost',isMobile)</script></div>
+			<div id = 'main35'><script>draw_article_button('main35','en-kort-historia-om-dönern',isMobile)</script></div>
+			<div id = 'main34'><script>draw_article_button('main34','staden-av-igår',isMobile)</script></div>
+			<div id = 'main33'><script>draw_article_button('main33','dagbok-från-kylskåpet',isMobile)</script></div>
+			<div id = 'main32'><script>draw_article_button('main32','om-tom-alandh',isMobile)</script></div>
+			<div id = 'main31'><script>draw_article_button('main31','anti-mölndal',isMobile)</script></div>
+			<div id = 'main30'><script>draw_article_button('main30','bergman-vs-widerberg',isMobile)</script></div>
+			<div id = 'main29'><script>draw_article_button('main29','om-medelklassens-semestervanor',isMobile)</script></div>
+			<div id = 'main28'><script>draw_article_button('main28','kenta-stoffe-och-sverige',isMobile)</script></div>	
+			<div id = 'main27'><script>draw_article_button('main27','bokmässan-2023',isMobile)</script></div>
+			<div id = 'main26'><script>draw_article_button('main26','stockholms-falafelkunder',isMobile)</script></div>
+			<div id = 'main25'><script>draw_article_button('main25','5-snutfilmer',isMobile)</script></div>	
+			<div id = 'main24'><script>draw_article_button('main24','har-hon-verkligen-ett-sätt',isMobile)</script></div>	
+			<div id = 'main23'><script>draw_article_button('main23','thriftarens-guide-gu',isMobile)</script></div>		
+			<div id = 'main22'><script>draw_article_button('main22','är-ditt-hem-redo-för-ett-hemsläp',isMobile)</script></div>
+			<div id = 'main21'><script>draw_article_button('main21','om-wrestling',isMobile)</script></div>
+			<div id = 'main20'><script>draw_article_button('main20','det-stora-europeiska-ciggreportaget',isMobile)</script></div>
+			<div id = 'main19'><script>draw_article_button('main19','turistortens-klagan',isMobile)</script></div>
+			<div id = 'main18'><script>draw_article_button('main18','att-gå-vilse',isMobile)</script></div>
+			<div id = 'main17'><script>draw_article_button('main17','broder-daniel',isMobile)</script></div>
+			<div id = 'main16'><script>draw_article_button('main16','göteborgs-cyklister',isMobile)</script></div>
+			<div id = 'main14'><script>draw_article_button('main14','stockholms-cyklister',isMobile)</script></div>
+			<div id = 'main13'><script>draw_article_button('main13','jackan-den-moderna-människans-bil',isMobile)</script></div>
+			<div id = 'main12'><script>draw_article_button('main12','en-del-av-dig',isMobile)</script></div>
+			<div id = 'main11'><script>draw_article_button('main11','mest-it-factor-i-kungafamiljen',isMobile)</script></div>
+			<div id = 'main10'><script>draw_article_button('main10','fimpa-rökförbudet',isMobile)</script></div>
+			<div id = 'main9'><script>draw_article_button('main9','mannen-utan-egna-saker',isMobile)</script></div>
+			<div id = 'main8'><script>draw_article_button('main8','10-bakfyllefilmer',isMobile)</script></div>
+			<div id = 'main7'><script>draw_article_button('main7','bowie-var-först',isMobile)</script></div>
+			<div id = 'main6'><script>draw_article_button('main6','stiljournalen',isMobile)</script></div>
+			<div id = 'main5'><script>draw_article_button('main5','ölreportaget',isMobile)</script></div>
+			<div id = 'main4'><script>draw_article_button('main4','ledare-1-maj-2024',isMobile)</script></div>
+			<div id = 'main3'><script>draw_article_button('main3','4-råd-till-göteborgs-killar',isMobile)</script></div>			
+			<div id = 'main2'><script>draw_article_button('main2','rostiga-roadtrips',isMobile)</script></div>
+			<div id = 'main1'><script>draw_article_button('main1','snöns-brödraskap',isMobile)</script></div>
+			<div id = 'main0'><script>draw_article_button('main0','hawaiiskjortan',isMobile)</script></div>
+		 </div>
+
+	</div>
+	
+</body>
+ 
+</html>
