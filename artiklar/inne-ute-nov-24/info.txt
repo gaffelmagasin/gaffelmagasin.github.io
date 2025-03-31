@@ -1,5 +1,5 @@
 <titel>Inne-Ute-Listan November</titel>
-<bild>https://i.imgur.com/9wLvx71.png</bild>
+<bild>https://i.imgur.com/IFZiKnz.png</bild>
 <ingress>Sveriges måttstock Gaffel presenterar vad som är ute och vad som är inne för nästa månad (November).</ingress>
 <skribent>Redaktionen</skribent> 
 <datum>15 Oktober 2024</datum>
