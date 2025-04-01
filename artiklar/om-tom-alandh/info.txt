@@ -1,5 +1,5 @@
 <titel>Om Tom Alandh</titel>
-<bild>https://i.imgur.com/y9yK6GH.png</bild>
+<bild>https://i.imgur.com/7KSU25I.png</bild>
 <ingress>Nils Hagberg har vågat sig ur ironin och skrivit en seriös artikel om dokumentärfilmaren och journalisten Tom Alandh.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
