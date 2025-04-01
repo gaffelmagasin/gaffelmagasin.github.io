@@ -1,5 +1,5 @@
 <titel>Stockholms falafelkunder</titel>
-<bild>https://i.imgur.com/lH40GO8.png</bild>
+<bild>https://i.imgur.com/krofRYW.png</bild>
 <ingress>Theodor Vogel har wallraffat och kokat ner hipsterfalafelns kundkrets till 5 arketyper</ingress>
 <skribent>Theodor Vogel</skribent>
 <porträtt>theodor_spg</porträtt>
