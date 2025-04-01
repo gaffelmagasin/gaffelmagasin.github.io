@@ -1,5 +1,5 @@
 <titel>Recension: Douglas Diamond</titel>
-<bild>https://i.imgur.com/dZwhuet.png</bild>
+<bild>https://i.imgur.com/M6J2JIl.png</bild>
 <ingress>"En dimma rullar in över publiken. Dess färg är medvetandets." Douglas Diamond är på turné, Albin G Carlsson var av händelse där.</ingress>
 <skribent>Albin G Carlsson</skribent>
 <porträtt>albin_spg</porträtt>
