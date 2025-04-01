@@ -3,3 +3,4 @@
 <ingress> Efter att GP skamlöst stal Gaffels idé om att lista vad en öl kostar på alla Göteborgs barer publicerar vi nu samma lista, fast gratis.</ingress>
 <skribent>Redaktionen</skribent> 
 <datum>13 maj 2024</datum>
+<foto>Wikimedia Commons</foto>
