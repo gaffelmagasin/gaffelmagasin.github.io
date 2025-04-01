@@ -1,5 +1,5 @@
 <titel>Har hon verkligen ett sätt?</titel>
-<bild>https://i.imgur.com/pdhKH0c.png</bild>
+<bild>https://i.imgur.com/6lG415R.png</bild>
 <ingress>"Istället för att vara kär i kärleken har han fått en crush på att ha en crush, och gjort det till en hitsingel." Theodor Vogel om Jakob Hellman och begreppet 'crush'</ingress>
 <skribent>Theodor Vogel</skribent>
 <porträtt>theodor_spg</porträtt>
