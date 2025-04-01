@@ -1,5 +1,5 @@
 <titel>Är ditt hem redo för ett hemsläp?</titel>
-<bild>https://i.imgur.com/wqvvf3c.png</bild>
+<bild>https://i.imgur.com/3DkXjIa.png</bild>
 <ingress>Ska vi hem till dig, mig eller var och en till sig? Det är inte alltid så lätt att svara på, Elsa Bolander har därför gjort en lista över hur din inredning kan påverka ett potentiellt ragg.</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
