@@ -1,5 +1,5 @@
-<titel>Behövs fler modeinfluencers efter stiljournalen</titel>
-<bild>https://i.imgur.com/veC5I3D.png</bild>
+<titel>Älskade stiljournalen</titel>
+<bild>https://i.imgur.com/1OzS4tu.png</bild>
 <ingress>"Hur bär man smoking på rätt sätt? Hur klär man sig till en elegant lunch? Dessa är frågor som jag en gång inte visste svaret på." Albin G Carlsson om 'stiljournalen'.</ingress>
 <skribent>Albin G Carlsson</skribent>
 <porträtt>albin_spg</porträtt>
