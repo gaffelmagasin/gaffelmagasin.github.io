@@ -1,5 +1,5 @@
 <titel>Thriftarens guide till galaxen</titel>
-<bild>https://i.imgur.com/HhRJtkf.png</bild>
+<bild>https://i.imgur.com/iwY51zM.png</bild>
 <ingress>Gaffel listar några av de mer udda second hand-butikerna i centrala Göteborg</ingress>
 <skribent>Nils Hagberg</skribent>
 
