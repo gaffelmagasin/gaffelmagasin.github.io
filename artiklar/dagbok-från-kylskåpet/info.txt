@@ -1,5 +1,5 @@
 <titel>Dagbok från kylskåpet</titel>
-<bild>https://i.imgur.com/fQRzazX.png</bild>
+<bild>https://i.imgur.com/QpZ4L6c.png</bild>
 <ingress>"Jag betraktar hyllorna och deras oheliga grupper av konserver, såser och gamla grönsaker. Allt medan ett mörker dras över mig." Elias Rågholm om lunch och kentcoverbandet Knut</ingress>
 <skribent>Elias Rågholm</skribent>
 <porträtt>elias_spg</porträtt>
