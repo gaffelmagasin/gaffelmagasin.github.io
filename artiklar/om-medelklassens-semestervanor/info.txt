@@ -1,5 +1,5 @@
 <titel>Om medelklassens semestervanor</titel>
-<bild>https://i.imgur.com/PWbUImY.png</bild>
+<bild>https://i.imgur.com/mGFGr53.png</bild>
 <ingress>"Det är som att medelklassen har uppfunnit en sorts omvänd behovstrappa à la Maslow" Theodor Vogel om medelklassens drömsemester.</ingress>
 <skribent>Theodor Vogel</skribent>
 <porträtt>theodor_spg</porträtt>
