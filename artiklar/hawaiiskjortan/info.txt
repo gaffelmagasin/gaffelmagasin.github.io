@@ -1,5 +1,5 @@
 <titel> För hawaiiskjortan. I tiden. </titel>
-<bild>https://i.imgur.com/Vibv8dg.png</bild>
+<bild>https://i.imgur.com/eQFwQzp.png</bild>
 <ingress>Nils Hagberg diskuterar hawaiiskjortans historia och makt på oss och gör, enligt honom, en viktig samhällsanalys.</ingress>
 <skribent> Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
