@@ -1,5 +1,5 @@
 <titel>Bowie var först</titel>
-<bild>https://i.imgur.com/LGLJKQw.png</bild>
+<bild>https://i.imgur.com/7rQR0wK.png</bild>
 <ingress>"Men sanningen stirrar mig stint i ögat när filmen är över. Det har aldrig varit lättare att vara en allkonstnär". Vilgot Andersson om David Bowie</ingress>
 <skribent>Vilgot Andersson</skribent>
 <porträtt>vilgot_spg</porträtt>
