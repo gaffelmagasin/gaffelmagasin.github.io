@@ -1,5 +1,5 @@
 <titel>Bergman VS Widerberg</titel>
-<bild>https://i.imgur.com/bSu0bj0.png</bild>
+<bild>https://i.imgur.com/9Wk2ka4.png</bild>
 <ingress>Olle Ordqvist om varför Bo Widerberg borde vara minst lika känd som Ingmar Bergman.</ingress>
 <skribent>Olle Ordqvist</skribent>
 <porträtt>olle_spg</porträtt>
