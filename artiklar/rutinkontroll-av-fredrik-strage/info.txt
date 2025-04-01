@@ -1,5 +1,5 @@
 <titel>Rutinkontroll av Fredrik Strage</titel>
-<bild>https://i.imgur.com/AWWuR7x.png</bild>
+<bild>https://i.imgur.com/kT4XrEC.png</bild>
 <ingress>Nils Hagberg har tagit reda på vad Fredrik Strage har för sig nu för tiden.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
