@@ -1,5 +1,5 @@
 <titel>Staden av igår</titel>
-<bild>https://i.imgur.com/mNWbugT.png</bild>
+<bild>https://i.imgur.com/Pf63ayc.png</bild>
 <ingress>"Mölndals existens är ett evigt mantramumlande, ett evigt ihågkommande, andar hålls vid liv av vördnad." Nils Hagberg bemöter kritiken mot Mölndal</ingress>
 <skribent> Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
