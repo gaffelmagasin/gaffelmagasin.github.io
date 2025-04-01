@@ -1,5 +1,5 @@
 <titel>Inne-Ute-Listan Tidsmaskinen</titel>
-<bild>https://i.imgur.com/mqLuFeh.png</bild>
+<bild>https://i.imgur.com/3yW8uXP.png</bild>
 <ingress>Gaffel reser i tiden och berättar lite om vad som var inne och ute förr och som kommer att vara inne och ute fram.</ingress>
 <skribent>Redaktionen</skribent> 
 <datum>4 Mars 2024</datum>
