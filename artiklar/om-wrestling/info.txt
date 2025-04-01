@@ -1,5 +1,5 @@
 <titel>Om Wrestling</titel>
-<bild>https://i.imgur.com/y2WfdbC.png</bild>
+<bild>https://i.imgur.com/Nvcuqze.png</bild>
 <ingress>"Varför vill alla berätta för mig att det är på låtsas?" Nils Hagberg om Wrestling</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
