@@ -1,5 +1,5 @@
 <titel>J'accuse Valhallabadet</titel>
-<bild>https://i.imgur.com/qFlkHZR.png</bild>
+<bild>https://i.imgur.com/Z2gfXYL.png</bild>
 <ingress>Nils Hagberg bryr sig inte om rivningen av Valhallabadet men tydligen om de som gör det.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
