@@ -1,5 +1,5 @@
 <titel>Att gå vilse</titel>
-<bild>https://i.imgur.com/8En0BZT.png</bild>
+<bild>https://i.imgur.com/7McO2zy.png</bild>
 <ingress>Love Wickelgren Svenskby berättar om en cykeltur i Shanghai och funderar över vilsegångens plats hos resenären.</ingress>
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
