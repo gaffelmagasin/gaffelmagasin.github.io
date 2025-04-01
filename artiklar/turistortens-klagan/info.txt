@@ -1,5 +1,5 @@
 <titel>Turistortens klagan</titel>
-<bild>https://i.imgur.com/2eOJaNJ.png</bild>
+<bild>https://i.imgur.com/oYmd1yx.png</bild>
 <ingress>Nils Hagberg är trött på alla som klagar på turisterna och ger några förslag på hur de kan förbättra ens liv istället</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
