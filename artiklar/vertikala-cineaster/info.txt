@@ -1,5 +1,5 @@
 <titel>Om de vertikala cineasterna</titel>
-<bild>https://i.imgur.com/Zz7Ehfb.png</bild>
+<bild>https://i.imgur.com/wmftLnC.png</bild>
 <ingress>"På fältet springer två killar, de hoppar och studsar, upprymda av detta otroliga landskap, av skönheten hos naturen, dess självklara storhet" AGC utforskar filmskapande som content.</ingress>
 <skribent>Albin G Carlsson</skribent>
 <porträtt>albin_spg</porträtt>
