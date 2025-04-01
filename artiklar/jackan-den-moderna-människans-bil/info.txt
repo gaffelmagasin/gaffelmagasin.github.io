@@ -1,5 +1,5 @@
 <titel>Jackan, den moderna männsikans bil</titel>
-<bild>https://i.imgur.com/GL7Yk8t.png</bild>
+<bild>https://i.imgur.com/Lnxgh4e.png</bild>
 <ingress>Nils Hagberg försöker sig på en analys om jackan, bilen och individen och lyckas använda begreppet "själsligt färdmedel"</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
