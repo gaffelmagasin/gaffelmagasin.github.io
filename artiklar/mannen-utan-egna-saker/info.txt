@@ -1,5 +1,5 @@
 <titel>Mannen utan egna saker</titel>
-<bild>https://i.imgur.com/BosemBL.png</bild>
+<bild>https://i.imgur.com/nkoFYGL.png</bild>
 <ingress>"Är en utekväll rentav meditativ för dem?" Nils Hagberg om grisch och buddhism.</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
