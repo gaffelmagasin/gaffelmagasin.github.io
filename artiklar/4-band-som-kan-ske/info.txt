@@ -1,5 +1,5 @@
 <titel>G-KVÄLL: 4 Band som kan ske</titel>
-<bild>https://i.imgur.com/ntyBPwX.png</bild>
+<bild>https://i.imgur.com/Nd5zPdL.png</bild>
 <ingress>Love Wickelgren Svensby har listat 4 up-and-coming-som-du-kan-skryta-om-att-du-såg-innan-de-blev-stora band för dig som är fast i Göteborg</ingress>
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
