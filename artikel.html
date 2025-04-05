@@ -224,7 +224,7 @@
         <div class = artikel_hållare>
             <div id = 'om_artikeln'></div>
             <div class = bröd id = 'innehåll'></div>
-
+	    <div id = '_data' class = data></div>
 	     <script>
 		function detectMob() {
 		    const toMatch = [
@@ -304,7 +304,6 @@
                             <img src = ${bild} class = blogg_bild></img>
 			    <div class = foto>${fotograf}</div>
 			    <div class = titel>${titel}</div>
-       			    <div class = data>${data}</div>
                             <div class = ingress>${preamble}</div>
                         </div>
                     </div>`
@@ -312,7 +311,7 @@
                 
             }
             document.getElementById('om_artikeln').innerHTML = buffer;
-             
+             document.getElementById('_data').innerHTML = fotograf;
           })
 
           fetch('artiklar/' + tag + '/brödtext.html')
