@@ -4,4 +4,4 @@
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
 <datum>11 augusti 2024</datum>
-<fotograf>Wikimedia commons</fotograv>
+<fotograf>Wikimedia commons</fotograf>
