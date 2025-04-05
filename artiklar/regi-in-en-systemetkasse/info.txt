@@ -1,0 +1,6 @@
+<titel>Regi i en systemetkasse</titel>
+<bild>https://i.imgur.com/HkHKk7S.png</bild>
+<ingress>"Finns det en svensk Charlie Chaplin? En Werner Herzog från Skåne? Eller kanske en Agnès Varda från Västerås?" Olle Ordqvist leker med tanken.</ingress>
+<skribent>Olle Ordqvist</skribent>
+<porträtt>olle_spg</porträtt>
+<datum>5 April 2025</datum>
