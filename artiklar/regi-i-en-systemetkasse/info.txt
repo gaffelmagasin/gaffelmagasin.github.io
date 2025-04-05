@@ -4,3 +4,4 @@
 <skribent>Olle Ordqvist</skribent>
 <porträtt>olle_spg</porträtt>
 <datum>5 April 2025</datum>
+<fotograf>Wikimedia Commons. David Hughes</fotograf>
