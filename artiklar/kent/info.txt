@@ -1,1 +1,6 @@
-
+<titel>Kents återförening, en intervju med Sebastian Murphy</titel>
+<bild>https://i.imgur.com/6kjVTqy.png</bild>
+<ingress>Love Wickelgren Svensby om <i>alla</i> kentdagar.</ingress>
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
+<datum>9 April 2025</datum>
