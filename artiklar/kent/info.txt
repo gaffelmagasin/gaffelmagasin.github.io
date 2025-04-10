@@ -4,3 +4,4 @@
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
 <datum>9 April 2025</datum>
+<fotograf>Wikimedia Commons</fotograf>
