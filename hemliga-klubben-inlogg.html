@@ -91,18 +91,15 @@
  
 <body>
 	<script src = "script_closed.js"></script>
-    <div id = 'web-header'><script> 
-		fetch('header.html')
-			.then(function(resp){return resp.text()})
-			.then(function(resp){
-				document.getElementById('web-header').innerHTML = resp;
-			});
-		
-	  </script></div>
-		<img src = "https://i.imgur.com/daZ7CRg.png" class = "bild"></img>
-		<p class = "titel">HEMLIGA KLUBBEN<br>Lösenord:</p>	
-		<input type="text" id="password_input" placeholder="" class="lösen" maxlength="30">
-		<input type="button" onclick="password()" id="skicka" class = "knapp"; value="SKICKA"></input>
+
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<div w3-include-html="header.html"></div>
+	<script>w3.includeHTML();</script>
+	
+	<img src = "https://i.imgur.com/daZ7CRg.png" class = "bild"></img>
+	<p class = "titel">HEMLIGA KLUBBEN<br>Lösenord:</p>	
+	<input type="text" id="password_input" placeholder="" class="lösen" maxlength="30">
+	<input type="button" onclick="password()" id="skicka" class = "knapp"; value="SKICKA"></input>
 	<script>
 		function password(){
 			var t = document.getElementById('password_input').value;
