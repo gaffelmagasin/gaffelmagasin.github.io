@@ -211,14 +211,9 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	    
-        <div id = 'web-header'><script> 
-		fetch('header.html')
-			.then(function(resp){return resp.text()})
-			.then(function(resp){
-				document.getElementById('web-header').innerHTML = resp;
-			});
-		
-    	</script></div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<div w3-include-html="header.html"></div>
+	<script>w3.includeHTML();</script>
         
         <div class = artikel_hållare>
             <div id = 'om_artikeln'></div>
