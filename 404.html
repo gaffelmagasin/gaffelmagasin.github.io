@@ -31,7 +31,7 @@
 		   	 overflow-x: hidden;
 		}	
     h1{
-        color: #FFFEF7FF;
+        color: #000000FF;
 	font-family: helvetica_bold;
 	font-size: 20vw;
 	margin: auto;
@@ -45,14 +45,10 @@
  
 <body>
 	
-	<div id = 'web-header'><script> 
-		fetch('header.html')
-			.then(function(resp){return resp.text()})
-			.then(function(resp){
-				document.getElementById('web-header').innerHTML = resp;
-			});
-		
-	</script></div>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<div w3-include-html="header.html"></div>
+	<script>w3.includeHTML();</script>
+  
   <h1>404</h1>
   <h1 style = "font-size: 3vw;">Sidan hittades inte.<br>Ta ett varv runt kvarteret.</h1>
 </body>
