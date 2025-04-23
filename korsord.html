@@ -10,11 +10,31 @@
             margin: 0px;
             padding: 0px;
           }
-          canvas{
-            width: clamp(75px, 90vw, 750px);
-            height: clamp(75px, 90vw, 750px);
- 	    background-color: white;
-          }
+          .crossword-grid {
+            display: grid;
+            gap: 5px;
+            margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+        .cell:focus {
+            outline: none;
+            border-color: blue;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
         </style>
     </head>
     <body>
@@ -25,40 +45,38 @@
 	    
 	<script src = "script_closed.js"></script>
 
-	<div style = "margin: auto;">
-		<canvas id = 'crossword' width: "clamp(75px, 90vw, 750px)" height: "clamp(75px, 90vw, 750px)"></canvas>
-	</div>
-		
-         <script>
-           	const canvas = document.getElementById("crossword");
-    		const ctx = canvas.getContext("2d");
+    <div class="grid-container">
+        <div id="crossword-container" class="crossword-grid"></div>
+    </div>
 
-		
-		canvas.height = canvas.height*10;
-		canvas.width = canvas.height * (canvas.clientWidth / canvas.clientHeight);
-		 
-		const cols = 5;
-		const rows = 5;
+    <script>
+        function generateGrid() {
+            const gridSize = 10;
+            const crosswordContainer = document.getElementById("crossword-container");
+            crosswordContainer.innerHTML = '';  // Clear any existing grid
 
-		const letter_array = [['A','A','A','A','A'],['A','A','A','A','A'],['A','A','O','A','A'],['A','A','A','A','A'],['A','A','A','A','A']]
-		 
-		const cell_size = canvas.width/cols;
-		 
-	        ctx.font = "50px Arial";
-	        ctx.textAlign = "center";
-	        ctx.textBaseline = "middle";
-		ctx.color = "black";
-	
-	        for (let y = 0; y < rows; y++) {
-	             for (let x = 0; x < cols; x++) {
-		         const letter = letter_array[y][x]
-			     ctx.strokeRect(x, y, cell_size, cell_size)
-			     ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size) + (cell_size / 2));
-	              }
-	        }
-		
-		
-         </script>     
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, 30px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, 30px)`;
+
+            for (let row = 0; row < gridSize; row++) {
+                for (let col = 0; col < gridSize; col++) {
+                    const inputCell = document.createElement("input");
+                    inputCell.classList.add("cell");
+                    inputCell.maxLength = 1; // Restrict to a single character
+                    inputCell.addEventListener("input", function(event) {
+                        let value = event.target.value;
+                        if (!/^[A-Za-z]$/.test(value)) {
+                            event.target.value = ""; // Clear non-letter input
+                        }
+                    });
+                    crosswordContainer.appendChild(inputCell);
+                }
+            }
+        }
+
+        // Generate grid on page load
+        window.onload = generateGrid;
+    </script>
     </body>
 </html>
 
