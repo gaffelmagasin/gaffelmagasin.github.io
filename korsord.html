@@ -52,7 +52,8 @@
 	        for (let y = 0; y < rows; y++) {
 	             for (let x = 0; x < cols; x++) {
 		         const letter = letter_array[y][x]
-			ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size) + (cell_size / 2));
+			     strokeRect(x, y, cell_size, cell_size)
+			     ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size) + (cell_size / 2));
 	              }
 	        }
 		
