@@ -51,20 +51,23 @@
 
     <script>
         function generateGrid() {
-            
+
+	    const game_size = Math.min(600,innerWidth);
+		
 	    const gridSize = 10;
-            
+	    const cell_size = game_size / gridSize;
+		
 	    const crosswordContainer = document.getElementById("crossword-container");
             crosswordContainer.innerHTML = '';  // Clear any existing grid
 
-            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, 50px)`;
-            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, 50px)`;
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
 
             for (let row = 0; row < gridSize; row++) {
                 for (let col = 0; col < gridSize; col++) {
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
-		    inputCell.style.cssText = "width: 50px; height: 50px;";
+		    inputCell.style.cssText = "width: ${cell_size}px; height: ${cell_size}px;";
                     inputCell.maxLength = 1; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
                         let value = event.target.value;
