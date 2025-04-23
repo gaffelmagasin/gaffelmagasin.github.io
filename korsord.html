@@ -37,12 +37,12 @@
 		canvas.height = canvas.height*10;
 		canvas.width = canvas.height * (canvas.clientWidth / canvas.clientHeight);
 		 
-		const cols = 10;
-		const rows = 10;
+		const cols = 5;
+		const rows = 5;
 
+		const letter_array = [['A','A','A','A','A'],['A','A','A','A','A'],['A','A','O','A','A'],['A','A','A','A','A'],['A','A','A','A','A']]
+		 
 		const cell_size = canvas.width/cols;
-
-		const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		 
 	        ctx.font = "50px Arial";
 	        ctx.textAlign = "center";
@@ -51,7 +51,7 @@
 	
 	        for (let y = 0; y < rows; y++) {
 	             for (let x = 0; x < cols; x++) {
-		         const letter = 'O';
+		         const letter = letter_array[y][x]
 			ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size) + (cell_size / 2));
 	              }
 	        }
