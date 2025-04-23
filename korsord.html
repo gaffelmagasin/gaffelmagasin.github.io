@@ -68,7 +68,7 @@
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
-		    inputCell.id = `${x}-${y}`;
+		    inputCell.id = `${row}-${col}`;
                     inputCell.maxLength = 1; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
                         let value = event.target.value;
