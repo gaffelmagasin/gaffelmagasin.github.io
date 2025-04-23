@@ -32,9 +32,9 @@
     		const ctx = canvas.getContext("2d");
 
 		const cols = 10;
-		const rows = 3;
+		const rows = 10;
 
-		const cell_size = canvas.width / cols
+		const cell_size = canvas.width / cols;
 
 		const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		 
@@ -45,8 +45,8 @@
 	
 	        for (let y = 0; y < rows; y++) {
 	             for (let x = 0; x < cols; x++) {
-		         const letter = letters[Math.floor(Math.random() * letters.length)];
-			ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size/2) + (cell_size / 2));
+		         const letter = 'O';
+			ctx.fillText(letter, (x * cell_size) + (cell_size / 2), (y * cell_size) + (cell_size / 2));
 	              }
 	        }
 		
