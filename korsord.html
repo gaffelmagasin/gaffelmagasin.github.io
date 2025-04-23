@@ -31,6 +31,8 @@
            	const canvas = document.getElementById("crossword");
     		const ctx = canvas.getContext("2d");
 
+		
+		canvas.height = canvas.height*10;
 		canvas.width = canvas.height * (canvas.clientWidth / canvas.clientHeight);
 		 
 		const cols = 10;
