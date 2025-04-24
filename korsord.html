@@ -76,24 +76,27 @@
                         if (!/^[A-Za-z]$/.test(value)) {
                             event.target.value = ""; // Clear non-letter input
                         }
-			var id_str = this.id;
-			id_str = id_str.split("-");
-			var xx = Number(id_str[0])
-			var yy = Number(id_str[1])
-
-			console.log(xx);
-			console.log(yy);
-			if(rot == 0){
-				xx++
-			}
 			else{
-				yy++
+				var id_str = this.id;
+				id_str = id_str.split("-");
+				var xx = Number(id_str[0])
+				var yy = Number(id_str[1])
+	
+				console.log(xx);
+				console.log(yy);
+				if(rot == 0){
+					xx++
+				}
+				else{
+					yy++
+				}
+				if(xx>=gridSize){xx-=gridSize}
+				if(yy>=gridSize){yy-=gridSize}
+				var new_id = String(xx) + "-" + String(yy);
+				
+				document.getElementById(new_id).focus();
 			}
-			if(xx>=gridSize){xx-=gridSize}
-			if(yy>=gridSize){yy-=gridSize}
-			var new_id = String(xx) + "-" + String(yy);
 			
-			document.getElementById(new_id).focus();
                     });
 		    inputCell.addEventListener("focus", function(event){
 			    
