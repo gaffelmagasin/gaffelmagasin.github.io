@@ -73,6 +73,7 @@
                     inputCell.maxLength = 1; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
                         let value = event.target.value;
+			event.value = event.value.slice(-1);
                         if (!/^[A-Za-z]$/.test(value)) {
                             event.target.value = ""; // Clear non-letter input
                         }
