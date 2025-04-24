@@ -49,6 +49,10 @@
     </div>
 
     <script>
+	function updateColor(){
+		
+	}
+	    
         function generateGrid() {
 
 	    const game_size = Math.min(600,0.9*innerWidth);
@@ -74,7 +78,9 @@
                         if (!/^[A-Za-z]$/.test(value)) {
                             event.target.value = ""; // Clear non-letter input
                         }
+			console.log(this.id);
                     });
+		    //inputCell.addEventListener("focus",)
                     crosswordContainer.appendChild(inputCell);
                 }
             }
@@ -82,6 +88,10 @@
 
         // Generate grid on page load
         window.onload = generateGrid;
+
+	
+	
+	
     </script>
     </body>
 </html>
