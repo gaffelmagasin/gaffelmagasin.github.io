@@ -49,9 +49,7 @@
     </div>
 
     <script>
-	function updateColor(){
-		
-	}
+	
 	    
         function generateGrid() {
 
@@ -78,9 +76,18 @@
                         if (!/^[A-Za-z]$/.test(value)) {
                             event.target.value = ""; // Clear non-letter input
                         }
-			console.log(this.id);
+			var id_str = this.id;
+			id_str = id_str.split("-");
+			var xx = Number(id_str[0])
+			var yy = Number(id_str[1])
+
+			console.log(xx);
+			console.log(yy);
+			document.getElementById().focus();
                     });
-		    //inputCell.addEventListener("focus",)
+		    inputCell.addEventListener("focus", function(event){
+			    
+		    });
                     crosswordContainer.appendChild(inputCell);
                 }
             }
