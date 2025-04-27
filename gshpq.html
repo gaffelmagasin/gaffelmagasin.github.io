@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GAFFELS HUMORALPATOLOGISKA QUIZ</title>
+        
+	<style>
+            @font-face {
+		  font-family: helvetica_bold;
+		  src: url(font/Helvetica-Bold.ttf) format("truetype");
+	    }
+		
+	    body { 
+
+         background-color: black;
+
+	     	margin: 0px;
+		            padding: 0px;
+		            max-width: 100vw !important;
+		            overflow-x: hidden !important;
+            }
+
+		
+        </style>
+    </head>
+    <body>
+        <div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+		
+    	</script></div>
+
+	
+    	<script>
+    		function detectMob() {
+    		    const toMatch = [
+    		        /Android/i,
+    		        /webOS/i,
+    		        /iPhone/i,
+    		        /iPod/i,
+    		        /BlackBerry/i,
+    		        /Windows Phone/i
+    		    ];
+        
+    		    return toMatch.some((toMatchItem) => {
+    			return navigator.userAgent.match(toMatchItem);
+    		    });
+    		}
+    
+    		var isMobile = detectMob();
+    		
+    	</script>
+	    
+      <p id = "question">Fråga 1: dadadadmkamdma</p>
+
+      <input type = "radio" id = "a1">
+      <label for="a1">Svar 1</label><br>
+      <input type = "radio" id = "a2">
+      <label for="a2">Svar 2</label><br>
+      <input type = "radio" id = "a3">
+      <label for="a3">Svar 3</label><br>
+      <input type = "radio" id = "a4">
+      <label for="a4">Svar 4</label><br>
+      
+    </body>
+</html>
