@@ -54,6 +54,21 @@
     		var isMobile = detectMob();
     		
     	</script>
+
+      <script>
+		cur_question = 0;
+
+		function update_questions(){
+			
+		}
+	      
+		function next_question(){
+			cur_question++
+			console.log(cur_question);
+		};
+
+	      
+      </script>
 	    
       <p id = "question">Fråga</p>
 
@@ -64,12 +79,15 @@
       <label for="a2">Svar 2</label><br>
 
       <input type = "radio" id = "a3" name = "quiz" value = "2">
-      <label for="a2">Svar 3</label><br>
+      <label for="a3">Svar 3</label><br>
 
       <input type = "radio" id = "a4" name = "quiz" value = "3">
       <label for="a4">Svar 4</label><br>
 
- 	<button id = "next" type = "button">Nästa</button>
+ 	<button id = "next" type = "button" onclick = "next_question()">Nästa</button>
+
+
+	
       
     </body>
 </html>
