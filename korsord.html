@@ -76,7 +76,7 @@
                     inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
-		    	inputCell.disabled = true;
+			inputCell.value = 0;
 			inputCell.style.backgroundColor = "black";
 		    }
 		    console.log(symbol);
@@ -87,7 +87,24 @@
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
-   
+   			if(this.value == 0){
+				var id_str = this.id;
+				id_str = id_str.split("-");
+				var xx = Number(id_str[0])
+				var yy = Number(id_str[1])
+
+				if(rot){
+					xx++
+				}
+				else{
+					yy++
+				}
+				if(xx>=gridSize){xx-=gridSize}
+				if(yy>=gridSize){yy-=gridSize}
+				var new_id = String(xx) + "-" + String(yy);
+				
+				document.getElementById(new_id).focus();
+			}
 		    });
 		    inputCell.addEventListener("keydown", function(event){
    			//console.log(event.key);
