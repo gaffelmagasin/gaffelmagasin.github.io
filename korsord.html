@@ -70,7 +70,7 @@
                     inputCell.classList.add("cell");
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.id = `${col}-${row}`;
-                    inputCell.maxLength = 1; // Restrict to a single character
+                    inputCell.maxLength = 0; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
                         
 			
