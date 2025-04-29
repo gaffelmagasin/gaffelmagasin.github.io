@@ -74,15 +74,17 @@
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 0; // Restrict to a single character
-                    inputCell.addEventListener("input", function(event) {
-
-		    var symbol = symbol_grid[col][row];
+                     var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
 		    	input.disabled = true;
 			input.style.backgroundColor = black;
 		    }
 		    console.log("symbol:");
 		    console.log(symbol);
+			
+		    inputCell.addEventListener("input", function(event) {
+
+		   
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
