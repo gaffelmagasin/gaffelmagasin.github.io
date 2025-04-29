@@ -80,11 +80,12 @@
 		    });
 		    inputCell.addEventListener("keydown", function(event){
    			console.log(event.key);
-			let value = event.key;
+			
                         if (!/^[A-Za-z]$/.test(value)) {
-                            event.target.value = ""; // Clear non-letter input
+                            //event.target.value = ""; // Clear non-letter input
                         }
 			else{
+				let value = event.key;
 				var id_str = this.id;
 				id_str = id_str.split("-");
 				var xx = Number(id_str[0])
