@@ -64,8 +64,8 @@
 	    const crosswordContainer = document.getElementById("crossword-container");
             crosswordContainer.innerHTML = '';  // Clear any existing grid
 
-            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
-            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize+1}, ${cell_size+1}px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize+1}, ${cell_size+1}px)`;
 
             for (let row = 0; row < gridSize; row++) {
                 for (let col = 0; col < gridSize; col++) {
