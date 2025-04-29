@@ -76,18 +76,19 @@
                     inputCell.maxLength = 0; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
 
-		    var symbol = symbol_grid[xx][yy]
+		    var symbol = symbol_grid[col][row]
 		    if(symbol == 1){
 		    	input.disabled = true;
 			input.style.backgroundColor = black;
 		    }
+		    console.log(symbol);
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
    
 		    });
 		    inputCell.addEventListener("keydown", function(event){
-   			console.log(event.key);
+   			//console.log(event.key);
 			var k = event.key;
 			if(k == " "){
 				rot = !rot;
@@ -103,8 +104,8 @@
 					var xx = Number(id_str[0])
 					var yy = Number(id_str[1])
 		
-					console.log(xx);
-					console.log(yy);
+					//console.log(xx);
+					//console.log(yy);
 					if(rot){
 						xx++
 					}
