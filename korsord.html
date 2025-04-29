@@ -26,6 +26,7 @@
 	    caret-color: transparent;
 	    outline: none;
 	    border: none;
+	    padding: none;
 	    background-color: white;	
         }
         .cell:focus {
@@ -73,7 +74,7 @@
                 for (let col = 0; col < gridSize; col++) {
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
-		    inputCell.style.cssText = `width: ${cell_size-3}px; height: ${cell_size-3}px;`;
+		    inputCell.style.cssText = `width: ${cell_size-1}px; height: ${cell_size-1}px;`;
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
