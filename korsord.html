@@ -99,7 +99,10 @@
 			
                     });
 		    inputCell.addEventListener("focus", function(event){
-			this.select();    
+   
+		    });
+		    inputCell.addEventListener("keydown", function(event){
+   			console.log(event.key);
 		    });
                     crosswordContainer.appendChild(inputCell);
                 }
