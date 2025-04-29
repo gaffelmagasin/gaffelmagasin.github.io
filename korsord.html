@@ -50,7 +50,7 @@
     </div>
 
     <script>
-	var rot = 0
+	var rot = true;
 	    
         function generateGrid() {
 
@@ -82,31 +82,35 @@
 		    inputCell.addEventListener("keydown", function(event){
    			console.log(event.key);
 			var k = event.key;
-			    
-                        if (!/^[A-Za-z]$/.test(k)) {
-                            event.target.value = ""; // Clear non-letter input
-                        }
-			else{
-				event.target.value = k;
-				var id_str = this.id;
-				id_str = id_str.split("-");
-				var xx = Number(id_str[0])
-				var yy = Number(id_str[1])
-	
-				console.log(xx);
-				console.log(yy);
-				if(rot == 0){
-					xx++
-				}
-				else{
-					yy++
-				}
-				if(xx>=gridSize){xx-=gridSize}
-				if(yy>=gridSize){yy-=gridSize}
-				var new_id = String(xx) + "-" + String(yy);
-				
-				document.getElementById(new_id).focus();
+			if(k = ""){
+				rot = !rot;
 			}
+			else{
+	                        if (!/^[A-Za-z]$/.test(k)) {
+	                            event.target.value = ""; // Clear non-letter input
+	                        }
+				else{
+					event.target.value = k;
+					var id_str = this.id;
+					id_str = id_str.split("-");
+					var xx = Number(id_str[0])
+					var yy = Number(id_str[1])
+		
+					console.log(xx);
+					console.log(yy);
+					if(rot){
+						xx++
+					}
+					else{
+						yy++
+					}
+					if(xx>=gridSize){xx-=gridSize}
+					if(yy>=gridSize){yy-=gridSize}
+					var new_id = String(xx) + "-" + String(yy);
+					
+					document.getElementById(new_id).focus();
+				}
+			};
 		    });
                     crosswordContainer.appendChild(inputCell);
                 }
