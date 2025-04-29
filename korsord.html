@@ -76,10 +76,9 @@
                     inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
-		    	input.disabled = true;
-			input.style.backgroundColor = black;
+		    	inputCell.disabled = true;
+			inputCell.style.backgroundColor = black;
 		    }
-		    console.log("symbol:");
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
