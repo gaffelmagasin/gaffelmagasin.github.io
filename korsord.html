@@ -72,7 +72,15 @@
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 1; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
-                        let value = event.target.value;
+                        
+			
+                    });
+		    inputCell.addEventListener("focus", function(event){
+   
+		    });
+		    inputCell.addEventListener("keydown", function(event){
+   			console.log(event.key);
+			let value = event.key;
                         if (!/^[A-Za-z]$/.test(value)) {
                             event.target.value = ""; // Clear non-letter input
                         }
@@ -96,13 +104,6 @@
 				
 				document.getElementById(new_id).focus();
 			}
-			
-                    });
-		    inputCell.addEventListener("focus", function(event){
-   
-		    });
-		    inputCell.addEventListener("keydown", function(event){
-   			console.log(event.key);
 		    });
                     crosswordContainer.appendChild(inputCell);
                 }
