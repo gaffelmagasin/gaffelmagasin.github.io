@@ -74,7 +74,7 @@
                 for (let col = 0; col < gridSize; col++) {
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
-		    inputCell.style.cssText = `width: ${0.99*cell_size}px; height: ${0.99*cell_size}px;`;
+		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
