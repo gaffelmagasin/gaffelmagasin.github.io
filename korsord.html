@@ -54,9 +54,11 @@
 	    
         function generateGrid() {
 
-	    const game_size = Math.min(600,0.9*innerWidth);
+	    const game_size = Math.min(600,0.8*innerWidth);
 		
-	    const gridSize = 10;
+	    const gridSize = 5;
+	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
+		
 	    const cell_size = game_size / gridSize;
 		
 	    const crosswordContainer = document.getElementById("crossword-container");
@@ -73,8 +75,13 @@
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 0; // Restrict to a single character
                     inputCell.addEventListener("input", function(event) {
-                        
-			
+
+		    var symbol = symbol_grid[xx][yy]
+		    if(symbol == 1){
+		    	input.disabled = true;
+			input.style.backgroundColor = black;
+		    }
+			    
                     });
 		    inputCell.addEventListener("focus", function(event){
    
