@@ -115,7 +115,7 @@
 			}
 			for(var y2 = y1+1; y2<gridHeight; y2++){
 				var get_id = String(xx) + "-" + String(y2);
-				console.log(get_id);
+
 				var get_symbol = symbol_grid[xx][y2];
 				if(get_symbol == 1){
 					break;
@@ -138,7 +138,7 @@
 			}
 			for(var x2 = x1+1; x2<gridWidth; x2++){
 				var get_id = String(x2) + "-" + String(yy);
-				console.log(get_id);
+
 				var get_symbol = symbol_grid[x2][yy];
 				if(get_symbol == 1){
 					break;
@@ -181,6 +181,9 @@
 			let inp_value = event.target.value;
 			var cur_letter = inp_value.slice(1,2);
     			let lastChar = inp_value.slice(-1);
+			
+			console.log(inp_value);
+			console.log(cur_letter);
 			console.log(lastChar);
 			 
 			var k = lastChar;
