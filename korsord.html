@@ -79,7 +79,8 @@
 
 	    const game_size = Math.min(600,0.8*innerWidth);
 		
-	    const gridSize = 5;
+	    const gridWidth = 5;
+	    const gridHeight = 5;
 	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
 
 
@@ -109,25 +110,27 @@
 			if(get_symbol == 1){
 				break;
 			}
-			else{
-				document.getElementById(get_id).style.backgroundColor = "blue";
-			}
+			
+			
 		}
+
+		for(let x2 =x1; x2<gridWidth; x2++)
+			
 		focusedElement.style.backgroundColor = "red";
 	    }
 		
-	    const cell_size = game_size / gridSize;
+	    const cell_size = game_size / gridWidth;
 		
 	    const crosswordContainer = document.getElementById("crossword-container");
             crosswordContainer.innerHTML = '';  // Clear any existing grid
 
-            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
-            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridWidth}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridHeight}, ${cell_size}px)`;
 
 	    
 		
-            for (let row = 0; row < gridSize; row++) {
-                for (let col = 0; col < gridSize; col++) {
+            for (let row = 0; row < gridWidth; row++) {
+                for (let col = 0; col < gridHeight; col++) {
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
@@ -170,8 +173,8 @@
 					else{
 						yy++
 					}
-					if(xx>=gridSize){xx-=gridSize}
-					if(yy>=gridSize){yy-=gridSize}
+					if(xx>=gridWidth){xx-=gridWidth}
+					if(yy>=gridHeight){yy-=gridHeight}
 					var new_id = String(xx) + "-" + String(yy);
 					
 					document.getElementById(new_id).focus();
