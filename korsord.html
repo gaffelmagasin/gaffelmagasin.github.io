@@ -129,10 +129,11 @@
 			}
 		    });
 		    inputCell.addEventListener("keydown", function(event){
-   			//console.log(event.key);
+   			//console.log(event.code);
 			this.style.backgroundColor = "red";
-			var k = event.key;
-			if(k == " "){
+			var k = event.code;
+			k = k.charAt(k.length - 1)
+			if(k == "space"){
 				rot = !rot;
 			}
 			else{
