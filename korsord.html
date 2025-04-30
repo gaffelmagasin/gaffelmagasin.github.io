@@ -87,8 +87,11 @@
 		const elements = document.querySelectorAll('.cell');
 
 		elements.forEach(element => {
-		    if(this.value != "?"){
-		    	element.style.backgroundColor = "white";
+		    if(this.value == "?"){
+		    	element.style.backgroundColor = "black";
+		    }
+		    else{
+			  element.style.backgroundColor = "white";  
 		    }
 		});
 		
