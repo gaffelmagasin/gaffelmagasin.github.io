@@ -114,16 +114,16 @@
 			
 		}
 
-		for(var x2 = x1; x2<gridWidth-1; x2++){
+		for(var x2 = x1+1; x2<gridWidth-1; x2++){
 			var get_id = String(x2) + "-" + String(yy);
 			console.log(get_id);
-			//var get_symbol = symbol_grid[x2][yy];
-			//if(get_symbol == 1){
-			//	break;
-			//}
-			//else{
-			//	document.getElementById(new_id).style.backgroundColor = "blue";
-			//}
+			var get_symbol = symbol_grid[x2][yy];
+			if(get_symbol == 1){
+				break;
+			}
+			else{
+				document.getElementById(new_id).style.backgroundColor = "blue";
+			}
 		}
 			
 		focusedElement.style.backgroundColor = "red";
