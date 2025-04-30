@@ -95,7 +95,7 @@
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.style.fontSize = `${cell_size-10}px`;
 		    inputCell.id = `${col}-${row}`;
-                    inputCell.maxLength = 1; // Restrict to a single character
+                    inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
 			inputCell.value = "?";
@@ -130,7 +130,7 @@
 		    });
 		    inputCell.addEventListener("keydown", function(event){
    			//console.log(event.key);
-			var k = event.key;
+			var k = event.target.value.splice(-1);
 			if(k == " "){
 				rot = !rot;
 			}
