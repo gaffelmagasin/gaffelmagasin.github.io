@@ -195,11 +195,8 @@
                     });
 		    inputCell.addEventListener("focus", function(event){
    			
-			reset_coloration();
-
-
 			
-			    
+  
 			if(this.value == "?"){
 				var id_str = this.id;
 				id_str = id_str.split("-");
@@ -218,6 +215,9 @@
 				
 				document.getElementById(new_id).focus();
 			}
+			    else{
+				    reset_coloration();
+			    }
 		    });
 		    inputCell.addEventListener("keydown", function(event){
    			//console.log(event.code);
