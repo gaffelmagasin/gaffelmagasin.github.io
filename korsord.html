@@ -95,7 +95,7 @@
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.style.fontSize = `${cell_size-10}px`;
 		    inputCell.id = `${col}-${row}`;
-                    inputCell.maxLength = 0; // Restrict to a single character
+                    inputCell.maxLength = 2; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
 			inputCell.value = "?";
@@ -104,34 +104,8 @@
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
-
-		   
-			    
-                    });
-		    inputCell.addEventListener("focus", function(event){
-   			if(this.value == "?"){
-				var id_str = this.id;
-				id_str = id_str.split("-");
-				var xx = Number(id_str[0])
-				var yy = Number(id_str[1])
-
-				if(rot){
-					xx++
-				}
-				else{
-					yy++
-				}
-				if(xx>=gridSize){xx-=gridSize; yy++;}
-				if(yy>=gridSize){yy-=gridSize; xx++;}
-				var new_id = String(xx) + "-" + String(yy);
-				
-				document.getElementById(new_id).focus();
-			}
-		    });
-		    inputCell.addEventListener("keydown", function(event){
-   			//console.log(event.code);
 			this.style.backgroundColor = "red";
-			var k = event.key;
+			var k = event.target.value;
 			if(k == " "){
 				rot = !rot;
 			}
@@ -161,6 +135,32 @@
 					document.getElementById(new_id).focus();
 				}
 			};
+		   
+			    
+                    });
+		    inputCell.addEventListener("focus", function(event){
+   			if(this.value == "?"){
+				var id_str = this.id;
+				id_str = id_str.split("-");
+				var xx = Number(id_str[0])
+				var yy = Number(id_str[1])
+
+				if(rot){
+					xx++
+				}
+				else{
+					yy++
+				}
+				if(xx>=gridSize){xx-=gridSize; yy++;}
+				if(yy>=gridSize){yy-=gridSize; xx++;}
+				var new_id = String(xx) + "-" + String(yy);
+				
+				document.getElementById(new_id).focus();
+			}
+		    });
+		    inputCell.addEventListener("keydown", function(event){
+   			//console.log(event.code);
+			
 		    });
                     crosswordContainer.appendChild(inputCell);
                 }
