@@ -95,7 +95,7 @@
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
 		    inputCell.style.fontSize = `${cell_size-10}px`;
 		    inputCell.id = `${col}-${row}`;
-                    inputCell.maxLength = 2; // Restrict to a single character
+                    inputCell.maxLength = 0; // Restrict to a single character
                      var symbol = symbol_grid[col][row];
 		    if(symbol == 1){
 			inputCell.value = "?";
@@ -104,7 +104,7 @@
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
-			this.style.backgroundColor = "red";
+			
 			var k = event.target.value;
 			if(k == " "){
 				rot = !rot;
@@ -114,6 +114,7 @@
 	                            //event.target.value = ""; // Clear non-letter input
 	                        }
 				else{
+					this.style.backgroundColor = "red";
 					event.target.value = k;
 					var id_str = this.id;
 					id_str = id_str.split("-");
