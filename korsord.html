@@ -177,6 +177,8 @@
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
+			const length = event.target.value.length;
+   			this.setSelectionRange(length, length);
 			
 			let inp_value = event.target.value;
 			var cur_letter = inp_value.slice(0,1);
