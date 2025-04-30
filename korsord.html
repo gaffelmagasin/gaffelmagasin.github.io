@@ -88,6 +88,34 @@
             crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
             crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
 
+	    function reset_coloration(){
+		const elements = document.querySelectorAll('.cell');
+
+		elements.forEach(element => {
+		    element.style.backgroundColor = "white";
+		});
+
+		var foc_id = focusedElement.id;
+		var id_str = foc_id.id;
+		id_str = id_str.split("-");
+		var xx = Number(id_str[0])
+		var yy = Number(id_str[1])
+
+		
+		for(let x1 = xx; x1>=0; x1--){
+			var get_id = String(x1) + "-" + String(yy);
+			var get_symbol = symbol_grid[x1][yy];
+
+			if(get_symbol == 1){
+				break;
+			}
+			else{
+				document.getElementById(get_id).style.backgroundColor = "blue";
+			}
+		}
+		focusedElement.style.backgroundColor = "red";
+	    }
+		
             for (let row = 0; row < gridSize; row++) {
                 for (let col = 0; col < gridSize; col++) {
                     const inputCell = document.createElement("input");
@@ -143,27 +171,17 @@
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
-   			var id_str = this.id;
-			id_str = id_str.split("-");
-			var xx = Number(id_str[0])
-			var yy = Number(id_str[1])
+   			
 
 
 
-			for(let x1 = xx; x1>=0; x1--){
-				var get_id = String(x1) + "-" + String(yy);
-				var get_symbol = symbol_grid[x1][yy];
-
-				if(get_symbol == 1){
-					break;
-				}
-				else{
-					document.getElementById(get_id).style.backgroundColor = "blue";
-				}
-			}
+			
 			    
 			if(this.value == "?"){
-				
+				var id_str = this.id;
+				id_str = id_str.split("-");
+				var xx = Number(id_str[0])
+				var yy = Number(id_str[1])
 
 				if(rot){
 					xx++
