@@ -177,18 +177,21 @@
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
+			
 			let inp_value = event.target.value;
+			var cur_letter = inp_value.slice(1,2);
     			let lastChar = inp_value.slice(-1);
 			console.log(lastChar);
 			 
 			var k = lastChar;
 			if(k == " "){
+				event.target.value = cur_letter;
 				rot = !rot;
 				reset_coloration();
 			}
 			else{
 	                        if (!/^[A-Za-zåäöÅÄÖ]$/.test(k)) {
-	                            event.target.value = ""; // Clear non-letter input
+	                            event.target.value = cur_letter; // Clear non-letter input
 	                        }
 				else{
 					
