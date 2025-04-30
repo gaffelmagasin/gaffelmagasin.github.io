@@ -130,7 +130,8 @@
 		    });
 		    inputCell.addEventListener("keydown", function(event){
    			//console.log(event.key);
-			var k = event.target.value.splice(-1);
+			this.style.backgroundColor = "red";
+			var k = event.key;
 			if(k == " "){
 				rot = !rot;
 			}
