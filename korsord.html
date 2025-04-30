@@ -102,7 +102,7 @@
 		var xx = Number(id_str[0])
 		var yy = Number(id_str[1])
 
-		if(rot){
+		if(!rot){
 			for(var y1 = yy; y1>=0; y1--){
 				var get_id = String(xx) + "-" + String(y1);
 				var get_symbol = symbol_grid[xx][y1];
@@ -184,6 +184,7 @@
 			var k = lastChar;
 			if(k == " "){
 				rot = !rot;
+				reset_coloration();
 			}
 			else{
 	                        if (!/^[A-Za-zåäöÅÄÖ]$/.test(k)) {
