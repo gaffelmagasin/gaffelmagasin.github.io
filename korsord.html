@@ -143,11 +143,27 @@
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
-   			if(this.value == "?"){
-				var id_str = this.id;
-				id_str = id_str.split("-");
-				var xx = Number(id_str[0])
-				var yy = Number(id_str[1])
+   			var id_str = this.id;
+			id_str = id_str.split("-");
+			var xx = Number(id_str[0])
+			var yy = Number(id_str[1])
+
+
+
+			for(let x1 = xx; x1>0; x1--){
+				var get_id = String(x1) + "-" + String(yy);
+				var get_symbol = symbol_grid[x1][yy];
+
+				if(get_symbol == 1){
+					break;
+				}
+				else{
+					document.getElementById(get_id).style.backgroundColor = "blue";
+				}
+			}
+			    
+			if(this.value == "?"){
+				
 
 				if(rot){
 					xx++
