@@ -186,15 +186,16 @@
 			console.log(cur_letter);
 			console.log(lastChar);
 			 
-			var k = lastChar;
-			if(k == " "){
+			//var k = lastChar;
+			if(lastChar == " "){
 				event.target.value = cur_letter;
 				rot = !rot;
 				reset_coloration();
 			}
 			else{
-	                        if (!/^[A-Za-zåäöÅÄÖ]$/.test(k)) {
-	                            event.target.value = cur_letter; // Clear non-letter input
+	                        if (!/^[A-Za-zåäöÅÄÖ]$/.test(lastChar)) {
+				    if(lastChar == cur_letter){event.target.value = "";}
+	                            else{event.target.value = cur_letter;} // Clear non-letter input
 	                        }
 				else{
 					
