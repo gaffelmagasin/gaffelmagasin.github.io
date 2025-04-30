@@ -104,8 +104,11 @@
 		    console.log(symbol);
 			
 		    inputCell.addEventListener("input", function(event) {
-			
-			var k = event.target.value;
+			let inp_value = event.target.value;
+    			let lastChar = value.slice(-1);
+			console.log(lastChar);
+			 
+			var k = lastChar;
 			if(k == " "){
 				rot = !rot;
 			}
@@ -114,8 +117,8 @@
 	                            //event.target.value = ""; // Clear non-letter input
 	                        }
 				else{
-					this.style.backgroundColor = "red";
-					this.value = "A";
+					
+					this.value = lastChar;
 					var id_str = this.id;
 					id_str = id_str.split("-");
 					var xx = Number(id_str[0])
