@@ -209,8 +209,8 @@
 				else{
 					yy++
 				}
-				if(xx>=gridSize){xx-=gridSize; yy++;}
-				if(yy>=gridSize){yy-=gridSize; xx++;}
+				if(xx>=gridWidth){xx-=gridWidth; yy++;}
+				if(yy>=gridHeight){yy-=gridHeight; xx++;}
 				var new_id = String(xx) + "-" + String(yy);
 				
 				document.getElementById(new_id).focus();
