@@ -187,6 +187,7 @@
 			 
 			//var k = lastChar;
 			if(lastChar == " "){
+				
 				event.target.value = cur_letter;
 				rot = !rot;
 				reset_coloration();
@@ -223,9 +224,6 @@
 			    
                     });
 		    inputCell.addEventListener("focus", function(event){
-   			
-			const length = this.value.length;
-    			this.setSelectionRange(1, 1);
   
 			if(this.value == "?"){
 				var id_str = this.id;
@@ -253,6 +251,12 @@
    			//console.log(event.code);
 			
 		    });
+		    inputCell.addEventListener('click', (event) => {
+		            if (document.activeElement === input) {
+		                console.log('Mouse click detected while input is focused.');
+		            }
+		        });
+			
                     crosswordContainer.appendChild(inputCell);
                 }
             }
