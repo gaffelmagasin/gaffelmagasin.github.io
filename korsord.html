@@ -114,7 +114,7 @@
 			
 		}
 
-		for(var x2 = x1+1; x2<gridWidth-1; x2++){
+		for(var x2 = x1+1; x2<gridWidth; x2++){
 			var get_id = String(x2) + "-" + String(yy);
 			console.log(get_id);
 			var get_symbol = symbol_grid[x2][yy];
@@ -122,11 +122,11 @@
 				break;
 			}
 			else{
-				document.getElementById(get_id).style.backgroundColor = "blue";
+				document.getElementById(get_id).style.backgroundColor = "Gainsboro";
 			}
 		}
 			
-		focusedElement.style.backgroundColor = "red";
+		focusedElement.style.backgroundColor = "LightGrey";
 	    }
 		
 	    const cell_size = game_size / gridWidth;
