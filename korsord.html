@@ -179,7 +179,7 @@
 		    inputCell.addEventListener("input", function(event) {
 			
 			let inp_value = event.target.value;
-			var cur_letter = inp_value.slice(1,2);
+			var cur_letter = inp_value.slice(0,1);
     			let lastChar = inp_value.slice(-1);
 			
 			console.log(inp_value);
