@@ -73,7 +73,17 @@
     <script>
 	var rot = true;
 
-	function reset_coloration(){
+	
+	    
+        function generateGrid() {
+
+	    const game_size = Math.min(600,0.8*innerWidth);
+		
+	    const gridSize = 5;
+	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
+
+
+		function reset_coloration(){
 		const elements = document.querySelectorAll('.cell');
 
 		elements.forEach(element => {
@@ -102,13 +112,6 @@
 		}
 		focusedElement.style.backgroundColor = "red";
 	    }
-	    
-        function generateGrid() {
-
-	    const game_size = Math.min(600,0.8*innerWidth);
-		
-	    const gridSize = 5;
-	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
 		
 	    const cell_size = game_size / gridSize;
 		
