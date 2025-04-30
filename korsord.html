@@ -72,29 +72,17 @@
 
     <script>
 	var rot = true;
-	    
-        function generateGrid() {
 
-	    const game_size = Math.min(600,0.8*innerWidth);
-		
-	    const gridSize = 5;
-	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
-		
-	    const cell_size = game_size / gridSize;
-		
-	    const crosswordContainer = document.getElementById("crossword-container");
-            crosswordContainer.innerHTML = '';  // Clear any existing grid
-
-            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
-            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
-
-	    function reset_coloration(){
+	function reset_coloration(){
 		const elements = document.querySelectorAll('.cell');
 
 		elements.forEach(element => {
-		    element.style.backgroundColor = "white";
+		    if(this.value != "?"){
+		    	element.style.backgroundColor = "white";
+		    }
 		});
-
+		
+		let focusedElement = document.activeElement;
 		var foc_id = focusedElement.id;
 		var id_str = foc_id.id;
 		id_str = id_str.split("-");
@@ -115,6 +103,23 @@
 		}
 		focusedElement.style.backgroundColor = "red";
 	    }
+	    
+        function generateGrid() {
+
+	    const game_size = Math.min(600,0.8*innerWidth);
+		
+	    const gridSize = 5;
+	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
+		
+	    const cell_size = game_size / gridSize;
+		
+	    const crosswordContainer = document.getElementById("crossword-container");
+            crosswordContainer.innerHTML = '';  // Clear any existing grid
+
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridSize}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridSize}, ${cell_size}px)`;
+
+	    
 		
             for (let row = 0; row < gridSize; row++) {
                 for (let col = 0; col < gridSize; col++) {
