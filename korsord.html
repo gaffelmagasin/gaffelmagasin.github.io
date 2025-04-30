@@ -102,30 +102,52 @@
 		var xx = Number(id_str[0])
 		var yy = Number(id_str[1])
 
-		
-		for(var x1 = xx; x1>=0; x1--){
-			var get_id = String(x1) + "-" + String(yy);
-			var get_symbol = symbol_grid[x1][yy];
-
-			if(get_symbol == 1){
-				break;
+		if(rot){
+			for(var y1 = yy; y1>=0; y1--){
+				var get_id = String(xx) + "-" + String(y1);
+				var get_symbol = symbol_grid[xx][y1];
+	
+				if(get_symbol == 1){
+					break;
+				}
+				
+				
 			}
-			
-			
+			for(var y2 = y1+1; y2<gridHeight; y2++){
+				var get_id = String(xx) + "-" + String(y2);
+				console.log(get_id);
+				var get_symbol = symbol_grid[xx][y2];
+				if(get_symbol == 1){
+					break;
+				}
+				else{
+					document.getElementById(get_id).style.backgroundColor = "Gainsboro";
+				}
+			}
 		}
-
-		for(var x2 = x1+1; x2<gridWidth; x2++){
-			var get_id = String(x2) + "-" + String(yy);
-			console.log(get_id);
-			var get_symbol = symbol_grid[x2][yy];
-			if(get_symbol == 1){
-				break;
+		else{
+			for(var x1 = xx; x1>=0; x1--){
+				var get_id = String(x1) + "-" + String(yy);
+				var get_symbol = symbol_grid[x1][yy];
+	
+				if(get_symbol == 1){
+					break;
+				}
+				
+				
 			}
-			else{
-				document.getElementById(get_id).style.backgroundColor = "Gainsboro";
+			for(var x2 = x1+1; x2<gridWidth; x2++){
+				var get_id = String(x2) + "-" + String(yy);
+				console.log(get_id);
+				var get_symbol = symbol_grid[x2][yy];
+				if(get_symbol == 1){
+					break;
+				}
+				else{
+					document.getElementById(get_id).style.backgroundColor = "Gainsboro";
+				}
 			}
 		}
-			
 		focusedElement.style.backgroundColor = "DarkGrey";
 	    }
 		
@@ -144,7 +166,7 @@
                     const inputCell = document.createElement("input");
                     inputCell.classList.add("cell");
 		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
-		    inputCell.style.fontSize = `${cell_size-10}px`;
+		    inputCell.style.fontSize = `${cell_size-15}px`;
 		    inputCell.id = `${col}-${row}`;
                     inputCell.maxLength = 2;
                      var symbol = symbol_grid[col][row];
