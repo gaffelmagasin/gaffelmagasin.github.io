@@ -114,7 +114,16 @@
 			
 		}
 
-		for(let x2 =x1; x2<gridWidth; x2++)
+		for(let x2 =x1; x2<gridWidth; x2++){
+			var get_id = String(x1) + "-" + String(yy);
+			var get_symbol = symbol_grid[x1][yy];
+			if(get_symbol == 1){
+				break;
+			}
+			else{
+				document.getElementById(new_id).style.backgroundColor = "blue";
+			}
+		}
 			
 		focusedElement.style.backgroundColor = "red";
 	    }
