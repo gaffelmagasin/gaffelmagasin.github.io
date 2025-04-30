@@ -1,6 +1,6 @@
 <titel>Några husmorsråd gällande hemsläpet</titel>
 <bild>https://i.imgur.com/kKKQcS4.png</bild>
-<ingress>Elsa Bolander kommer inte med nåt nytt utan har gjort en uppföljare med några råd gällande inredning och hemsläp.</ingress>
+<ingress>Elsa Bolander har gjort en uppföljare med några råd gällande inredning och hemsläp.</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
 <datum>15 April 2025</datum>
