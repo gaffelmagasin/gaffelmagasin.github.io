@@ -252,7 +252,8 @@
 			
 		    });
 		    inputCell.addEventListener('click', (event) => {
-		           this.setSelectionRange(5, 5);
+		            var input = document.getElementById(this.id)
+			    input.setSelectionRange(5, 5);
 		    });
 			
                     crosswordContainer.appendChild(inputCell);
