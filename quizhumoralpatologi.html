@@ -78,12 +78,17 @@
       <script>
 		cur_question = 0;
 		num_questions = 11;
+
+		sang = 0;
+	        fleg = 0;
+	        kole = 0;
+	        mela = 0;
 	      
 		question_array = ["Fråga 1","F2","F3","F4","F5","f6","f7","8","9","10","11","12"];
-
-		console.log(question_array);
-
-		console.log(question_array[cur_question]);
+		answer1_array = [1,1,1,1,1,1,1,1,1,1,1,1];
+	        answer2_array = [2,2,2,2,2,2,2,2,2,2,2,2];
+	        answer3_array = [3,3,3,3,3,3,3,3,3,3,3,3];
+	        answer4_array = [4,4,4,4,4,4,4,4,4,4,4,4];
 	      
 		function update_questions(){
 			document.getElementById("question").innerHTML = question_array[cur_question];
@@ -93,8 +98,18 @@
 			if(cur_question < num_questions){
 				cur_question++
 				console.log(cur_question);
-	
+
+				a1 = document.getElementById("a1").value;
+				a2 = document.getElementById("a2").value;
+				a3 = document.getElementById("a3").value;
+				a4 = document.getElementById("a4").value;
+
+				console.log(a1,a2,a3,a4);
+				
 				update_questions();
+			}
+			else{
+				//end quiz
 			}
 		};
 
