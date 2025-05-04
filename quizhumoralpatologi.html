@@ -60,6 +60,10 @@
 		num_questions = 11;
 	      
 		question_array = ["Fråga 1","F2","F3","F4","F5","f6","f7","8","9","10","11","12"];
+
+		console.log(question_array);
+
+		console.log(question_array[0]);
 	      
 		function update_questions(){
 			document.getElementById("question").innerHTML = question_array[cur_question];
@@ -74,7 +78,7 @@
 			}
 		};
 
-	        update_questions();
+	        
       </script>
 	    
       <p id = "question">Fråga</p>
