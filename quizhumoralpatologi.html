@@ -119,24 +119,27 @@
 		}
 	      
 		function next_question(){
-			if(cur_question < num_questions){
-				cur_question++
-				console.log(cur_question);
-
-				a1 = document.getElementById("a1").checked;
-				a2 = document.getElementById("a2").checked;
-				a3 = document.getElementById("a3").checked;
-				a4 = document.getElementById("a4").checked;
-
-				sang += a1;
-				fleg += a2;
-				kole += a3;
-				mela += a4;
-				
-				update_questions();
+			a1 = document.getElementById("a1").checked;
+			a2 = document.getElementById("a2").checked;
+			a3 = document.getElementById("a3").checked;
+			a4 = document.getElementById("a4").checked;
+			if(a1 || a2 || a3 || a4){
+				if(cur_question < num_questions){
+					cur_question++
+					
+					sang += a1;
+					fleg += a2;
+					kole += a3;
+					mela += a4;
+					
+					update_questions();
+				}
+				else{
+					end_quiz();
+				}
 			}
 			else{
-				end_quiz();
+				
 			}
 		};
 
