@@ -86,17 +86,17 @@
       
 	      <p id = "question" class = "question">Fråga</p>
 	
-	      <input type = "radio" id = "a1" class = "answer" name = "quiz" value = "0">
-	      <label class = "answer" for="a1">Svar 1</label><br>
+	      <input type = "radio" id = "a1" class = "answer_radio" name = "quiz" value = "0">
+	      <label class = "answer" id = "la4" for="a1">Svar 1</label><br>
 		
-	      <input type = "radio" id = "a2" class = "answer" name = "quiz" value = "1">
-	      <label class = "answer" for="a2">Svar 2</label><br>
+	      <input type = "radio" id = "a2" class = "answer_radio" name = "quiz" value = "1">
+	      <label class = "answer" id = "la4" for="a2">Svar 2</label><br>
 	
-	      <input type = "radio" id = "a3" class = "answer" name = "quiz" value = "2">
-	      <label class = "answer" for="a3">Svar 3</label><br>
+	      <input type = "radio" id = "a3" class = "answer_radio" name = "quiz" value = "2">
+	      <label class = "answer" id = "la4" for="a3">Svar 3</label><br>
 	
-	      <input type = "radio" id = "a4" class = "answer" name = "quiz" value = "3">
-	      <label class = "answer" for="a4">Svar 4</label><br>
+	      <input type = "radio" id = "a4" class = "answer_radio" name = "quiz" value = "3">
+	      <label class = "answer" id = "la4" for="a4">Svar 4</label><br>
 	
 	      <button id = "next" class = "next" type = "button" onclick = "next_question()">Nästa</button>
 
@@ -120,10 +120,10 @@
 		function update_questions(){
 			document.getElementById("question").innerHTML = question_array[cur_question];
 
-			document.getElementById("a1").innerHTML = answer1_array[cur_question];
-			document.getElementById("a2").innerHTML = answer2_array[cur_question];
-			document.getElementById("a3").innerHTML = answer3_array[cur_question];
-			document.getElementById("a4").innerHTML = answer4_array[cur_question];
+			document.getElementById("la1").innerHTML = answer1_array[cur_question];
+			document.getElementById("la2").innerHTML = answer2_array[cur_question];
+			document.getElementById("la3").innerHTML = answer3_array[cur_question];
+			document.getElementById("la4").innerHTML = answer4_array[cur_question];
 		}
 
 		function end_quiz(){
