@@ -21,6 +21,18 @@
 		            overflow-x: hidden !important;
             }
 
+		.holder{
+			
+		}
+		.question{
+			
+		}
+		.answer{
+			
+		}
+		.next{
+			
+		}
 		
         </style>
     </head>
@@ -58,23 +70,26 @@
 
 
      
-	    
-      <p id = "question">Fråga</p>
-
-      <input type = "radio" id = "a1" name = "quiz" value = "0">
-      <label for="a1">Svar 1</label><br>
+      <div class = "holder"> 
+      
+	      <p id = "question" class = "question">Fråga</p>
 	
-      <input type = "radio" id = "a2" name = "quiz" value = "1">
-      <label for="a2">Svar 2</label><br>
+	      <input type = "radio" id = "a1" class = "answer" name = "quiz" value = "0">
+	      <label for="a1">Svar 1</label><br>
+		
+	      <input type = "radio" id = "a2" class = "answer" name = "quiz" value = "1">
+	      <label for="a2">Svar 2</label><br>
+	
+	      <input type = "radio" id = "a3" class = "answer" name = "quiz" value = "2">
+	      <label for="a3">Svar 3</label><br>
+	
+	      <input type = "radio" id = "a4" class = "answer" name = "quiz" value = "3">
+	      <label for="a4">Svar 4</label><br>
+	
+	      <button id = "next" class = "next" type = "button" onclick = "next_question()">Nästa</button>
 
-      <input type = "radio" id = "a3" name = "quiz" value = "2">
-      <label for="a3">Svar 3</label><br>
-
-      <input type = "radio" id = "a4" name = "quiz" value = "3">
-      <label for="a4">Svar 4</label><br>
-
- 	<button id = "next" type = "button" onclick = "next_question()">Nästa</button>
-
+      </div> 
+	      
       <script>
 		cur_question = 0;
 		num_questions = 11;
@@ -92,6 +107,15 @@
 	      
 		function update_questions(){
 			document.getElementById("question").innerHTML = question_array[cur_question];
+
+			document.getElementById("a1").innerHTML = answer1_array[cur_question];
+			document.getElementById("a2").innerHTML = answer2_array[cur_question];
+			document.getElementById("a3").innerHTML = answer3_array[cur_question];
+			document.getElementById("a4").innerHTML = answer4_array[cur_question];
+		}
+
+		function end_quiz(){
+			console.log([sang,fleg,kole,mela]);
 		}
 	      
 		function next_question(){
@@ -104,12 +128,15 @@
 				a3 = document.getElementById("a3").checked;
 				a4 = document.getElementById("a4").checked;
 
-				console.log(a1,a2,a3,a4);
+				sang += a1;
+				fleg += a2;
+				kole += a3;
+				mela += a4;
 				
 				update_questions();
 			}
 			else{
-				//end quiz
+				end_quiz();
 			}
 		};
 
