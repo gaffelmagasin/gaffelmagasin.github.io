@@ -1,0 +1,7 @@
+<titel>Aladåbens återkomst</titel>
+<bild>https://i.imgur.com/FaIf5OS.png</bild>
+<ingress>Världen är på dåligt humör. Kanske kan aladåben vara räddningen.</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<datum>6 Maj 2025</datum>
+<fotograf>Wikimedia Commons</fotograf>
