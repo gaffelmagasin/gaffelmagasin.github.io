@@ -10,6 +10,10 @@
 		  font-family: helvetica_bold;
 		  src: url(font/Helvetica-Bold.ttf) format("truetype");
 	    }
+		@font-face {
+		  font-family: Atkinson-Bold;
+		  src: url(font/AtkinsonHyperlegible-Bold.ttf) format("truetype");
+		}
 		
 	    body { 
 
@@ -49,21 +53,25 @@
 			display: inline-block;
 			width: 100%;
 			margin-bottom: 15px;
-			border-style: solid;
-			border-color: white;
-			border: 2px;
+
 			
 		}
 		.answer_radio:checked + .answer{
 			color: white;
 			background-color: black;
-			border-style: solid;
-			border-color: white;
-			border: 2px;
 			
 		}
 		.next{
 			background-color: white;
+			border: none;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			font-family: Atkinson-Bold;
+			margin: auto;
 		}
 		
         </style>
