@@ -82,12 +82,6 @@
 			background-color: black;
 			
 		}
-
-		@keyframes switch_anim {
-			0% {opacity: 1;}
-			50% {opacity: 1;}
-			100% {opacity: 0;}
-		}
 		
 		.next{
 			  background-color: white;
@@ -211,12 +205,6 @@
 					fleg += a2;
 					kole += a3;
 					mela += a4;
-
-					document.getElementById("question").style.animation = `switch_anim 1s`;
-					document.getElementById("a1").style.animation = `switch_anim 1s`;
-					document.getElementById("a2").style.animation = `switch_anim 1s`;
-					document.getElementById("a3").style.animation = `switch_anim 1s`;
-					document.getElementById("a4").style.animation = `switch_anim 1s`;
 					
 					update_questions();
 				}
