@@ -82,6 +82,11 @@
 			background-color: black;
 			
 		}
+
+		@end_anim{
+		  0% {opacity: 1;}
+		  100% {opacity: 0;}
+		}
 		
 		.next{
 			  background-color: white;
@@ -190,6 +195,12 @@
 
 		function end_quiz(){
 			console.log([sang,fleg,kole,mela]);
+
+			document.getElementById("question").style.animation = `end_anim 1s`;
+			document.getElementById("la1").style.animation = `end_anim 1s`;
+			document.getElementById("la2").style.animation = `end_anim 1s`;
+			document.getElementById("la3").style.animation = `end_anim 1s`;
+			document.getElementById("la4").style.animation = `end_anim 1s`;
 		}
 	      
 		function next_question(){
