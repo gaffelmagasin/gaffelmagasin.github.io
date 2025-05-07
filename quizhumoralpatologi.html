@@ -38,6 +38,19 @@
 			padding: 10px;
 			margin-bottom: 15px;
 		}
+		
+		.tip{
+			font-family: georgia;
+			color: white;
+			margin-top: 15px;
+			
+		}
+		@keyframes tip_anim {
+		  0% {opacity: 0;}
+		  1% {opacity: 1;}
+		  100% {opacity: 0;}
+		}
+		
 		.answer_radio{
 			accent-color: white;
 			
@@ -55,6 +68,10 @@
 			margin-bottom: 15px;
 
 			
+		}
+		.answer:hover{
+			color: white;
+			background-color: black;
 		}
 		.answer_radio:checked + .answer{
 			color: white;
@@ -134,6 +151,7 @@
 	
 	      <button id = "next" class = "next" type = "button" onclick = "next_question()">Nästa</button>
 
+	      <p id = "tip_id" class = "tip">Du måste välja nån dummer.</p>
       </div> 
 	      
       <script>
@@ -190,7 +208,7 @@
 				}
 			}
 			else{
-				
+				document.getElementById("tip_id").style.animation = `tip_anim 2s`;
 			}
 		};
 
