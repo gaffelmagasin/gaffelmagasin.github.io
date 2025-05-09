@@ -202,6 +202,20 @@
 		function end_quiz(){
 			console.log([sang,fleg,kole,mela]);
 
+			var highest = Math.max(sang,fleg,kole,mela);
+
+			var is_sang = false;
+			var is_fleg = false;
+			var is_kole = false;
+			var is_mela = false;
+
+			if(sang == highest){is_sang = true}
+			if(fleg == highest){is_fleg = true}
+			if(kole == highest){is_kole = true}
+			if(mela == highest){is_mela = true}
+
+			index = 8*sang + 4*fleg + 2*kole + mela;
+			
 			fadeOutAndRemove(document.getElementById("holder_id"))
 
 		}
