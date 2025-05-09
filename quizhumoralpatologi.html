@@ -198,9 +198,9 @@
 		}
 	      
 		function update_questions(){
-			document.getElementById("holder_id").style.animation = `fade_out_anim 1s`;
+			document.getElementById("holder_id").style.animation = `fade_out_anim 0.3s`;
 			setTimeout(() => {
-				document.getElementById("holder_id").style.animation = `fade_in_anim 1s`;
+				document.getElementById("holder_id").style.animation = `fade_in_anim 0.3s`;
 
 				document.getElementById("question").innerHTML = question_array[cur_question];
 
@@ -213,7 +213,7 @@
 				document.getElementById("a2").checked = false;
 				document.getElementById("a3").checked = false;
 				document.getElementById("a4").checked = false;
-			}, 1000);
+			}, 300);
 
 			
 			
