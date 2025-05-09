@@ -207,8 +207,13 @@
 		}
 	      
 		function update_questions(){
-			document.getElementById("holder_id").style.animation = `null 0s`;
-			document.getElementById("holder_id").style.animation = `fade_in_out_anim 0.6s`;
+
+			var el = document.getElementById("holder_id");
+			
+			el.style.animation = "none";
+ 			el.offsetHeight;                   
+			el.style.animation = `fade_in_out_anim 0.6s`;
+			
 			setTimeout(() => {
 
 				document.getElementById("question").innerHTML = question_array[cur_question];
