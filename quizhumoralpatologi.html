@@ -30,6 +30,23 @@
 			margin: auto;
 			margin-top: 20px;
 		}
+
+		.fade_out{
+			animation fade_out_anim 0.5s;
+		}
+		.fade_in{
+			animation fade_in_anim 0.5s;
+		}
+		
+		@keyframes fade_out_anim {
+		  0% {opacity: 1;}
+		  100% {opacity: 0;}
+		}
+		@keyframes fade_in_anim {
+		  0% {opacity: 0;}
+		  100% {opacity: 100;}
+		}
+		
 		.question{
 			font-family: georgia;
 			background-color: white;
@@ -186,6 +203,13 @@
 		}
 	      
 		function update_questions(){
+			
+			document.getElementById("holder_id").classList.add('fade_out');
+			setTimeout(() => {
+			    document.getElementById("holder_id").classList.add('fade_in');
+			}, 500);
+
+			
 			document.getElementById("question").innerHTML = question_array[cur_question];
 
 			document.getElementById("la1").innerHTML = answer1_array[cur_question];
