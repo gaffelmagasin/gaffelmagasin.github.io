@@ -32,10 +32,12 @@
 		}
 
 		.fade_out{
-			animation fade_out_anim 0.5s;
+			animation-name = fade_out_anim;
+			animation-duration = 1s;
 		}
 		.fade_in{
-			animation fade_in_anim 0.5s;
+			animation-name = fade_in_anim;
+			animation-duration = 1s;
 		}
 		
 		@keyframes fade_out_anim {
@@ -220,7 +222,7 @@
 				document.getElementById("a2").checked = false;
 				document.getElementById("a3").checked = false;
 				document.getElementById("a4").checked = false;
-			}, 500);
+			}, 1000);
 
 			
 			
