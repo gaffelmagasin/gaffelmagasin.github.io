@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<!-- Google tag (gtag.js) -->
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-HR8REX9FGG"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-HR8REX9FGG');
+	</script>-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TAROTMASKINEN</title>
+        
+	<style>
+            @font-face {
+		  font-family: helvetica_bold;
+		  src: url(font/Helvetica-Bold.ttf) format("truetype");
+	    }
+		
+	    body { 
+
+                background-color: black;
+
+            	     	margin: 0px;
+            		padding: 0px;
+            		max-width: 100vw !important;
+            		overflow-x: hidden !important;
+            }
+
+
+	    .intr{
+		    text-align: center;
+		    font-family: "Times New Roman", Times, serif;
+		    font-size: 1.1em;
+		    color: white;
+		    margin-bottom: 20px;
+	    }
+
+        </style>
+    </head>
+    <body>
+        <div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+		
+    	</script></div>
+
+
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+		
+	</script>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0b-nFSUXcuM?si=duhuA49RhkAfo0VO&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	    
+    </body>
+</html>
