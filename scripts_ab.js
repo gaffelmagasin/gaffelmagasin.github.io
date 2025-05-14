@@ -49,13 +49,13 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 		//bild
 		new_html += `<div style = "width: 100%; height: auto; display: table; margin-bottom: 10px; position: relative;">
 	
-				<img src = ${bild} id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto; display: table-row; float: right;"></img>`
+				<img src = ${bild} alt=`${titel}` id = ${'bild' + div_id} style = "width: ${imgw}%; height: auto; display: table-row; float: right;"></img>`
 	
 	
 		//porträtt
 		if(portrait != "-1"){
-			if(!small){	new_html += `<img src = porträtt/${portrait}.png style = "width: 15%; height 15%; position: absolute; left: 32%; bottom: 0px; z-index: 2;"> </img>`}
-			else{		new_html += `<img src = porträtt/${portrait}.png style = "width: 35%; height 35%; position: absolute; right: 0%; bottom: 0px; z-index: 2;"> </img>`}
+			if(!small){	new_html += `<img src = porträtt/${portrait}.png alt=`${data}` style = "width: 15%; height 15%; position: absolute; left: 32%; bottom: 0px; z-index: 2;"> </img>`}
+			else{		new_html += `<img src = porträtt/${portrait}.png alt=`${data}` style = "width: 35%; height 35%; position: absolute; right: 0%; bottom: 0px; z-index: 2;"> </img>`}
 		}
 		
 		//start
