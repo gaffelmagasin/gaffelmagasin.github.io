@@ -1,0 +1,7 @@
+<titel>Hemlig intervju med Jules and the Vernes</titel>
+<bild>https://i.imgur.com/iQOSqeV.png</bild>
+<ingress>Nils Hagberg har intervjuat ett band.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>14 Maj 2025</datum>
+<fotograf>F: Nils Hagberg + Wikimedia Commons</fotograf>
