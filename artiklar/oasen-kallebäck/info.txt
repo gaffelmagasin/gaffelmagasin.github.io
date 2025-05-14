@@ -1,0 +1,6 @@
+<titel>Oasen Kallebäck</titel>
+<bild>https://i.imgur.com/N64UP9L.png</bild>
+<ingress>"Infrastrukturen som byggts kring Kallebäck har lett till att orten, trots sitt relativt centrala läge, känns som en ö i fjärran" Elias Rågholm om Kallebäck</ingress>
+<skribent>Elias Rågholm</skribent>
+<porträtt>elias_spg</porträtt>
+<datum>14 Maj 2025</datum>
