@@ -1,6 +1,6 @@
-<titel>Bechtel in Zürich</titel>
+<titel>Bechdel in Zürich</titel>
 <bild>https://imgur.com/a/cI0Awda</bild>
-<ingress>Elsa Bolander har åkt till Zürich för att intervjua en tjej och passerar (nästan) Bechtel-testet.</ingress>
+<ingress>Elsa Bolander har åkt till Zürich för att intervjua en tjej och passerar (nästan) Bechdel-testet.</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
 <datum>20 Maj 2025</datum>
