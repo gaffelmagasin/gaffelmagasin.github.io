@@ -1,5 +1,5 @@
 <titel>Kents vålnad</titel>
-<bild></bild>
+<bild>https://i.imgur.com/CuajlTq.png</bild>
 <ingress>Det går ett spöke genom svensk musikscen, Kents spöke, Vilgot Andersson skriver om bandet som vägrar att dö och nämner hälften av alla sveriges aktiva band.</ingress>
 <skribent>Vilgot Andersson</skribent>
 <porträtt>vilgot_spg</porträtt>
