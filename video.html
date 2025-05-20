@@ -19,6 +19,10 @@
 		  font-family: helvetica_bold;
 		  src: url(font/Helvetica-Bold.ttf) format("truetype");
 	    }
+	     @font-face {
+    		  font-family: morfeta;
+    		  src: url(font/MorfetaGealmord-5158V.otf) format("opentype");
+    		}
 		
 	    body { 
 
@@ -30,6 +34,14 @@
             		overflow-x: hidden !important;
             }
 
+	    .titel{
+                  font-family: morfeta;
+		  font-size: clamp(10px,7vw,70px);
+		  line-height: 90%;
+		  color: white;
+
+		    margin-auto;
+            }
 
 	    .intr{
 		    text-align: center;
@@ -95,7 +107,7 @@
 		
 	</script>
 
-
+<p class = "titel" id = "titel_id">Video</p>
 <div class = "container">
   <iframe class = "responsive-iframe" id = "vs" src="https://www.youtube.com/embed/0b-nFSUXcuM?si=duhuA49RhkAfo0VO&amp;controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -128,6 +140,7 @@
 
 		document.title = titel;
 		document.getElementById("vs").src = url;
+		document.getElementById("titel_id").innerHTML = titel;
 		  
 		console.log(titel);
 		console.log(url);
