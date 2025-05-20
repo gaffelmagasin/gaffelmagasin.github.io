@@ -94,7 +94,7 @@
 
 
 <div class = "container">
-  <iframe class = "responsive-iframe" src="https://www.youtube.com/embed/0b-nFSUXcuM?si=duhuA49RhkAfo0VO&amp;controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class = "responsive-iframe" id = "vs" src="https://www.youtube.com/embed/0b-nFSUXcuM?si=duhuA49RhkAfo0VO&amp;controls=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
  <script>
         function content_of_tag(str,tag,start){
@@ -122,6 +122,8 @@
             	var titel = content_of_tag(a_str,"titel",0);
 		var url = content_of_tag(a_str,"url",0);
 		var beskrivning = content_of_tag(a_str,"beskrivning",0);
+
+		document.getElementById("vs").src = url;
 		  
 		console.log(titel);
 		console.log(url);
