@@ -1,5 +1,5 @@
-<titel>Bechdel in Zürich</titel>
-<bild>https://imgur.com/a/cI0Awda</bild>
+<titel>Gaffel passerar (nästan) bechdeltestet</titel>
+<bild>https://i.imgur.com/JucBFPy.png</bild>
 <ingress>Elsa Bolander har åkt till Zürich för att intervjua en tjej och passerar (nästan) Bechdel-testet.</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
