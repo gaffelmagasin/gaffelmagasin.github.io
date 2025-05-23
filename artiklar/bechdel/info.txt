@@ -1,6 +1,6 @@
 <titel>Gaffel passerar (nästan) bechdeltestet</titel>
 <bild>https://i.imgur.com/JucBFPy.png</bild>
-<ingress>Elsa Bolander har åkt till Zürich för att intervjua en tjej och passerar (nästan) Bechdel-testet.</ingress>
+<ingress>Elsa Bolander har åkt till Zürich för att intervjua en tjej och passerar (nästan) bechdeltestet.</ingress>
 <skribent>Elsa Bolander</skribent>
 <porträtt>elsa_spg</porträtt>
 <datum>20 Maj 2025</datum>
