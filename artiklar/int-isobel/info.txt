@@ -1,0 +1,7 @@
+<titel>Intervjun med Isobel</titel>
+<bild>https://i.imgur.com/yj4GYs7.png</bild>
+<ingress>"Musik & konst är nr. 1 rich kid sport dock, det vet alla. Äkta skallar skriver prosa." Nils Hagberg har intervjuat bandet Isobel per mejl.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>28 Maj 2025</datum>
+<fotograf>Lovisa Persson</fotograf>
