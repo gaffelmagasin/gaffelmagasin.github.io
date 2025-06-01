@@ -1,6 +1,6 @@
 <titel>5 band i obskyrheten</titel>
 <bild>https://i.imgur.com/4LdNLT5.png</bild>
-<ingress></ingress>
+<ingress>Vi ville inte bli musikjournalister. Genomsnittsmännsikan vill inte va det, Gaffel listar därför 4 band och 1 kille i obskyrheten som man bör se.</ingress>
 <skribent>Redaktionen</skribent>
 <datum>1 Juni 2025</datum>
 <fotograf>Wikimedia Commons</fotograf>
