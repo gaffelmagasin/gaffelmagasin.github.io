@@ -1,0 +1,6 @@
+<titel>5 band i obskyrheten</titel>
+<bild>https://i.imgur.com/4LdNLT5.png</bild>
+<ingress></ingress>
+<skribent>Redaktionen</skribent>
+<datum>1 Juni 2025</datum>
+<fotograf>Wikimedia Commons</fotograf>
