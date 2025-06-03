@@ -299,20 +299,25 @@
 
 			var highest = Math.max(sang,fleg,kole,mela);
 
-			var is_sang = false;
-			var is_fleg = false;
-			var is_kole = false;
-			var is_mela = false;
+			var is_sang = 0;
+			var is_fleg = 0;
+			var is_kole = 0;
+			var is_mela = 0;
 
-			if(Math.abs(sang - highest) <= 1){is_sang = true}
-			if(Math.abs(fleg - highest) <= 1){is_fleg = true}
-			if(Math.abs(kole - highest) <= 1){is_kole = true}
-			if(Math.abs(mela - highest) <= 1){is_mela = true}
+			if(Math.abs(sang - highest) <= 1){is_sang = 1}
+			if(Math.abs(fleg - highest) <= 1){is_fleg = 1}
+			if(Math.abs(kole - highest) <= 1){is_kole = 1}
+			if(Math.abs(mela - highest) <= 1){is_mela = 1}
 
 			index = 8*sang + 4*fleg + 2*kole + mela;
 
 			img_array = ["ingen","melankolikern","kolerikern","melakolerikern","flegmatikern","melaflegmatikern","koleflegmatikern","asangvinikern","sangvinikern","melasangvinikern","kolesangvinikern","aflegmatikern","sangflegmatikern","akolerikern","amelankolikern","jämnvikt"]
-
+			console.log(is_sang)
+			console.log(is_fleg)
+			console.log(is_kole)
+			console.log(is_mela)
+			
+			console.log(index)
 			console.log(img_array[index])
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))
