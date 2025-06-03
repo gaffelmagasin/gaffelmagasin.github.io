@@ -187,10 +187,11 @@
 
 	      <p id = "tip_id" class = "tip">Du måste välja nåt alternativ dummer.</p>
 
-	      <img class = "card" id = "resultat" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
+	      
 	      
       </div> 
-	      
+      <img class = "card" id = "resultat" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
+	    
       <script>
 		cur_question = 0;
 		num_questions = 9;
@@ -268,6 +269,7 @@
 		  el.style.opacity = 0;
 		
 		  setTimeout(() => {
+	            document.getElementById("resultat").style.display = "block";
 		    if (el.parentNode) {
 		      el.parentNode.removeChild(el);
 		    }
@@ -327,7 +329,7 @@
 			console.log(index)
 			console.log(img_array[index])
 
-			document.getElementById("resultat").style.display = "block";
+			
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))
 
