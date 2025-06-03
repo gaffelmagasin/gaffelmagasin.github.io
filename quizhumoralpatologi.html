@@ -187,7 +187,7 @@
 
 	      <p id = "tip_id" class = "tip">Du måste välja nåt alternativ dummer.</p>
 
-	      <img class = "card" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
+	      <img class = "card" id = "resultat" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
 	      
       </div> 
 	      
@@ -328,6 +328,8 @@
 			console.log(img_array[index])
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))
+
+			document.GetElementById("resultat").style.display = "block";
 
 		}
 	      
