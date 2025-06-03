@@ -323,17 +323,12 @@
 			index = 8*is_sang + 4*is_fleg + 2*is_kole + is_mela;
 
 			img_array = ["ingen","melankolikern","kolerikern","melakolerikern","flegmatikern","melaflegmatikern","koleflegmatikern","asangvinikern","sangvinikern","melasangvinikern","kolesangvinikern","aflegmatikern","sangflegmatikern","akolerikern","amelankolikern","jämnvikt"]
-			console.log(is_sang)
-			console.log(is_fleg)
-			console.log(is_kole)
-			console.log(is_mela)
-			
-			console.log(index)
-			console.log(img_array[index])
+			soruce = "bilder/humoral/" + img_array[index] + ".png";
 
 			var el = document.getElementById("resultat")
 			el.style.display = "block";
-		   	el.style.animation = `fade_in_anim 4s`
+		   	el.style.animation = `fade_in_anim 3s`
+			el.src = source;
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))			
 
