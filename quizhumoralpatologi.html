@@ -270,11 +270,7 @@
 		  el.style.transition = `opacity ${duration}ms ease`;
 		  el.style.opacity = 0;
 		
-		  setTimeout(() => {
-	            	var el = document.getElementById("resultat")
-			el.style.display = "block";
-		   	el.style.animation = `fade_in 2s`
-		    
+		  setTimeout(() => {	            			    
 		   if (el.parentNode) {
 		      el.parentNode.removeChild(el);
 		    }
@@ -334,11 +330,11 @@
 			console.log(index)
 			console.log(img_array[index])
 
+			var el = document.getElementById("resultat")
+			el.style.display = "block";
+		   	el.style.animation = `fade_in 2s`
 			
-			
-			fadeOutAndRemove(document.getElementById("holder_id"))
-
-			
+			fadeOutAndRemove(document.getElementById("holder_id"))			
 
 		}
 	      
