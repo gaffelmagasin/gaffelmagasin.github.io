@@ -304,12 +304,16 @@
 			var is_kole = false;
 			var is_mela = false;
 
-			if(sang == highest){is_sang = true}
-			if(fleg == highest){is_fleg = true}
-			if(kole == highest){is_kole = true}
-			if(mela == highest){is_mela = true}
+			if(Math.abs(sang - highest) <= 1){is_sang = true}
+			if(Math.abs(fleg - highest) <= 1){is_fleg = true}
+			if(Math.abs(kole - highest) <= 1){is_kole = true}
+			if(Math.abs(mela - highest) <= 1){is_mela = true}
 
 			index = 8*sang + 4*fleg + 2*kole + mela;
+
+			img_array = ["ingen","melankolikern","kolerikern","melakolerikern","flegmatikern","melaflegmatikern","koleflegmatikern","asangvinikern","sangvinikern","melasangvinikern","kolesangvinikern","aflegmatikern","sangflegmatikern","akolerikern","amelankolikern","jämnvikt"]
+
+			console.log(img_array[index])
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))
 
