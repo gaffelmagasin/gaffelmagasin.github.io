@@ -128,6 +128,8 @@
 		}
 
 		.card{
+			width: clamp(100px,100vw,500px);
+			margin: auto;
 			display: none;
 		}
 		
@@ -269,8 +271,11 @@
 		  el.style.opacity = 0;
 		
 		  setTimeout(() => {
-	            document.getElementById("resultat").style.display = "block";
-		    if (el.parentNode) {
+	            	var el = document.getElementById("resultat")
+			el.style.display = "block";
+		   	el.style.animation = `fade_in 2s`
+		    
+		   if (el.parentNode) {
 		      el.parentNode.removeChild(el);
 		    }
 		  }, duration);
