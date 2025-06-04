@@ -1,0 +1,7 @@
+<titel>Placerad i en frack</titel>
+<bild>https://i.imgur.com/wka2Plc.png</bild>
+<ingress>"Det fanns dock ett litet aber, nämligen klädkoden ”akademisk högtidsdräkt”, vilket betydde frack för mig som man" Theodor Vogel om den gången han bar frack.</ingress>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theodor_spg</porträtt>
+<datum>4 Juni 2025</datum>
+<fotograf>Wikimedia Commons</fotograf>
