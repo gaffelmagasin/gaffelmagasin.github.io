@@ -136,11 +136,14 @@
 			color: white;
 			background-color: black;
 		}
-
-		.card{
+		.result_div{
+			display: none;
 			width: clamp(100px,100vw,600px);
 			margin: auto;
-			display: none;
+		}
+		.card{
+			
+			
 		}
 		
         </style>
@@ -203,8 +206,9 @@
 	      
 	      
       </div> 
-      <img class = "card" id = "resultat" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
-	    
+      <div class = "result_div" id = "resultat">
+	<img class = "card"  src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
+      </div>    
       <script>
 		cur_question = 0;
 		num_questions = 9;
