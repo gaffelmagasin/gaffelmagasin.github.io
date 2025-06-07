@@ -142,8 +142,8 @@
 			margin: auto;
 		}
 		.card{
-			
-			
+			width: 100%;
+			height: auto;
 		}
 		
         </style>
@@ -207,7 +207,7 @@
 	      
       </div> 
       <div class = "result_div" id = "resultat">
-	<img class = "card"  src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
+	<img class = "card" id = "res_kort" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Logo_BILD.svg/800px-Logo_BILD.svg.png"></img>
       </div>    
       <script>
 		cur_question = 0;
@@ -339,10 +339,12 @@
 			img_array = ["ingen","melankolikern","kolerikern","melakolerikern","flegmatikern","melaflegmatikern","koleflegmatikern","asangvinikern","sangvinikern","melasangvinikern","kolesangvinikern","aflegmatikern","sangflegmatikern","akolerikern","amelankolikern","jämnvikt"]
 			source = "bilder/humoral/" + img_array[index] + ".png";
 
-			var el = document.getElementById("resultat")
+			var el = document.getElementById("resultat");
 			el.style.display = "block";
 		   	el.style.animation = `fade_in_anim 3s`
-			el.src = source;
+			
+			var el2 = document.getElementById("res_kort");
+			el2.src = source;
 			
 			fadeOutAndRemove(document.getElementById("holder_id"))			
 
