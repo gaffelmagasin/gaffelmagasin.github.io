@@ -307,8 +307,25 @@
 	<div class = tidning>
 		
 		<div id = 'top' style = "width: 100%; margin-top: 20px; margin-bottom: 20px;">
+			<div id="quiz"></div>
+			<script>
+			var new_html = `<a href = "quizjumoralpatologi">`
 			
-			<div id = 'blickfång1'><script>draw_article_button('blickfång1','int-jules-and-the-vernes',isMobile)</script></div>
+			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+			if(isMobile == false){
+				new_html += 	`<img src =  "https://i.imgur.com/Edjg9hj.png"
+						style = "width: 100%; float: right;">
+						</img>`
+			}
+			else{
+				new_html += 	`<img src =  "https://i.imgur.com/FWaqFRP.png"
+						style = "width: 100%; float: right; background: black;">
+						</img>`
+			}
+			new_html += "</a>"
+			document.getElementById("quiz").innerHTML = new_html;
+			</script>
+			<!--<div id = 'blickfång1'><script>draw_article_button('blickfång1','int-jules-and-the-vernes',isMobile)</script></div>-->
 			<div style = "background: black; width: 100%;">
 
 			</div>
