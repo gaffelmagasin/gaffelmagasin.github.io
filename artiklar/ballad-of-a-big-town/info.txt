@@ -1,0 +1,6 @@
+<titel>Ballad of a big town</titel>
+<bild>https://i.imgur.com/UeZvJ9q.png</bild>
+<ingress>“Det är nästan som att man tappar alla journalistiska insikter“ Douglas Diamond mötte Sverige. Love Wickelgren Svensby följde honom.</ingress>
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
+<datum>13 Juni 2025</datum>
