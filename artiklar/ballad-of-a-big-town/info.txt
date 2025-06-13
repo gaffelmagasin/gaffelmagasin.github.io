@@ -4,3 +4,4 @@
 <skribent>Love Wickelgren Svensby</skribent>
 <porträtt>love_spg</porträtt>
 <datum>13 Juni 2025</datum>
+<fotograf>F: Fredrik Strage</fotograf>
