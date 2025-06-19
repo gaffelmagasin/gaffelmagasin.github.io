@@ -307,25 +307,8 @@
 	<div class = tidning>
 		
 		<div id = 'top' style = "width: 100%; margin-top: 20px; margin-bottom: 20px;">
-			<div id="quiz"></div>
-			<script>
-			var new_html = `<a href = "quizhumoralpatologi">`
 			
-			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
-			if(isMobile == false){
-				new_html += 	`<img src =  "https://i.imgur.com/Edjg9hj.png"
-						style = "width: 100%; float: right;">
-						</img>`
-			}
-			else{
-				new_html += 	`<img src =  "https://i.imgur.com/FWaqFRP.png"
-						style = "width: 100%; float: right; background: black;">
-						</img>`
-			}
-			new_html += "</a>"
-			document.getElementById("quiz").innerHTML = new_html;
-			</script>
-			<div id = 'blickfång1'><script>draw_article_button('blickfång1','ballad-of-a-big-town',isMobile)</script></div>
+			<div id = 'blickfång1'><script>draw_article_button('blickfång1','inne-ute-jul-25',isMobile)</script></div>
 			<div style = "background: black; width: 100%;">
 
 			</div>
@@ -387,14 +370,32 @@
 			<div id = 'main61'><script>draw_article_button('main61','placerad-i-en-frack',isMobile)</script></div>
 																						
 			<h2 style = "width: 100%;">GAFFELS INNE-UTE-LISTA</h2>
-			<div id = 'iul'><script>draw_article_button('iul','inne-ute-jun-25',isMobile)</script></div>
+			<div id = 'iul'><script>draw_article_button('iul','inne-ute-jul-25',isMobile)</script></div>
 			<div style = "display: grid;">
+				<a class = 'artikel_knapp' href='/artikel?=inne-ute-jun-25'>JUNI</a>
 				<a class = 'artikel_knapp' href='/artikel?=inne-ute-maj-25'>MAJ</a>
-				<a class = 'artikel_knapp' href='/artikel?=inne-ute-apr-25'>APRIL</a>	
-				<a class = 'artikel_knapp' href='/artikel?=inne-ute-mar-25'>MARS</a>																
+				<a class = 'artikel_knapp' href='/artikel?=inne-ute-apr-25'>APRIL</a>																		
 			</div>
 			
 			<h2 style = "width: 100%;">ÄLDRE</h2>
+			<div id="quiz"></div>
+			<script>
+			var new_html = `<a href = "quizhumoralpatologi">`
+			
+			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+			if(isMobile == false){
+				new_html += 	`<img src =  "https://i.imgur.com/Edjg9hj.png"
+						style = "width: 100%; float: right;">
+						</img>`
+			}
+			else{
+				new_html += 	`<img src =  "https://i.imgur.com/FWaqFRP.png"
+						style = "width: 100%; float: right; background: black;">
+						</img>`
+			}
+			new_html += "</a>"
+			document.getElementById("quiz").innerHTML = new_html;
+			</script>
 			<!--<div id="tarot"></div>
 			<script>
 			var new_html = `<a href = "tarot">`
