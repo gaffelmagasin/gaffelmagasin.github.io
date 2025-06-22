@@ -2,5 +2,6 @@
 <bild>https://i.imgur.com/gxENz4b.png</bild>
 <ingress>Gaffel blev officiell inoffieciell tredje statsmakt i en stat som existerade i 5 timmar, följande är vad som hände på Civilpolis och EMB:s En stat i en Stat</ingress>
 <skribent>Albin G Carlsson + Elias Rågholm</skribent>
+<porträtt>albin_elias_spg</porträtt>
 <datum>21 Juni 2025</datum>
 <fotograf></fotograf>
