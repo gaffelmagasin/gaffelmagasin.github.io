@@ -1,6 +1,7 @@
 <titel>Tuppjuck: Intervjun med Cockhouse</titel>
 <bild>https://i.imgur.com/nuXFGJy.png</bild>
 <ingress>”Dampig, fånig, genial, oseriös, välproddad, på skämt, på allvar, med flit.” Theodor Vogel har intervjuat bandet Cockhouse</ingress>
-<skribent>Redaktionen</skribent>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theo_spg</porträtt>
 <datum>25 Juni 2025</datum>
-<fotograf>Wikimedia Commons</fotograf>
+<fotograf>F: Theodor Vogel</fotograf>
