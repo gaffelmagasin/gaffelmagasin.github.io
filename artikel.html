@@ -347,6 +347,37 @@
 
 			wi = e_hi2+5;
 		}
+
+		 let f = ".jpg";
+		    let img_num = b_str.split(f).length - 1;
+		    
+
+		var wi = 0
+		for (let i = 0; i < img_num; i++) {
+		  	wi = b_str.indexOf(` width:`,wi);
+			var e_wi = b_str.indexOf(`;`,wi);
+			
+			var hi = b_str.indexOf(` height:`,wi);
+			var e_hi = b_str.indexOf(`;`,hi);
+			
+
+			wi2 = b_str.indexOf(`"width:`,wi)+1;
+			var e_wi2 = b_str.indexOf(`;`,wi2);
+			var hi2 = b_str.indexOf(` height:`,wi2);
+			var e_hi2 = b_str.indexOf(`;`,hi2);
+
+			var w = b_str.substring(wi,e_wi);
+			var h = b_str.substring(hi,e_hi);
+			var w2 = b_str.substring(wi2,e_wi2);
+			var h2 = b_str.substring(hi2,e_hi2);
+			
+			b_str = b_str.replaceAll(w,'width: 100%');
+			b_str = b_str.replaceAll(h,'height: auto');
+			b_str = b_str.replaceAll(w2,'width: 100%');
+			b_str = b_str.replaceAll(h2,'height: auto');
+
+			wi = e_hi2+5;
+		}
 		  
 		
            	 document.getElementById('innehåll').innerHTML = b_str;
