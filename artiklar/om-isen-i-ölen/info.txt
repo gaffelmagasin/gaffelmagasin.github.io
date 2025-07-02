@@ -1,6 +1,6 @@
 <titel>Om isen i ölen</titel>
 <bild>https://i.imgur.com/6onf7nB.png</bild>
-<ingress>"Sakta kryper kanske en otukt tanke genom din hjärnas veckade membran: Om jag kanske bara hade lite is i ölen, så skulle den inte bli varm lika fort." Nils Hagberg diskuterar frågan is-i-öl.</ingress>
+<ingress>"Sakta kryper kanske en tanke genom din hjärnas veckade membran: Om jag kanske bara hade lite is i ölen, så skulle den inte bli varm lika fort." Nils Hagberg diskuterar frågan is-i-öl.</ingress>
 <skribent>Nils Hagberg</skribent>
 <datum>2 Juli 2025</datum>
 <porträtt>nils_spg</porträtt>
