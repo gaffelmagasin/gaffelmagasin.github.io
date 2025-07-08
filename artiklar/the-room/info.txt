@@ -1,0 +1,7 @@
+<titel>Om the room och den svenska biopubliken – ett kulturreportage(?)</titel>
+<bild>https://i.imgur.com/D3hM4Jt.png</bild>
+<ingress>Theodor Vogel vänder sig i salongen och granskar biopubliken.</ingress>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theodor_spg</porträtt>
+<datum>8 Juli 2025</datum>
+<fotograf>F: Flickr</fotograf>
