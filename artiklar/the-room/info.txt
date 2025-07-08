@@ -1,4 +1,4 @@
-<titel>Om the room och den svenska biopubliken – ett kulturreportage(?)</titel>
+<titel>Om the room och den svenska biopubliken</titel>
 <bild>https://i.imgur.com/D3hM4Jt.png</bild>
 <ingress>Theodor Vogel vänder sig i salongen och granskar biopubliken.</ingress>
 <skribent>Theodor Vogel</skribent>
