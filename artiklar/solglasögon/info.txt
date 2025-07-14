@@ -1,0 +1,7 @@
+<titel>Solglasögon (Le Mans)</titel>
+<bild>https://i.imgur.com/73nUJV3.png</bild>
+<ingress>“Jag tänker bära ett par solglasögon i 24 timmar i sträck för att se hur det påverkar mig psykiskt, fysiskt och rytmiskt“ Nils Hagberg om solglasögon</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>15 Juli 2025</datum>
+<fotograf></fotograf>
