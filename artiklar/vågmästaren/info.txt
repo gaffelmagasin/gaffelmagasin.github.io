@@ -1,4 +1,4 @@
-<titel>Vågmästare, om radion</titel>
+<titel>Vågmästaren, om radion</titel>
 <bild>https://i.imgur.com/uNqM8GT.png</bild>
 <ingress>Theodor Vogel om att lyssna på radio.</ingress>
 <skribent>Theodor Vogel</skribent>
