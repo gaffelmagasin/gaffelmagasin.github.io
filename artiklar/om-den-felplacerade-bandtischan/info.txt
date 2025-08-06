@@ -1,0 +1,7 @@
+<titel>Om den felplacerade bandtischan</titel>
+<bild>https://i.imgur.com/D6zn59O.png</bild>
+<ingress>Nils Hagberg slår in öppna dörrar och diskuterar om att ha fel bands merch på sig.</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Pexels</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>6 Augusti 2025</datum>
