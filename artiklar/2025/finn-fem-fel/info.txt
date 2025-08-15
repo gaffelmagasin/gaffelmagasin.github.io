@@ -1,0 +1,7 @@
+<titel>Finn Fem Fel</titel>
+<bild>https://i.imgur.com/oU7dlHY.png</bild>
+<ingress>Nils Hagberg ger en parageografisk översikt över fem platser som inte finns.</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>15 Augusti 2025</datum>
+<fotograf>F: Wikimedia Commons</fotograf>
