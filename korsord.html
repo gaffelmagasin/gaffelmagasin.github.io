@@ -24,18 +24,262 @@
             margin: 0px;
             padding: 0px;
           }
-
+          .crossword-grid {
+            display: grid;
+            gap: 5px;
+            margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .cell {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            font-size: 20px;
+            text-transform: uppercase;
+	    outline: none;
+	    border: none;
+	    padding: 0px;
+	    background-color: white;
+	    font-family: Atkinson-Bold;
+        }
+        .cell:focus {
+            background-color: Gainsboro;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
         </style>
     </head>
     <body>
 
-		<script src="https://www.w3schools.com/lib/w3.js"></script>
-		<div w3-include-html="header.html"></div>
-		<script>w3.includeHTML();</script>
-		    
-		<script src = "script_closed.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<div w3-include-html="header.html"></div>
+	<script>w3.includeHTML();</script>
+	    
+	<script src = "script_closed.js"></script>
 
+    <div class="grid-container">
+        <div id="crossword-container" class="crossword-grid"></div>
+    </div>
+
+    <script>
+	var rot = true;
+
+	
+	    
+        function generateGrid() {
+
+	    const game_size = Math.min(600,0.8*innerWidth);
+		
+	    const gridWidth = 5;
+	    const gridHeight = 5;
+	    const symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
+
+
+		function reset_coloration(){
+		const elements = document.querySelectorAll('.cell');
+
+		elements.forEach(element => {
+		    if(element.value == "?"){
+		    	element.style.backgroundColor = "black";
+		    }
+		    else{
+			  element.style.backgroundColor = "white";  
+		    }
+		});
+		
+		let focusedElement = document.activeElement;
+		var id_str = focusedElement.id;
+		id_str = id_str.split("-");
+		var xx = Number(id_str[0])
+		var yy = Number(id_str[1])
+
+		if(!rot){
+			for(var y1 = yy; y1>=0; y1--){
+				var get_id = String(xx) + "-" + String(y1);
+				var get_symbol = symbol_grid[xx][y1];
+	
+				if(get_symbol == 1){
+					break;
+				}
+				
+				
+			}
+			for(var y2 = y1+1; y2<gridHeight; y2++){
+				var get_id = String(xx) + "-" + String(y2);
+
+				var get_symbol = symbol_grid[xx][y2];
+				if(get_symbol == 1){
+					break;
+				}
+				else{
+					document.getElementById(get_id).style.backgroundColor = "Gainsboro";
+				}
+			}
+		}
+		else{
+			for(var x1 = xx; x1>=0; x1--){
+				var get_id = String(x1) + "-" + String(yy);
+				var get_symbol = symbol_grid[x1][yy];
+	
+				if(get_symbol == 1){
+					break;
+				}
+				
+				
+			}
+			for(var x2 = x1+1; x2<gridWidth; x2++){
+				var get_id = String(x2) + "-" + String(yy);
+
+				var get_symbol = symbol_grid[x2][yy];
+				if(get_symbol == 1){
+					break;
+				}
+				else{
+					document.getElementById(get_id).style.backgroundColor = "Gainsboro";
+				}
+			}
+		}
+		focusedElement.style.backgroundColor = "DarkGrey";
+	    }
+		
+	    const cell_size = game_size / gridWidth;
+		
+	    const crosswordContainer = document.getElementById("crossword-container");
+            crosswordContainer.innerHTML = '';  // Clear any existing grid
+
+            crosswordContainer.style.gridTemplateColumns = `repeat(${gridWidth}, ${cell_size}px)`;
+            crosswordContainer.style.gridTemplateRows = `repeat(${gridHeight}, ${cell_size}px)`;
+
+	    
+		
+            for (let row = 0; row < gridWidth; row++) {
+                for (let col = 0; col < gridHeight; col++) {
+                    const inputCell = document.createElement("input");
+                    inputCell.classList.add("cell");
+		    inputCell.style.cssText = `width: ${cell_size}px; height: ${cell_size}px;`;
+		    inputCell.style.fontSize = `${cell_size-15}px`;
+		    inputCell.id = `${col}-${row}`;
+                    inputCell.maxLength = 2;
+		    inputCell.type = "text";
+                     var symbol = symbol_grid[col][row];
+		    if(symbol == 1){
+			inputCell.value = "?";
+			inputCell.style.backgroundColor = "black";
+		    }
+		    console.log(symbol);
+			
+		    inputCell.addEventListener("input", function(event) {
+			
+			let inp_value = event.target.value;
+			var cur_letter = inp_value.slice(0,1);
+    			let lastChar = inp_value.slice(-1);
+			
+			console.log(inp_value);
+			console.log(cur_letter);
+			console.log(lastChar);
+			 
+			//var k = lastChar;
+			if(lastChar == " "){
+				
+				event.target.value = cur_letter;
+				rot = !rot;
+				reset_coloration();
+			}
+			else{
+	                        if (!/^[A-Za-zåäöÅÄÖ]$/.test(lastChar)) {
+				    if(lastChar == cur_letter){event.target.value = "";}
+	                            else{event.target.value = cur_letter;} // Clear non-letter input
+	                        }
+				else{
+					
+					this.value = lastChar;
+					var id_str = this.id;
+					id_str = id_str.split("-");
+					var xx = Number(id_str[0])
+					var yy = Number(id_str[1])
+		
+					//console.log(xx);
+					//console.log(yy);
+					if(rot){
+						xx++
+					}
+					else{
+						yy++
+					}
+					if(xx>=gridWidth){xx-=gridWidth}
+					if(yy>=gridHeight){yy-=gridHeight}
+					var new_id = String(xx) + "-" + String(yy);
+					
+					document.getElementById(new_id).focus();
+				}
+			};
+		   
+			    
+                    });
+		    inputCell.addEventListener("focus", function(event){
   
+			if(this.value == "?"){
+				var id_str = this.id;
+				id_str = id_str.split("-");
+				var xx = Number(id_str[0])
+				var yy = Number(id_str[1])
 
+				if(rot){
+					xx++
+				}
+				else{
+					yy++
+				}
+				if(xx>=gridWidth){xx-=gridWidth; yy++;}
+				if(yy>=gridHeight){yy-=gridHeight; xx++;}
+				var new_id = String(xx) + "-" + String(yy);
+				
+				document.getElementById(new_id).focus();
+			}
+			    else{
+				    reset_coloration();
+			    }
+		    });
+		    inputCell.addEventListener("keydown", function(event){
+   			//console.log(event.code);
+			
+		    });
+		    inputCell.addEventListener('click', (event) => {
+		         var elem = document.getElementById(this.id);
+
+   			 if(elem != null) {
+			        if(elem.createTextRange) {
+			            var range = elem.createTextRange();
+			            range.move('character', caretPos);
+			            range.select();
+			        }
+			        else {
+			            if(elem.selectionStart) {
+			                elem.focus();
+			                elem.setSelectionRange(caretPos, caretPos);
+			            }
+			            else
+			                elem.focus();
+			        }
+			    }
+			});
+			
+                    crosswordContainer.appendChild(inputCell);
+                }
+            }
+        }
+
+        // Generate grid on page load
+        window.onload = generateGrid;
+
+	
+	
+	
+    </script>
     </body>
 </html>
