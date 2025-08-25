@@ -17,28 +17,32 @@
 </head>
 <body>
   <div width = "600" height = "600">
-    <svg id="svgGrid" width="600" height="600"></svg>
+    <svg id="svgGrid"></svg>
   </div>
   <script>
+    var cross_w = 600;
+    var cross_h = 600;
+
     const svg = document.getElementById('svgGrid');
 
+    svg.style.width = cross_w
+    svg.style.height = cross_h
+    
     // Grid settings
     const cols = 10;
     const rows = 10;
-    const rectWidth = 600/cols;
-    const rectHeight = 600/cols;
-    const padding = 10;
+    const rectSize= cross_w/cols;
 
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        const x = col * (rectWidth + padding);
-        const y = row * (rectHeight + padding);
+        const x = col * rectSize;
+        const y = row * rectSize;
 
         const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
         rect.setAttribute("x", x);
         rect.setAttribute("y", y);
-        rect.setAttribute("width", rectWidth);
-        rect.setAttribute("height", rectHeight);
+        rect.setAttribute("width", rectSize);
+        rect.setAttribute("height", rectSize);
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
