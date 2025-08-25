@@ -10,7 +10,6 @@
       margin: 20px auto;
     }
     rect {
-      fill: #3498db;
       stroke: #2c3e50;
     }
   </style>
@@ -43,6 +42,7 @@
         rect.setAttribute("y", y);
         rect.setAttribute("width", rectSize);
         rect.setAttribute("height", rectSize);
+        rect.setAttribute("fill", "#000000");
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
