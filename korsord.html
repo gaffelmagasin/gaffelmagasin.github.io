@@ -19,7 +19,8 @@
     <svg id="svgGrid"></svg>
   </div>
   <script>
-    var cur_id = "0-0"
+    var cur_x = 0
+    var cur_y = 0
     
     var cross_w = 600;
     var cross_h = 600;
@@ -61,8 +62,16 @@
     }
 
     function update_puzzle(){
-        var current_square = document.getElementById(cur_id)
-        current_square.setAttribute("fill","#FFFFFF")
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+            var square_id = col.toString() + "-" + row.toString();
+            var square = document.getElementById(square_id);
+
+            if(cur_x == row && cur_y == col){
+              square.setAttribute("fill","#888888")
+            }
+        }
+      }
     }
     
 
