@@ -53,7 +53,10 @@
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
-           cur_id = event.target.id;
+           var id_str = event.target.id
+           var pos = id_str.split("-")
+           cur_x = pos[0]
+           cur_y = pos[1]
            update_puzzle()
         });
 
