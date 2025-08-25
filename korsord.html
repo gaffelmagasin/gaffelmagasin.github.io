@@ -55,8 +55,8 @@
         rect.addEventListener("click", () => {
            var id_str = event.target.id
            var pos = id_str.split("-")
-           cur_x = pos[0]
-           cur_y = pos[1]
+           cur_x = pos[1]
+           cur_y = pos[0]
            update_puzzle()
         });
 
