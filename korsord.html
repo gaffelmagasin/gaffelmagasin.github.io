@@ -19,6 +19,9 @@
     <svg id="svgGrid"></svg>
   </div>
   <script>
+    var cur_x = 0
+    var cur_y = 0
+    
     var cross_w = 600;
     var cross_h = 600;
 
@@ -38,15 +41,19 @@
         const y = row * rectSize;
 
         const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+
+        rect.id = x.toString() + "-" + y.toString()
+        
         rect.setAttribute("x", x);
         rect.setAttribute("y", y);
         rect.setAttribute("width", rectSize);
         rect.setAttribute("height", rectSize);
         rect.setAttribute("fill", "#000000");
         
+        
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
-          rect.setAttribute("fill", "#FFFFFF");
+           
         });
 
         svg.appendChild(rect);
