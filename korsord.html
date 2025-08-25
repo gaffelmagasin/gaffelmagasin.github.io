@@ -50,13 +50,14 @@
         rect.setAttribute("height", rectSize);
         rect.setAttribute("fill", "#000000");
         
+        rect.setAttribute("pos_x",col)
+        rect.setAttribute("pos_y",row)
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
-           var id_str = event.target.id
-           var pos = id_str.split("-")
-           cur_x = pos[1]
-           cur_y = pos[0]
+
+           cur_x = event.target.pos_x
+           cur_y = event.target.pos_y
            update_puzzle()
         });
 
@@ -72,6 +73,9 @@
 
             if(cur_x == row && cur_y == col){
               square.setAttribute("fill","#888888")
+            }
+            else{
+              
             }
         }
       }
