@@ -19,8 +19,7 @@
     <svg id="svgGrid"></svg>
   </div>
   <script>
-    var cur_x = 0
-    var cur_y = 0
+    var cur_id = "0-0"
     
     var cross_w = 600;
     var cross_h = 600;
@@ -53,12 +52,20 @@
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
-           
+           cur_id = event.target.id;
+           update_puzzle()
         });
 
         svg.appendChild(rect);
       }
     }
+
+    function update_puzzle(){
+        cur_id.setAttribute("fill","#FFFFFF")
+    }
+    
+
+    
   </script>
 </body>
 </html>
