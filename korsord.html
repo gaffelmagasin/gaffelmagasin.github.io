@@ -1,74 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>KORSORD</title>
-        <meta name="description" content="Lös korsord">
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Grid of Rectangles</title>
+  <style>
+    svg {
+      border: 1px solid #444;
+      display: block;
+      margin: 20px auto;
+    }
+    rect {
+      fill: #3498db;
+      stroke: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <svg id="svgGrid" width="600" height="400"></svg>
 
-		@font-face {
-		  font-family: morfeta;
-		  src: url(font/MorfetaGealmord-5158V.otf) format("opentype");
-		}
-		@font-face {
-		  font-family: helvetica_bold;
-		  src: url(font/Helvetica-Bold.ttf) format("truetype");
-		}
-		 @font-face {
-		  font-family: Atkinson-Bold;
-		  src: url(font/AtkinsonHyperlegible-Bold.ttf) format("truetype");
-		}
-		
-		 body{
-			background: black;
-			margin: 0px;
-			padding: 0px;
-		 }
-		.cell{
-			width: 40px;
-	        height: 40px;
-	        border: 1px solid #ccc;
-	        text-align: center;
-	        vertical-align: middle;
-	        line-height: 40px;
-	        font-size: 20px;
-	        background-color: #f0f0f0;
-	        cursor: pointer;
-		}
-		.crossword_grid{
-			display: grid;
-		}
-			
-        </style>
-    </head>
-    <body>
+  <script>
+    const svg = document.getElementById('svgGrid');
 
-	<script src="https://www.w3schools.com/lib/w3.js"></script>
-	<div w3-include-html="header.html"></div>
-	<script>w3.includeHTML();</script>
-	    
-	<script src = "script_closed.js"></script>
+    // Grid settings
+    const cols = 10;
+    const rows = 6;
+    const rectWidth = 50;
+    const rectHeight = 50;
+    const padding = 10;
 
-	<div id = "cgrid" class = "crossword_grid">
-		
-	</div>
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        const x = col * (rectWidth + padding);
+        const y = row * (rectHeight + padding);
 
-    <script>
-		const grid = document.getElementById('cgrid');
-		var width = 10
-		var height = 10
-		
-		for(var x = 0; x < width; x++){
-			for(var y = 0; y < height; y++){
-				const cell = document.createElement('div');
-			    cell.className = 'cell';
-			    cell.contentEditable = true;
-			    cell.textContent = String.fromCharCode(65 + (i % 26)); // A-Z letters
-			    grid.appendChild(cell);
-			}
-		}
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", x);
+        rect.setAttribute("y", y);
+        rect.setAttribute("width", rectWidth);
+        rect.setAttribute("height", rectHeight);
+        
+        // Optional: Add custom attributes or interactivity
+        rect.addEventListener("click", () => {
+          rect.setAttribute("fill", "#e74c3c"); // change color on click
+        });
 
-		
-    </script>
-    </body>
+        svg.appendChild(rect);
+      }
+    }
+  </script>
+</body>
 </html>
