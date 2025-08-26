@@ -1,0 +1,6 @@
+<titel>Utflykt till hemköps epicentrum</titel>
+<ingress>Elsa Bolander besöker och recenserar Hemköp Linnégatan.</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<fotograf>Wikimedia<fotograf>
+<datum>26 Augusti 2025</datum>
