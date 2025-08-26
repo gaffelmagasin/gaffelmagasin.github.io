@@ -24,7 +24,11 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 		var skribent = content_of_tag(a_str,"skribent",0);
 		var datum = content_of_tag(a_str,"datum",0);
 		var bild = content_of_tag(a_str,"bild",0);
-	
+
+		if(bild == "-1"){
+			bild = 'artiklar/' + tag + '/omslag.webp'
+		}
+		
 		var portrait = content_of_tag(a_str,"porträtt",0)
 		
 		var data = skribent;
