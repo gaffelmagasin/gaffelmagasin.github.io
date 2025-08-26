@@ -241,7 +241,7 @@
 	  <script src = "scripts_ab.js"></script>
 	  <div style = "background: #001015FF; padding-top: 30px;">
 		<div id = 'rec1'><script>draw_article_button('rec1','ballad-of-a-big-town',isMobile)</script></div>	
-		<div id = 'rec2'><script>draw_article_button('rec2','inne-ute-juli-25',isMobile)</script></div>	
+		<div id = 'rec2'><script>draw_article_button('rec2','2025/inne-ute-sep',isMobile)</script></div>	
 		<div id = 'rec3'><script>draw_article_button('rec3','casablanca-en-stat-i-en-stat',isMobile)</script></div>
 	  </div>
         </div>
@@ -276,6 +276,9 @@
             titel = titel.toUpperCase();
 	    var preamble = content_of_tag(a_str,"ingress",0);
             var bild = content_of_tag(a_str,"bild",0);
+			if(bild == "-1"){
+				bild = 'artiklar/' + tag + '/omslag.webp'
+			}
 	    var fotograf = content_of_tag(a_str,"fotograf",0);
 	    console.log(fotograf)
 	    if(fotograf == "-1"){fotograf = ""}
