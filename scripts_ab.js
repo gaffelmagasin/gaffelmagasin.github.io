@@ -26,7 +26,7 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 		var bild = content_of_tag(a_str,"bild",0);
 
 		if(bild == "-1"){
-			bild = 'artiklar/' + tag + '/omslag.webp'
+			bild = 'artiklar/' + article_name + '/omslag.webp'
 		}
 		
 		var portrait = content_of_tag(a_str,"porträtt",0)
