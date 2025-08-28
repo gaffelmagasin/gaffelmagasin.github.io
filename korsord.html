@@ -19,6 +19,9 @@
     <svg id="svgGrid"></svg>
   </div>
   <script>
+    var symbol_grid = [[1,0,0,0,0],[0,0,0,0,0],[0,0,1,0,0],[0,0,0,0,0],[0,0,0,0,1]]
+    var enter_grid =  [["","","","",""],["","","","",""],["","","","",""],["","","","",""]]
+    
     var cur_x = 0
     var cur_y = 0
     
@@ -31,8 +34,8 @@
     svg.style.height = cross_h
     
     // Grid settings
-    const cols = 10;
-    const rows = 10;
+    const cols = 5;
+    const rows = 5;
     const rectSize= cross_w/cols;
 
     for (let row = 0; row < rows; row++) {
@@ -50,8 +53,8 @@
         rect.setAttribute("height", rectSize);
         
         
-        rect.setAttribute("pos_x",col)
-        rect.setAttribute("pos_y",row)
+        rect.setAttribute("pos_x",row)
+        rect.setAttribute("pos_y",col)
         
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
@@ -59,8 +62,6 @@
            cur_x = event.target.getAttribute('pos_x')
            cur_y = event.target.getAttribute('pos_y')
 
-           console.log(cur_x);
-           console.log(cur_y);
            update_puzzle()
         });
 
