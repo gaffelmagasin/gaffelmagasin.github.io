@@ -56,8 +56,8 @@
         // Optional: Add custom attributes or interactivity
         rect.addEventListener("click", () => {
 
-           cur_x = event.target.pos_x
-           cur_y = event.target.pos_y
+           cur_x = event.target.getAttribute('pos_x')
+           cur_y = event.target.getAttribute('pos_y')
 
            console.log(cur_x);
            console.log(cur_y);
