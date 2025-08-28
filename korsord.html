@@ -52,7 +52,6 @@
         rect.setAttribute("width", rectSize);
         rect.setAttribute("height", rectSize);
         
-        
         rect.setAttribute("pos_x",row)
         rect.setAttribute("pos_y",col)
         
@@ -65,6 +64,17 @@
            update_puzzle()
         });
 
+        
+        const letter = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        letter.setAttribute("x", x + rectSize / 2);
+        letter.setAttribute("y", y + rectSize / 2);
+        letter.setAttribute("text-anchor", "middle");
+        letter.setAttribute("dominant-baseline", "middle");
+        letter.setAttribute("font-size", "24");
+        letter.setAttribute("fill", "#000000");
+        letter.textContent = "A";
+
+        rect.appendChild(letter);
         svg.appendChild(rect);
       }
     }
