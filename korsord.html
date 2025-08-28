@@ -66,15 +66,13 @@
 
         
         const letter = document.createElementNS("http://www.w3.org/2000/svg", "text");
-        letter.setAttribute("x", x + rectSize / 2);
-        letter.setAttribute("y", y + rectSize / 2);
-        letter.setAttribute("text-anchor", "middle");
-        letter.setAttribute("dominant-baseline", "middle");
+        letter.setAttribute("x", x + 5);
+        letter.setAttribute("y", y + 5;
         letter.setAttribute("font-size", "24");
         letter.setAttribute("fill", "#000000");
         letter.textContent = "A";
 
-        rect.appendChild(letter);
+        svg.appendChild(letter);
         svg.appendChild(rect);
       }
     }
