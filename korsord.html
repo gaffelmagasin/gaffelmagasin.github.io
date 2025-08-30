@@ -21,7 +21,7 @@
     rect {
       stroke: #2c3e50;
     }
-    text{
+    .letter{
         font-family: Atkinson-Bold;
 		pointer-events: none;
     }
@@ -86,6 +86,7 @@
         letter.setAttribute("font-size", letter_size.toString());
         letter.setAttribute("fill", "#000000");
         letter.textContent = "A";
+		letter.class = "letter";
 
         svg.appendChild(rect);
         svg.appendChild(letter);
