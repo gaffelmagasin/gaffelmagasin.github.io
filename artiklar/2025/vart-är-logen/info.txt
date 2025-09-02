@@ -1,0 +1,5 @@
+<titel>Vart är logen?</titel>
+<ingress>"I Göteborg uppfattas jag åtminstone så pass lantlig att jag har fått frågan om vart logen ligger, i tron om att det är ett specifikt ställe." Pontus Ohlson om logar.</ingress>
+<skribent>Pontus Ohlson</skribent>
+<porträtt>pontus_spg</porträtt>
+<datum>2 September 2025</datum>
