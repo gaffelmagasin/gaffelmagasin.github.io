@@ -1,0 +1,5 @@
+<titel>Jeansens halveringstid</titel>
+<ingress>”För jag har nämligen listat ut en modell för livslängden på jeans, en kalkyl för tåligt och otåligt material.” Theodor Vogel om jeans som trasar sönder.</ingress>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theodor_spg</porträtt>
+<datum>8 september 2025</datum>
