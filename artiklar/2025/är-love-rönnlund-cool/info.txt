@@ -1,0 +1,4 @@
+<titel>Är Love Rönnlund cool?</titel>
+<ingress>“Love Rönnlund är en man som aldrig snubblar, en man som aldrig stammar. Och när han väl snubblar, ja då gör han det med full kontroll.” Möjligtvis en intervju med Love Rönnlund, och några andra.</ingress>
+<skribent>Erik Larsson</skribent>
+<datum>13 September 2025</datum>
