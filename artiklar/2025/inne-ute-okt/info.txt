@@ -1,0 +1,4 @@
+<titel>Inne-Ute-Listan Oktober</titel>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad. (Oktober).</ingress>
+<skribent>Redaktionen</skribent> 
+<datum>18 September 2024</datum>
