@@ -2,4 +2,4 @@
 <bild>https://i.imgur.com/T9NUqVX.png</bild>
 <ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (September).</ingress>
 <skribent>Redaktionen</skribent> 
-<datum>20 Augusti 2024</datum>
+<datum>20 Augusti 2025</datum>
