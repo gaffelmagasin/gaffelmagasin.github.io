@@ -1,0 +1,4 @@
+<titel>5 andra byggnader att flytta på</titel>
+<ingress>Denna något gamla lista som vi fann på stranden när vi rensade fisk går igenom 5 andra byggnader som borde flyttas.</ingress>
+<skribent>Okänd</skribent> 
+<datum>23 september 2025</datum>
