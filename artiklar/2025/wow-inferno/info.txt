@@ -1,0 +1,5 @@
+<titel>WOW25: Inferno</titel>
+<ingress>“Marken här är rutten, kvävande, dödlig. Överallt stinker det av jord, jeans, öl och fall.“ Del 1 av Nils Hagbergs triptyk över Way out West</ingress>
+<skribent>Nils Hagberg</skribent>
+<porträtt>nils_spg</porträtt>
+<datum>1 Oktober 2025</datum>
