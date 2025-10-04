@@ -1,5 +1,5 @@
 <titel>WOW25: Purgatorio</titel>
-<ingress>“I postregnets Slottsskogen ligger dimman så tät att man behöver klyva sig igenom den likt sprutgrädde.“ Del 2 av Nils Hagbergs triptyk över Way out West</ingress>
+<ingress>“I postregnets Slottsskogen ligger dimman så tät att man behöver klyva sig igenom den med manchete som om det vore sprutgrädde.“ Del 2 av Nils Hagbergs triptyk över Way out West</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
 <datum>4 Oktober 2025</datum>
