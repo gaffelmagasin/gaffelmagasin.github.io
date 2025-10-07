@@ -35,7 +35,7 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 		
 		var text_style_title = `font-size: clamp(10px,3vw,35px)`
 		var text_style_preamble = `font-size: clamp(5px,2vw,20px);`
-		var preamble_line_height = 1;
+		var preamble_line_height = 1.1;
 		var text_style_writer = `clamp(5px,1.5vw,15px)`
 		var imgw = 53;
 		var roww = 38;
@@ -66,7 +66,7 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 		new_html +=`<div style = "width: ${roww}%; margin: 3%; float: left;">`
 		
 			//titel
-			new_html += `<div id = ${'titel' + div_id} style = "color: white; width: 98%; padding-top: 2%; font-family: legaff; font-size: clamp(10px,4vw,38px); line-height: 110%;${text_style_title}"> ${titel}</div>`
+			new_html += `<div id = ${'titel' + div_id} style = "color: white; width: 98%; padding-top: 2%; font-family: legaff; font-size: clamp(10px,4vw,38px); line-height: 100%;${text_style_title}"> ${titel}</div>`
 		       
 			//ingress
 			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "font-family: georgia; line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
