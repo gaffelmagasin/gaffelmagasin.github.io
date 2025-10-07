@@ -1,5 +1,5 @@
 <titel>WOW25: PARADISO</titel>
-<ingress>“Jag studsar mellan scenerna i ett ständigt nuflöde av musik, konversationer och jippon. En motståndslös förflyttning genom tre dagars festival.“ Del 4 av Nils Hagbergs triptyk över Way out West</ingress>
+<ingress>“Jag studsar mellan scenerna i ett ständigt nuflöde av musik, konversationer och jippon. En motståndslös förflyttning genom tre dagars festival.“ Del 3 av Nils Hagbergs triptyk över Way out West</ingress>
 <skribent>Nils Hagberg</skribent>
 <porträtt>nils_spg</porträtt>
 <datum>7 Oktober 2025</datum>
