@@ -122,10 +122,6 @@
 		  font-family: legaff;
 		  src: url(font/Legaff-Regular.otf) format("opentype");
 		}
-		 @font-face {
-    		  font-family: morfeta;
-    		  src: url(font/MorfetaGealmord-5158V.otf) format("opentype");
-    		}
 
 		@font-face {
 		  font-family: Atkinson-Bold;
@@ -319,7 +315,8 @@
     	  .then(function(resp){
     		var a_str = resp;
                        
-		var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
+			var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
+			  b_str = b_str.replaceAll(`font-family:"Arial"`,`font-family:"Atkinson-Bold"`)
 		  
 		    let f = ".png";
 		    let img_num = b_str.split(f).length - 1;
