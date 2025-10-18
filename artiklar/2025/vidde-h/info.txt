@@ -1,0 +1,5 @@
+<titel>Mannen som började ljuga</titel>
+<bild>https://imgur.com/gSgRMn6</bild>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (September).</ingress>
+<skribent>Nikolai Minajček</skribent> 
+<datum>18 Oktober 2025</datum>
