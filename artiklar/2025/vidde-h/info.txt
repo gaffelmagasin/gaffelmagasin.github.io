@@ -1,5 +1,4 @@
 <titel>Mannen som började ljuga</titel>
-<bild>https://i.imgur.com/gSgRMn6.jpeg</bild>
 <ingress>Gaffels pseudonym intervjuar musikern och Trollhättanöverlevaren Vidde H, eller vad han kallar sig numera</ingress>
 <skribent>Nikolai Minajček</skribent> 
 <datum>18 Oktober 2025</datum>
