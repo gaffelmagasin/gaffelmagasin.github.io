@@ -1,5 +1,5 @@
 <titel>Om pensionärens plikt</titel>
-<ingress>“Någon måste finansiera teatern. Min kulturtant på Dramaten har en plikt och hon är här för att genomföra den, men vill hon vara här?” Ofelia Revelj om kulturtanten</ingress>
+<ingress>“Min kulturtant på Dramaten har en plikt och hon är här för att genomföra den, men vill hon vara här?” Ofelia Revelj om kulturtanten</ingress>
 <skribent>Ofelia Revelj</skribent>
 <porträtt>ofelia_spg</porträtt>
 <datum>10 Oktober 2025</datum>
