@@ -1,0 +1,6 @@
+<titel>Ballad om en axelremsväska</titel>
+<ingress>” Jag romantiserar om hur annorlunda mitt liv hade kunnat varit.” Nils Hagberg om en väska</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>29 Oktober 2025</datum>
