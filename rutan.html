@@ -197,7 +197,7 @@
 					var signatur_i = str.indexOf(`Signatur{`,str_i);
 					if(signatur_i != -1){
 						var signatur_ei = str.indexOf(`}`,signatur_i);
-						var titel = str.substring(signatur_i+8,signatur_ei);
+						var signatur = str.substring(signatur_i+8,signatur_ei);
 					}
 					
 					var text_i = str.indexOf(`Text{`,str_i);
