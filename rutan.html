@@ -182,9 +182,13 @@
 		    let inl_num = str.split(f).length - 1;
 		var text_i = 0
 		for (let i = 0; i < inl_num; i++) {
-		  	text_i = str.indexOf(`===`,text_i);
+		  	text_i = str.indexOf("===",text_i);
 
+			console.log(text_i)
+			
 			var titel_i = str.indexOf(`titel{`,text_i);
+
+			console.log(titel_i)
 			if(titel_i){
 				var titel_ei = str.indexOf(`}`,titel_i);
 
