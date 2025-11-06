@@ -184,30 +184,32 @@
 			for (let i = 0; i < inl_num; i++) {
 			  	str_i = str.indexOf("===",str_i);
 
+				next_str_i = str.indexOf("===",str_i+4);
+				
 				if(str_i != -1){
 		
 					new_html += "<div>";
 					
 					var titel_i = str.indexOf(`Titel{`,str_i);
-					if(titel_i != -1){
+					if(titel_i != -1 && (titel_i < next_str_i || next_str_i == -1)){
 						var titel_ei = str.indexOf(`}`,titel_i);
 						var titel = str.substring(titel_i+6,titel_ei);
 					}
 					
 					var signatur_i = str.indexOf(`Signatur{`,str_i);
-					if(signatur_i != -1){
+					if(signatur_i != -1 && (signatur_i < next_str_i || next_str_i == -1)){
 						var signatur_ei = str.indexOf(`}`,signatur_i);
 						var signatur = str.substring(signatur_i+9,signatur_ei);
 					}
 					
 					var text_i = str.indexOf(`Text{`,str_i);
-					if(text_i != -1){
+					if(text_i != -1 && (text_i < next_str_i || next_str_i == -1)){
 						var text_ei = str.indexOf(`}`,text_i);
 						var text = str.substring(text_i+5,text_ei);
 					}
 					
 					var bild_i = str.indexOf(`Bild{`,str_i);
-					if(bild_i != -1){
+					if(bild_i != -1 && (bild_i < next_str_i || next_str_i == -1)){
 						var bild_ei = str.indexOf(`}`,bild_i);
 						var bild = str.substring(bild_i+5,bild_ei);
 					}
