@@ -186,10 +186,10 @@
 	
 				console.log(text_i)
 				
-				var titel_i = str.indexOf(`titel{`,text_i);
+				var titel_i = str.indexOf(`Titel{`,text_i);
 	
 				console.log(titel_i)
-				if(titel_i){
+				if(titel_i != -1){
 					var titel_ei = str.indexOf(`}`,titel_i);
 	
 					var titel = str.substring(titel_i,titel_ei);
