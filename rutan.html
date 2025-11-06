@@ -169,7 +169,7 @@
 
 		var isMobile = detectMob();
 
-    
+    var new_html = ""
 
     fetch('rutan.txt')
     	   .then(function(resp) { 
@@ -178,8 +178,17 @@
          .then(function(resp){
          var a_str = resp;
 
+			let f = "§§";
+		    let inl_num = b_str.split(f).length - 1;
+			 
+		var text_i = 0
+		for (let i = 0; i < inl_num; i++) {
+		  	text_i = a_str.indexOf(`§§`,text_i);
+			text_i += 2;
+		}
 		
-         document.getElementById('rutan_hållare').innerHTML = a_str;
+		
+         document.getElementById('rutan_hållare').innerHTML = i;
        
         })
     
