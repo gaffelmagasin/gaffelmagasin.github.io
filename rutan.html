@@ -184,9 +184,12 @@
 		for (let i = 0; i < inl_num; i++) {
 		  	text_i = str.indexOf(`===`,text_i);
 
-			var title_i = str.indexOf(`titel{`,text_i);
-			if(title_i){
-				var title_ei = str.indexOf(`}`,title_i);
+			var titel_i = str.indexOf(`titel{`,text_i);
+			if(titel_i){
+				var titel_ei = str.indexOf(`}`,titel_i);
+
+				var titel = str.substring(titel_i,titel_ei);
+				new_html += titel;
 			}
 			
 			text_i += 2;
@@ -195,7 +198,7 @@
 		}
 		
 		
-         document.getElementById('rutan_hållare').innerHTML = inl_num;
+         document.getElementById('rutan_hållare').innerHTML = new_html;
        
         })
     
