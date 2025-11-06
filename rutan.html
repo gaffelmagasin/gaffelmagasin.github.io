@@ -176,14 +176,14 @@
             return resp.text()
          })
          .then(function(resp){
-         var a_str = resp;
+	         var str = resp;
 
 			let f = "§§";
-		    let inl_num = b_str.split(f).length - 1;
+		    let inl_num = str.split(f).length - 1;
 			 
 		var text_i = 0
 		for (let i = 0; i < inl_num; i++) {
-		  	text_i = a_str.indexOf(`§§`,text_i);
+		  	text_i = str.indexOf(`§§`,text_i);
 			text_i += 2;
 		}
 		
