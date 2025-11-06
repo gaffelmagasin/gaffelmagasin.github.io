@@ -180,16 +180,15 @@
 
 			let f = "§§";
 		    let inl_num = str.split(f).length - 1;
-		var test = 0
 		var text_i = 0
 		for (let i = 0; i < inl_num; i++) {
 		  	text_i = str.indexOf(`§§`,text_i);
 			text_i += 2;
-			test = i;
+
 		}
 		
 		
-         document.getElementById('rutan_hållare').innerHTML = test;
+         document.getElementById('rutan_hållare').innerHTML = inl_num;
        
         })
     
