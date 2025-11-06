@@ -197,19 +197,19 @@
 					var signatur_i = str.indexOf(`Signatur{`,str_i);
 					if(signatur_i != -1){
 						var signatur_ei = str.indexOf(`}`,signatur_i);
-						var signatur = str.substring(signatur_i+8,signatur_ei);
+						var signatur = str.substring(signatur_i+9,signatur_ei);
 					}
 					
 					var text_i = str.indexOf(`Text{`,str_i);
 					if(text_i != -1){
 						var text_ei = str.indexOf(`}`,text_i);
-						var text = str.substring(text_i+4,text_ei);
+						var text = str.substring(text_i+5,text_ei);
 					}
 					
 					var bild_i = str.indexOf(`Bild{`,str_i);
 					if(bild_i != -1){
 						var bild_ei = str.indexOf(`}`,bild_i);
-						var bild = str.substring(bild_i+4,bild_ei);
+						var bild = str.substring(bild_i+5,bild_ei);
 					}
 
 					new_html += `<p>${titel}</p>`;
