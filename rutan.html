@@ -180,25 +180,48 @@
 
 			let f = "===";
 		    let inl_num = str.split(f).length - 1;
-			let text_i = 0
+			let str_i = 0
 			for (let i = 0; i < inl_num; i++) {
-			  	text_i = str.indexOf("===",text_i);
-	
-				console.log(text_i)
-				
-				var titel_i = str.indexOf(`Titel{`,text_i);
-	
-				console.log(titel_i)
-				if(titel_i != -1){
-					var titel_ei = str.indexOf(`}`,titel_i);
-	
-					var titel = str.substring(titel_i+6,titel_ei);
-					new_html += titel;
+			  	str_i = str.indexOf("===",str_i);
+
+				if(str_i != -1){
+		
+					new_html += "<div>";
+					
+					var titel_i = str.indexOf(`Titel{`,str_i);
+					if(titel_i != -1){
+						var titel_ei = str.indexOf(`}`,titel_i);
+						var titel = str.substring(titel_i+6,titel_ei);
+					}
+					
+					var signatur_i = str.indexOf(`Signatur{`,str_i);
+					if(signatur_i != -1){
+						var signatur_ei = str.indexOf(`}`,signatur_i);
+						var titel = str.substring(signatur_i+8,signatur_ei);
+					}
+					
+					var text_i = str.indexOf(`Text{`,str_i);
+					if(text_i != -1){
+						var text_ei = str.indexOf(`}`,text_i);
+						var text = str.substring(text_i+4,text_ei);
+					}
+					
+					var bild_i = str.indexOf(`Bild{`,str_i);
+					if(bild_i != -1){
+						var bild_ei = str.indexOf(`}`,bild_i);
+						var bild = str.substring(bild_i+4,bild_ei);
+					}
+
+					new_html += "<p>${Titel}</p>";
+					new_html += "<p>${Signatur}</p>";
+					new_html += "<p>${Text}</p>";
+					new_html += "<p>${Bild}</p>";
+					
+					new_html += "</div>";
+					
+					str_i += 4;
 				}
-				
-				text_i += 5;
-	
-				
+
 			}
 			
 		
