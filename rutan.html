@@ -185,10 +185,9 @@
 		  	text_i = str.indexOf(`===`,text_i);
 
 			var title_i = str.indexOf(`titel{`,text_i);
-			var title_ei = str.indexOf(`}`,title_i);
-
-			var signatur_i = str.indexOf(`signatur{`,text_i);
-			var signatur_ei = str.indexOf(`}`,signatur_i);
+			if(title_i){
+				var title_ei = str.indexOf(`}`,title_i);
+			}
 			
 			text_i += 2;
 
