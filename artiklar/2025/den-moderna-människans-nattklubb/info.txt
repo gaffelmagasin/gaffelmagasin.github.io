@@ -1,0 +1,5 @@
+<titel>Den moderna människans nattklubb</titel>
+<ingress>”Jag tror snarare att klubben, om inget görs, snart kommer gå i graven.” Elsa Bolander om klubb</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<datum>11 November 2025</datum>
