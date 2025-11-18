@@ -1,0 +1,6 @@
+<titel>Recension: Vasas flora och fauna</titel>
+<ingress>Theodor Vogel har sett på musik live.</ingress>
+<skribent>Theodor Vogel</skribent>
+<porträtt>theodor_spg</porträtt>
+<fotograf>F: Pressbild, Fredrika Eriksson</fotograf>
+<datum>18 November 2025</datum>
