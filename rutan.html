@@ -140,6 +140,23 @@
 			background: #000000FF;
 			max-width: 200px;
 		}
+
+		.c_titel{
+			font-family: legaff;
+			color: white;
+		}
+		.c_bild{
+			width: 100%;
+			height: auto;
+		}
+		.c_text{
+			color: white;
+			font: georgia;
+		}
+		.c_signatur{
+			background: white;
+			color: black;
+		}
 		
 		
         </style>
@@ -226,10 +243,10 @@
 						var bild = str.substring(bild_i+5,bild_ei);
 					}
 
-					new_html += `<p>${titel}</p>`;
-					new_html += `<p>${signatur}</p>`;
-					new_html += `<p>${text}</p>`;
-					new_html += `<p>${bild}</p>`;
+					new_html += `<p class = "c_titel">${titel}</p>`;
+					new_html += `<p clas = "c_text">${text}</p>`;
+					new_html += `<img src = "${bild}" class = "c_bild"></img>`;
+					new_html += `<p class = "c_signatur">${signatur}</p>`;	
 					
 					new_html += "</div>";
 					
