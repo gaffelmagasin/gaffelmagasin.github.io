@@ -272,10 +272,10 @@
 						var bild = str.substring(bild_i+5,bild_ei);
 					}
 
-					new_html += `<p class = "c_titel">${titel}</p>`;
-					new_html += `<p class = "c_text">${text}</p>`;
-					new_html += `<img src = "${bild}" class = "c_bild"></img>`;
-					new_html += `<p class = "c_signatur">${signatur}</p>`;	
+					if(titel != ""){new_html += `<p class = "c_titel">${titel}</p>`;}
+					if(text != ""){new_html += `<p class = "c_text">${text}</p>`;}
+					if(bild != ""){new_html += `<img src = "${bild}" class = "c_bild"></img>`;}
+					if(signatur != ""){new_html += `<p class = "c_signatur">${signatur}</p>`;}
 					
 					new_html += "</div>";
 					
