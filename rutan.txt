@@ -6,7 +6,7 @@ dsadasd
 asdas
 
 ===
-Titel{ett}
+Titel{Pastor}
 Signatur{sigett}
 Text{Hej hoppsan}
 Bi
