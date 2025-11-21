@@ -156,7 +156,7 @@
 
 		.c_titel{
 			font-family: legaff;
-			line-height: 0.9;
+			line-height: 0.95;
 			color: white;
 			padding-top: 20px;
 			padding-left: 20px;
@@ -251,6 +251,8 @@
 						var titel_ei = str.indexOf(`}`,titel_i);
 						var titel = str.substring(titel_i+6,titel_ei);
 					}
+
+					titel = titel.toUpperCase();
 					
 					var signatur_i = str.indexOf(`Signatur{`,str_i);
 					if(signatur_i != -1 && ((signatur_i < next_str_i) || (next_str_i == -1))){
