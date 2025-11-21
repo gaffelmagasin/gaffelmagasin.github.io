@@ -12,9 +12,27 @@ Text{Hej hoppsan}
 Bi
 
 ===
-Titel{två}
-Signatur{ddddddd}
-Text{kul att se dig här}
+Titel{Snygga lines i Paul Simons musik}
+Signatur{Pontus Ohlson}
+Text{Han har “a way with words”, den där Pål. Detta är ett tvärsnitt.
+
+Homeward Bound (1966)
+“Everyday is an endless stream of cigarettes and magazines”
+Paul Simons tidsenliga motsvarighet till doomscrollande hade idag setts som lite coolt, lite eget. Dare I say: indie? Det frånkopplade lugnet som uttråkar honom mellan giggen på Englandsturnén kan man idag romantisera. 
+
+Peace like a river (1972)
+“Ah, and I remember misinformation followed us, like a plague”
+Snack om mis-/desinformation och andra knepigheter från vår nuvarande medievärld gör en total ett-åtti och blir coolt när det utspelar sig före internet.
+
+You can call me Al (1986)
+Med raderna “He doesn't speak the language, He holds no currency” konkretiserar Paul Simon utanförskap. 
+
+Overs (1968)
+Raden “Why don’t we stop fooling ourselves, the game is over” som inleder låten om ett falnande förhållande briljerar tillsammans med den avslutande raden “But each time i try on the thought of leaving you, I stop, stop and think it over”. Ordet “over” får i låten två olika betydelser. Tur att den heter Overs (plural) så att man fattar det finurliga. 
+
+Save the life of my child (1968)
+“Though it never made the New York Times, in the Daily News the caption read: Save the life of my child”
+Jag vill ha fler låtar om nyhetsvärdering}
 Bild{}
 
 ===
