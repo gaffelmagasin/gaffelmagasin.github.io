@@ -136,6 +136,13 @@
 		  overflow-x: hidden;
 		}
 
+		.holder{
+			width: clamp(10px,100%,1000px);
+			display: flex;
+			margin: auto;
+			magin-top: 50px;
+		}
+		
 		.post{
 			background: #000000FF;
 			max-width: 250px;
@@ -185,7 +192,7 @@
 	<div w3-include-html="header.html"></div>
 	<script>w3.includeHTML();</script>
 
-    <div id = "rutan_hållare"></div>
+    <div id = "rutan_hållare" class = "holder"></div>
       
 	  <script>
 		function detectMob() {
