@@ -1,0 +1,6 @@
+<titel>Borås tur och retur</titel>
+<ingress>”Jag har åkt till Borås i onödan och står nu hungrig och blöt i duggregnet” Nils Hagberg har varit i Borås</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>22 November 2025</datum>
