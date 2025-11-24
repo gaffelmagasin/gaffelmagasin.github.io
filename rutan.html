@@ -147,10 +147,22 @@
 			margin-top: 50px;
 			margin-bottom: 90px;
 		}
+
+		.holder_mobile{
+			width: 95%
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 90px;
+		}
 		
 		.post{
 			background: #000000FF;
 			width: 300px;
+			margin: 10px;
+		}
+		.post_mobile{
+			background: #000000FF;
+			width: 100%;
 			margin: 10px;
 		}
 
@@ -219,6 +231,11 @@
 
 		var isMobile = detectMob();
 
+		if(isMobile){
+			document.getElementById('rutan_hållare').classList.remove('holder');
+			document.getElementById('rutan_hållare').classList.add('holder_mobile');
+		}
+
     var new_html = ""
 
     fetch('rutan.txt')
@@ -239,7 +256,8 @@
 				
 				if(str_i != -1){
 		
-					new_html += `<div class = "post">`;
+					if(isMobile){new_html += `<div class = "post">`;}
+					else{new_html += `<div class = "post_mobile">`;}
 
 					var titel = ""
 					var signatur = ""
