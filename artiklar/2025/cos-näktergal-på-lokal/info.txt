@@ -1,5 +1,5 @@
 <titel>C&S: Näktergal på lokal</titel>
-<ingress>“Herrelösa singlar vandrar runt, skygga för varandra, pratar med sig själva och de närmaste” Vilgot Andersson har startat en spalt, Celibat & Staden, i detta avsnitt är vår hjälte på lokal.</ingress>
+<ingress>“Herrelösa singlar vandrar runt, skygga för varandra” Vilgot Andersson har startat en spalt, Celibat & Staden, i detta avsnitt är vår hjälte på lokal.</ingress>
 <skribent>Vilgot Andersson</skribent>
 <fotograf>F: Wikimedia</fotograf>
 <porträtt>vilgot_spg</porträtt>
