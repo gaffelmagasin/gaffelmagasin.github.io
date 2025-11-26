@@ -1,5 +1,11 @@
 
 ===
+Titel{Inne ute, teaser}
+Signatur{Redakttionen with love}
+Text{Klädbytardag? Jag byter kläder varje dag x.}
+
+
+===
 Titel{Pastor}
 Signatur{sigett}
 Text{Hej hoppsan}
