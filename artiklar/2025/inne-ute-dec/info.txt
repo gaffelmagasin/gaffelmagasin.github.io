@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan December</titel>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (December).</ingress>
+<fotograf>F: Wikimedia</fotograf>
+<skribent>Redaktionen</skribent> 
+<datum>28 November 2025</datum>
