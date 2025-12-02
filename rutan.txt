@@ -1,15 +1,13 @@
 
 ===
-Titel{Inne ute, teaser}
-Signatur{Redakttionen with love}
-Text{Klädbytardag? Jag byter kläder varje dag x.}
-
+Titel{Nihilisten}
+Signatur{Nils}
+Text{Vi skulle intervjua Sveriges siste nihilist men han ställde in och sa att det inte spelar någon roll egentligen vilket vi tyckte var lite taskigt}
 
 ===
 Titel{Pastor}
 Signatur{sigett}
 Text{Hej hoppsan}
-Bi
 
 ===
 Titel{Snygga lines i Paul Simons musik}
