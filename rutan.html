@@ -247,6 +247,8 @@
 			document.getElementById('rutan_hållare').classList.add('holder_mobile');
 		}
 
+	function setHeight(){document.getElementById('rutan_hållare').style.height = String(2000 - document.getElementById('rutan_hållare').offsetWidth)+"px";}
+		  
     var new_html = ""
 
     fetch('rutan.txt')
@@ -315,10 +317,14 @@
 			
 			 var division = document.getElementById('rutan_hållare')
          	 division.innerHTML = new_html;
-			 division.style.height = String(2000 - division.offsetWidth)+"px";
-       
+			 
+       		setHeight();
         })
-    
+
+	
+		  
+	window.onresize = setHeight;
+		  
     </script>
 
 	
