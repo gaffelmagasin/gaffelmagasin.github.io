@@ -255,7 +255,7 @@
 		console.log(el.scrollHeight)
 		var width = el.offsetWidth;
 
-		var new_height = 2000 - width;
+		var new_height = 3000 - 2*width;
 		el.style.height = String(new_height)+"px";
 		var min_height = el.scrollHeight;
 		if(min_height>new_height){el.style.height = String(min_height)+"px";}
