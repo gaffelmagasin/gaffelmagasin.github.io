@@ -247,7 +247,12 @@
 			document.getElementById('rutan_hållare').classList.add('holder_mobile');
 		}
 
-	function setHeight(){document.getElementById('rutan_hållare').style.height = String(2000 - document.getElementById('rutan_hållare').offsetWidth)+"px";}
+	function setHeight(){
+		var el = document.getElementById('rutan_hållare')
+		var minheight = el.scrollHeight
+		var width = el.offsetWidth)
+		el.style.height = String(max(2000 - width,minheight))+"px";
+	}
 		  
     var new_html = ""
 
