@@ -251,7 +251,7 @@
 		var el = document.getElementById('rutan_hållare')
 		var minheight = el.scrollHeight;
 		var width = el.offsetWidth;
-		el.style.height = String(max(2000 - width,minheight))+"px";
+		el.style.height = String(Math.max(2000 - width,minheight))+"px";
 	}
 		  
     var new_html = ""
