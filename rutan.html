@@ -249,12 +249,16 @@
 
 	function setHeight(){
 		var el = document.getElementById('rutan_hållare')
-		var minheight = el.scrollHeight;
+		
 		console.log(el.height)
 		console.log(el.offsetHeight)
 		console.log(el.scrollHeight)
 		var width = el.offsetWidth;
-		el.style.height = String(Math.max(2000 - width,minheight))+"px";
+
+		var new_height = 2000 - width;
+		el.style.height = String(new_height)+"px";
+		var min_height = el.scrollHeight;
+		if(min_height>new_height){el.style.height = String(min_height)+"px";}
 	}
 		  
     var new_html = ""
