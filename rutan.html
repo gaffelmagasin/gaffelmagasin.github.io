@@ -254,7 +254,7 @@
 		console.log(el.offsetHeight)
 		console.log(el.scrollHeight)
 		var width = el.offsetWidth;
-		el.style.height = String(2000 - width)+"px";
+		el.style.height = String(Math.max(2000 - width,minheight))+"px";
 	}
 		  
     var new_html = ""
