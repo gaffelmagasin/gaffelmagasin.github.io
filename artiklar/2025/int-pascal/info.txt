@@ -1,4 +1,4 @@
-<titel>Sillraskor & bridgeblandningar</titel>
+<titel>Sillraskor & bridge&shy;blandningar</titel>
 <ingress>“Jag tycker att fåglar är finast uppstoppade.” Pontus Ohlson har snackat med Pascal om bridgeblandning, sillgrisslor och Palmes mördare</ingress>
 <skribent>Pontus Ohlson</skribent>
 <porträtt>pontus_spg</porträtt>
