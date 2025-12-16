@@ -69,7 +69,7 @@ function draw_article_button(div_id, article_name,small, use_preamble = true){
 			new_html += `<div id = ${'titel' + div_id} style = "color: white; width: 98%; padding-top: 2%; font-family: legaff; font-size: clamp(10px,4vw,38px); line-height: 100%;${text_style_title}"> ${titel}</div>`
 		       
 			//ingress
-			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "font-family: georgia; line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
+			if(use_preamble){new_html += `<div id = ${'ingress' + div_id} style = "word-break: break-word; hyphens: auto; font-family: georgia; line-height: ${preamble_line_height}; color: white; width: 95%;	${text_style_preamble}"> ${ingress} </div>`}
 			
 			//name
 			if(!small){new_html +=	`<div style = "font-family: Atkinson-Bold;font-weight: 400; font-size: ${text_style_writer};line-height: ${text_style_writer};padding: 2%;margin-top: 5%; margin-bottom: 2%; color: black;background: white; width: 80%;">${data}</div>`}
