@@ -1,0 +1,6 @@
+<titel>Work Wear Fiction</titel>
+<ingress>”Arbetskläder som mode, estetiskt, och som inte-mode, praktiskt, och det skrämmande vackra som sker när dessa möts” Nils Hagberg hagberg om arbetskläder</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>19 december 2025</datum>
