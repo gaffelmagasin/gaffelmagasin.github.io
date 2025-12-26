@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TAROTMASKINEN</title>
+        
+	<style>
+		
+	    body { 
+
+                background-color: black;
+
+            	     	margin: 0px;
+            		padding: 0px;
+            		max-width: 100vw !important;
+            		overflow-x: hidden !important;
+            }
+
+            .scene {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+             
+              perspective: 1000px;
+            }
+
+            .framer{
+              
+              margin-left: auto;
+              margin-right: auto;
+              width: clamp(51.2px,76.8vw,332.8px);
+              height: clamp(80.6px,120.9vw,523.9px);
+
+	      
+            }
+	    .intr{
+		    text-align: center;
+		    font-family: Georgia;
+		    font-size: 1em;
+		    color: white;
+		    margin-bottom: 20px;
+	    }
+		
+	    .beskrivning{
+		    color: white;
+		    opacity: 0;
+		    vertical-align: middle;
+		    font-family: Georgia;
+		    font-size: 1em;
+		    font-size: 1.1em;
+		    margin-top: 30px;
+		    margin-bottom: 25px;
+	    }
+
+	     .beskrivning.is-flipped{
+		    animation: fadeIn 2s;
+		     opacity: 1;
+	     }
+		
+	     @keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	     }
+	      @keyframes fadeInSlow {
+		0% { opacity: 0; }
+		30% { opacity: 0; }
+		100% { opacity: 1; }
+	     }
+		
+            .card {
+              position: relative;
+		 margin-top: 10px;
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+              transform-style: preserve-3d;
+              transform-origin: center right;
+              transition: transform 2s;
+		
+            }
+
+            .kort{
+                width: 100%;
+                height: 100%;
+		-webkit-user-select: none; /* Safari */
+		-ms-user-select: none; /* IE 10 and IE 11 */
+		user-select: none;
+            }
+            
+            .card.is-flipped {
+              transform: translateX(-100%) rotateY(-180deg);
+            }
+
+	    
+            .card__face {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              line-height: 260px;
+              color: white;
+              text-align: center;
+              font-weight: bold;
+              font-size: 40px;
+              backface-visibility: hidden;
+            }
+            
+            .card__face--front {
+		
+            }
+            
+            .card__face--back {
+              
+              transform: rotateY(180deg);
+            }
+
+		button {
+		  display: block;
+		  background-color: white;
+		  border: none;
+		  color: black;
+		  padding: 10px 18px;
+		  text-align: center;
+		  text-decoration: none;
+		  font-family: helvetica_bold;
+		  font-size: 1em;
+		  font-weight: bold;
+		  margin-top: 0px;
+		  margin-left: auto;
+              	  margin-right: auto;
+		  opacity: 0;
+		}
+		button.is-flipped{
+		    animation: fadeInSlow 4s;
+		     opacity: 1;
+	     	}
+		
+        </style>
+    </head>
+    <body>
+        <div id = 'web-header'><script> 
+		fetch('header.html')
+			.then(function(resp){return resp.text()})
+			.then(function(resp){
+				document.getElementById('web-header').innerHTML = resp;
+			});
+		
+    	</script></div>
+
+	<img src = "/bilder/tarot/tarot logga.png" id = "banner" style = "width: clamp(0px,100%,700px); height: auto; margin-left: auto; margin-right: auto; display: block;"></img>
+	<script>
+		function detectMob() {
+		    const toMatch = [
+		        /Android/i,
+		        /webOS/i,
+		        /iPhone/i,
+		        /iPod/i,
+		        /BlackBerry/i,
+		        /Windows Phone/i
+		    ];
+    
+		    return toMatch.some((toMatchItem) => {
+			return navigator.userAgent.match(toMatchItem);
+		    });
+		}
+
+		var isMobile = detectMob();
+		if(isMobile){
+
+                      document.getElementById("banner").src = "/bilder/tarot/tarot banner mobil.png";
+                  }
+		
+	</script>
+	    
+        <div class = "framer">
+            <p class = "intr">Framför dig har du en maskin som kan spå hur ditt 2025 kommer att bli. Det är bara att klicka på kortet, är man inte nöjd kan man klicka igen.</p>
+	      <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front" id="cf">
+                    <img src = "/bilder/tarot/tarot_bakgrund.png" class = "kort"></img>    
+                </div>
+                <div class="card__face card__face--back" id="cb">
+                    <img src = "/bilder/tarot/tarot_bakgrund.png" class = "kort" id = "k"></img> 
+                </div>
+              </div>
+            </div>
+	    <p id= "text" class = "beskrivning">ooooooooooooooooooooooooooo</p>
+	    <p id = "råd" class = "beskrivning" style = "font-size: 0.9em;">Gör: <br> Undvik:</p>
+	    <button id = "knapp">tell your friends</button>
+	    <br><br>
+        </div>
+        
+
+        <script>
+            function getRandomInt(max) {
+              return Math.floor(Math.random() * max);
+            }
+
+            var flip = false;
+
+            bild = ["narren","magikern","påverskan","kejsarinnan","kejsaren","påven","de älskande","vagnen","justitia","eremiten","lyckans hjul","styrkan","den hängde","döden","måttfullhet","djävulen","plutus","stjärnan","månen","solen","yttersta domen","världen"]
+
+	    text = [
+		    "I ditt öde står skrattet skrivet. Du kommer att börja med riktigt hack ståupp. Ditt set består av ytlig igenkänningshumor, publiksnack som gör folk obekväma, skillnader mellan tjejer och killar samt bomba på Big Ben.",
+		    "Hokus pokus filiokus. Korttrick blir din nya paradhäst på krogen, oväntat nog går det hem hos folk. Låt dock inte dina nya ockulta krafter ta över ditt liv eftersom det fortfarande är lite töntigt med magi.",
+		    "Chakran är i toppform, gudomliga uppenbarelser väntar dig. I dina visioner kommer en tidigare borgerlig statsminister uppenbara sig och ställa dig inför ett val. Betänk länge, välj väl.",
+		    "Efter en kortare psykos i vilken du tror att du är den fjärde inkarnationen i följden: Theodora av Bysans, Katarina den Store och Joséphine de Beauharnais kommer du få en ny förståelse för det enkla oadliga livet och flytta ut till landet för att bli statare.",
+		    "Le suzerain? C’est le roi. Du kommer att bli rojalist trots att det inte längre ger en många fördelar i samhället. Möjliga monarker att hänge dig åt inkluderar: Drottning Margrethe II av Danmark, Oba Ewuare II av Benin, Kung Abdullah II av Jordanien eller Drottning Kristina från Young Royals.",
+		    "Katolicism, en miljard människor kan väl inte ha fel? 2025 är året du börjar med helgondyrkan, mariakulter och transsubstination. Vatikanen är numer ditt själsliga hemland. Om du redan råkar vara katolik kommer du istället konvertera till Heavens Gate.",
+		    "L’amour, c'est fou. Du kommer pussa en liten groda som blir en prins som både är lång och får dig att skratta. Dessvärre vet du inte vilken groda så det lär ta några försök.",
+		    "Ett nytt intresse för bilar, snart kan du talk-the-talk om B-stolpar, vinkelväxlar, trumbromsen, differentialväxeln och Toyotabilar.",
+		    "Rättvisan skola segra! Du kommer ha en kortare flört med syndikalistiska idéer och skriva en intressant men totalt oläsbar essä om rättvisebegreppet hos Kant och Marx.",
+		    "Överge civilisationen. Du kommer välja natur över kultur och överge stadslivet. Möjliga tillflyktsorter: Haparanda, Arvika, Härnösand, Dorotea, Fårö.",
+		    "Du är fjädern i Fru Fortunas hatt. Det är dags att satsa, du kommer börja hänga på travbanan, bingoklubbarna och ditt lokala mahjongställe. När året är slut kommer vinsterna och förlusterna gå på ett ut, men du kommer att ha haft kul på vägen.",
+		    "BÄNK <br>PRESS<br> Dags att bli enorm.",
+		    ":(",
+		    "Aj, aj aj. Det här ser inte bra ut. I värsta fall: ond bråd död, möjligtvis genom en giftpilsattack. I mer metaforisk mening: bli av med jobbet, bli dumpad, stuka foten. Hur som helst är det trist.",
+		    "Nykterism väntar. Du kommer må bättre rent fysiskt men dina vänner inser långsamt att de bara tycker om dig när både du och de är fulla.",
+		    "He's been down at the crossroad. Rackaren är framme igen. Nästa år kommer du att synda något så fruktansvärt mycket: otrohet, snatteri och piratkopiering står på schemat.",
+		    "Money talks. Plutus är gud över de rikedomar du kommer att erhålla på ett mer eller mindre etiskt sätt. Möjliga vägar: dropshipping, betalda samarbeten, sol-och-vårande på Gotland, blodsdiamanter. Pengarna kommer tyvärr leda till ditt förfall enligt den klassiska dramaturgin.",
+		    "Time to go big. Du är nästa Sabrina Carpenter och det här året för med sig ditt stora break, låtsläpp, spelningar och musiksamarbeten. Det slutar inte så bra dock, efter att du redan har signat kommer du tyvärr förstå varför skivbolaget Luger heter som det gör.",
+		    "Din rymden-fas inleds någon gång i mars (referens). Hobbyastronomen i dig kommer inte att hålla tyst om nebulosor, exoplaneter eller möjliga intergalaktiska rymdskepp.",
+		    "Solen står i zenit och du är solen. Gassa i strålningen så mycket du kan, töm en solskyddstub om dagen. Glöm bort UV:t. Bli farligt brun. Lev.",
+		    "Låter värre än vad det är. Du kommer att bli kallad till rättegång, straffskalan är max en månad på kåken. Se det som en semester, bli påläst och vältränad.",
+		    "En gång var jag på en gaybar i Berlin som hette Heile Welt. Åk dit! De har rökrum där bak! I alla fall, ditt år kommer att bestå av världsliga ting som: bord, grus och lägenheter och inte så mycket om andliga ting som: oblat, ikoner och skapelsemyter."
+	    ]
+	    gör = ["Dikter, Mössor, Längdskidor","Gråzoner, Karaoke, Räddningstjänster","Virkning, paradoxer, Science Fiction","Popmusik, Keps på sniskan, Utombordare","Navelskådning, Vykort, Brädspel","Hela havet stormar, Solglasögon, Tjejcigg","Armhävningar, Fåraherdning, Gavel","Stunts, Ekolokalisering, Fonetik","Dockskåp, Allitteration, Husgeråd","Parafrasering, Avslut, Djurgården","Sparbössa, Nässprej, Plastväxter","Förflyttningar, The Wire, Soppa","Ingenting, Vykort, Saltstänk","Göteborgskoloristerna, K-märkning, Bokstaven Q","Provskytte, Uppklarning, Gåshud","Pärmar, Glömska, Parkbänkar","Östblock, Kobingo, Saft","Påhopp, Avledningar, Hanna Hellquist","Mirakel, Femtedelar, Utomhus","Påverkan, ℅, Misär","PQ-formeln, Fraktionsbildning, Återvinning","Gå hem, Sidospår, Listor"]
+	    undvik = ["Hängmattor, Crème brulé, Mönster","Korsdrag, Sockor, Ekobrott","Mannagryn, Sjuhäradsbygden, P3","Krigsspel, Öresund, Personliga attacker","Byfånar, Temakortlekar, Jonatan Unge","Nöjesfält, Handstöpta ljus, Norrlands guld","Lantmäteri, Antika Egypten, Gudsförnekelse","Nagelfarande, Konstrundor, Spa","Proppskåp, Serietidningar, Dimma","Katakeser, Mörkläggning, Gåtor","Huvud, Axlar, Knän & Tår","Instagram, Matkedjor, Morgondagen","Morsning korsning, Huvudvärk, Snabel-A","Kväden, Mys, Lovisa","Kommerser, Krukmakare, Sangviniker","Den gråa hjärnsubstansen, Kolavippen, Kåseri","Sommelier, Tungotal, Märkligheter","Analysandar, Sandlådor, Brevinkast","A-aktier, Gråterskor, Möjligheter","Undvikning, Containerdykning, Låsdyrkning","Komplikationer, Återföreningar, Övertid","Tarotkort, Hemsidor, Popkulturmagasin"]
+		
+            var cards = document.querySelectorAll('.card');
+            [...cards].forEach((card)=>{
+              card.addEventListener( 'click', function() {
+		card.classList.toggle('is-flipped');
+		document.getElementById("text").classList.toggle('is-flipped');
+		document.getElementById("råd").classList.toggle('is-flipped');
+		document.getElementById("knapp").classList.toggle('is-flipped');
+  
+                  flip = !flip;
+
+                  if(flip){
+                      var i = getRandomInt(22);
+                      var b = bild[i]
+		      var t = text[i]
+
+		      var g = gör[i]
+	              var u = undvik[i]
+			  
+                      console.log(i);
+                      console.log(b);
+                      
+                      document.getElementById("text").innerHTML = t;
+		      document.getElementById("råd").innerHTML = "Gör: " + g + "<br>" + "Undvik: " + u;
+                      document.getElementById("k").src = "/bilder/tarot/" + b + ".png";
+                  }
+              });
+            });
+        </script>
+
+	
+
+	<script>
+		const shareData = {
+		  title: "TAROTMASKINEN",
+		  text: "bli spådd",
+		  url: "https://gaffel.nu/tarot",
+		};
+		
+		const btn = document.querySelector("button");
+		const resultPara = document.querySelector(".result");
+		
+		// Share must be triggered by "user activation"
+		btn.addEventListener("click", async () => {
+		  try {
+		    await navigator.share(shareData);
+		    resultPara.textContent = "MDN shared successfully";
+		  } catch (err) {
+		    resultPara.textContent = `Error: ${err}`;
+		  }
+		});
+	</script>
+	    
+    </body>
+</html>
