@@ -1,0 +1,6 @@
+<titel>Uppesittarkväll på göteborgs central</titel>
+<ingress>Nils Hagberg om sin uppesittarkväll på Göteborgs central.</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>26 December 2025</datum>
