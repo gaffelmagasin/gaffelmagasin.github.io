@@ -287,9 +287,11 @@
 				  "Carola, hunddagis, permanenta.",
 				  "Bindestreck, kollo, minnesanteckningar."]
 
-			ordning = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+			ordning = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
 			ordning.sort(() => Math.random() - 0.5)
+			var i = getRandomInt(44)
 
+			
 			console.log(ordning)
 			
             var cards = document.querySelectorAll('.card');
@@ -303,7 +305,8 @@
                   flip = !flip;
 
                   if(flip){
-                      var i = getRandomInt(22);
+                      i++
+					  if(i==45){i=0}
                       const b = bild[i]
 		      var t = text[i]
 
