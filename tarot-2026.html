@@ -293,6 +293,8 @@
 
 			
 			console.log(ordning)
+			console.log(i)
+			
 			
             var cards = document.querySelectorAll('.card');
             [...cards].forEach((card)=>{
@@ -305,15 +307,16 @@
                   flip = !flip;
 
                   if(flip){
-                      i++
-					  if(i==45){i=0}
-                      const b = bild[i]
-		      var t = text[i]
+                      i++;
+					  if(i==45){i=0};
+                      const b = bild[ordning[i]];
+		      var t = text[i];
 
-		      var g = gör[i]
-	              var u = undvik[i]
+		      var g = gör[i];
+	              var u = undvik[i];
 			  
                       console.log(i);
+					  console.log(ordning[i]);
                       console.log(b);
                       
                       document.getElementById("text").innerHTML = t;
@@ -329,9 +332,7 @@
 	<script>
 		const shareData = {
 		  title: "TAROTMASKINEN",
-		  text: "bli spådd",
 		  url: "https://gaffel.nu/tarot",
-		  files: "/bilder/tarot-2026/" + b + ".png"
 		};
 		
 		const btn = document.querySelector("button");
