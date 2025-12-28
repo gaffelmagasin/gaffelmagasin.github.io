@@ -287,7 +287,7 @@
 				  "Carola, hunddagis, permanenta.",
 				  "Bindestreck, kollo, minnesanteckningar."]
 
-			ordning = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+			ordning = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
 			ordning.sort(() => Math.random() - 0.5)
 			var i = getRandomInt(42)
 
@@ -308,7 +308,10 @@
 
                   if(flip){
                       i++;
-					  if(i==43){i=0};
+					  if(i==22){
+						  ordning.sort(() => Math.random() - 0.5) 
+						  i=0
+					  };
 					  var ii = ordning[i]
                       const b = bild[ii];
 		      var t = text[ii];
