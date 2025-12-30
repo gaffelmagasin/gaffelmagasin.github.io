@@ -302,7 +302,24 @@
 		
 		<div id = 'top' style = "width: 100%; margin-top: 20px; margin-bottom: 20px;">
 			
-
+			<div id="reklam_banner"></div>
+			<script>
+			var new_html = `<a href = "/tarot-2026">`
+			
+			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+			if(isMobile == false){
+				new_html += 	`<img src =  "bilder/tarot-2026/tarot banner.webp"
+						style = "width: 100%; float: right;">
+						</img>`
+			}
+			else{
+				new_html += 	`<img src =  "bilder/tarot-2026/tarot mobil.webp"
+						style = "width: 100%; float: right; background: black;">
+						</img>`
+			}
+			new_html += "</a>"
+			document.getElementById("reklam_banner").innerHTML = new_html;
+			</script>
 			<div id = 'blickfång1'><script>draw_article_button('blickfång1','2025/int-fred-soila',isMobile)</script></div>
 			
 
@@ -372,25 +389,6 @@
 			<div id = 'main95'><script>draw_article_button('main95','2025/uppesittarkväll-på-göteborgs-central',isMobile)</script></div>
 			<div id = 'main94'><script>draw_article_button('main94','2025/work-wear-fiction',isMobile)</script></div>
 			<div id = 'main93'><script>draw_article_button('main93','2025/bruce-springsteen',isMobile)</script></div>
-
-			<div id="reklam_banner"></div>
-			<script>
-			var new_html = `<a href = "/postorder">`
-			
-			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
-			if(isMobile == false){
-				new_html += 	`<img src =  "https://i.imgur.com/xZhBsYY.png"
-						style = "width: 100%; float: right;">
-						</img>`
-			}
-			else{
-				new_html += 	`<img src =  "https://i.imgur.com/0mDoC0B.png"
-						style = "width: 100%; float: right; background: black;">
-						</img>`
-			}
-			new_html += "</a>"
-			document.getElementById("reklam_banner").innerHTML = new_html;
-			</script>
 			
 			<h2 style = "width: 100%;">CELIBAT & STADEN</h2>
 			<div id = 'cos'><script>draw_article_button('cos','2025/cos-näktergal-på-lokal',isMobile)</script></div>
