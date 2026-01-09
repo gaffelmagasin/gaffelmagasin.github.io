@@ -304,24 +304,7 @@
 
 			<div id = 'blickfång1'><script>draw_article_button('blickfång1','2026/vietnam',isMobile)</script></div>
 			
-			<div id="reklam_banner"></div>
-			<script>
-			var new_html = `<a href = "/tarot-2026">`
 			
-			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
-			if(isMobile == false){
-				new_html += 	`<img src =  "bilder/tarot-2026/tarot banner.webp"
-						style = "width: 100%; float: right;">
-						</img>`
-			}
-			else{
-				new_html += 	`<img src =  "bilder/tarot-2026/tarot mobil.webp"
-						style = "width: 100%; float: right; background: black;">
-						</img>`
-			}
-			new_html += "</a>"
-			document.getElementById("reklam_banner").innerHTML = new_html;
-			</script>
 
 
 			<div style = "background: black; width: 100%;">
@@ -388,11 +371,29 @@
 		<div id ='blogg_inlägg' class = blog_area>
 			<h2 style = "width: 100%;">SENASTE</h2>
 			<div id = 'main97'><script>draw_article_button('main97','2026/vietnam',isMobile)</script></div>
-			<div id = 'main96'><script>draw_article_button('main96','2025/att-publicera',isMobile)</script></div>
-			<div id = 'main95'><script>draw_article_button('main95','2025/uppesittarkväll-på-göteborgs-central',isMobile)</script></div>
+			<div id="reklam_banner"></div>
+			<script>
+			var new_html = `<a href = "/tarot-2026">`
+			
+			new_html += `<div style = "width:100%; height: auto; display: table; margin-bottom: 10px">`
+			if(isMobile == false){
+				new_html += 	`<img src =  "bilder/tarot-2026/tarot banner.webp"
+						style = "width: 100%; float: right;">
+						</img>`
+			}
+			else{
+				new_html += 	`<img src =  "bilder/tarot-2026/tarot mobil.webp"
+						style = "width: 100%; float: right; background: black;">
+						</img>`
+			}
+			new_html += "</a>"
+			document.getElementById("reklam_banner").innerHTML = new_html;
+			</script>
+			<div id = 'main96'><script>draw_article_button('main96','2025/att-publicera',isMobile)</script></div>			
 			
 			<h2 style = "width: 100%;">CELIBAT & STADEN</h2>
-			<div id = 'cos'><script>draw_article_button('cos','2025/cos-näktergal-på-lokal',isMobile)</script></div>
+			<div id = 'cos'><script>draw_article_button('cos','2025/cos-kinsugi-diskotek',isMobile)</script></div>
+			<a class = 'artikel_knapp' href='/artikel?=2025/cos-näktergal-på-lokal'>C&S: Näktergal på lokal</a>	
 			
 			<h2 style = "width: 100%;">GAFFELS INNE-UTE-LISTA</h2>
 			<div id = 'iul'><script>draw_article_button('iul','2025/inne-ute-dec',isMobile)</script></div>
@@ -403,6 +404,7 @@
 			</div>
 			
 			<h2 style = "width: 100%;">ÄLDRE</h2>
+			<div id = 'main95'><script>draw_article_button('main95','2025/uppesittarkväll-på-göteborgs-central',isMobile)</script></div>
 			<div id = 'main94'><script>draw_article_button('main94','2025/work-wear-fiction',isMobile)</script></div>	
 			<div id = 'main93'><script>draw_article_button('main93','2025/bruce-springsteen',isMobile)</script></div>
 			<div id = 'main92'><script>draw_article_button('main92','2025/int-fred-soila',isMobile)</script></div>	
