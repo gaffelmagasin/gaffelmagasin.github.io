@@ -1,0 +1,6 @@
+<titel>Ett kort resonemang om att läsa på originalspråk</titel>
+<ingress>Theodor Vogel för ett kort resonemang om att läsa på originalspråk.</ingress>
+<skribent>Theodor Vogel</skribent>
+<fotograf>F: Wikimedia</fotograg>
+<porträtt>theodor_spg</porträtt>
+<datum>13 januari 2026</datum>
