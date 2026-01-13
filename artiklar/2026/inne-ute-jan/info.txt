@@ -1,5 +1,5 @@
 <titel>Inne-Ute-Listan Januari</titel>
 <ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (Januari).</ingress>
+<skribent>Redaktionen</skribent>
 <fotograf>F: Wikimedia</fotograf>
-<skribent>Redaktionen</skribent> 
 <datum>31 December 2025</datum>
