@@ -1,0 +1,6 @@
+<titel>Rekognoserat på tåg 328 mot Göteborg</titel>
+<ingress>Nedan följer ett referat av vad som nyligen rekognoscerades av spion Stig Center.</ingress>
+<skribent>Pontus Ohlson</skribent>
+<porträtt>pontus_spg</porträtt>
+<fotograf>F: Wikimedia Commons</fotograf>
+<datum>18 januari 2025</datum>
