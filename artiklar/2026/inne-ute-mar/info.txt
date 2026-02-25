@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan Mars</titel>
+<ingress>Gaffel presenterar vad som är inne och vad som är ute nästa månad (Mars).</ingress>
+<skribent>Redaktionen</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<datum>25 februari 2025</datum>
