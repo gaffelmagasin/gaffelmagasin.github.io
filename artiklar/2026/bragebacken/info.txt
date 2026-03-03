@@ -1,0 +1,6 @@
+<titel>BRAGEBACKEN / SVEAVÄGEN BABYLON / TUNNELGATAN</titel>
+<ingress>Pontus Ohlson går på upptäcktsfärd genom tid, rum, Slottskogen och Sveriges största brottsutredning.  </ingress>
+<skribent>Pontus Ohlson</skribent>
+<porträtt>pontus_spg</porträtt>
+<fotograf>F: Wikimedia Commons</fotograf>
+<datum>3 mars 2025</datum>
