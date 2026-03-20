@@ -1,0 +1,6 @@
+<titel>C&S: Han, robot</titel>
+<ingress>Vilgot Andersson om AI-pojkvännerna och de sorgliga pojkarna som tittar på.</ingress>
+<skribent>Vilgot Andersson</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>vilgot_spg</porträtt>
+<datum>20 mars 2026</datum>
