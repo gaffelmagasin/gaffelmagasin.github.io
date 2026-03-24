@@ -319,6 +319,7 @@
                        
 			var b_str = a_str.replaceAll('images/','artiklar/' + tag + '/');
 			  b_str = b_str.replaceAll(`font-family:"Arial"`,`font-family:"Atkinson-Bold"`)
+			  b_str = b_str.replaceAll(`font-family:"Times New Roman"`,`font-family:"Georgia"`)
 		  
 		    let f = ".png";
 		    let img_num = b_str.split(f).length - 1;
