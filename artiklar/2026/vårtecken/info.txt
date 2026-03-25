@@ -1,5 +1,5 @@
 <titel>Vårtecken</titel>
-<ingress>”De har ingen historia och ingen framtid, de är fastfrusna i tiden, år efter år på samma parkbänk.” Olga Niemandius om våretecknet Alkoholister</ingress>
+<ingress>”De har ingen historia och ingen framtid, de är fastfrusna i tiden, år efter år på samma parkbänk.” Olga Niemandius om vårtecknet Alkoholister</ingress>
 <skribent>Olga Niemandius</skribent>
 <fotograf>F: Wikimedia</fotograf>
 <datum>24 mars 2026</datum>
