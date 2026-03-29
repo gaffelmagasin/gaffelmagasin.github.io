@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan April</titel>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (April).</ingress>
+<skribent>Redaktionen</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<datum>29 mars 2025</datum>
