@@ -1,0 +1,6 @@
+<titel>Inflyttning: fest</titel>
+<ingress>“Jag har bott i den här lägenheten i ett halvår nu, men har fortfarande inte haft någon inflyttningsfest.“ Love Wickelgren Svensby har inflyttningsfest och du är bjuden</ingress>
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
+<datum>2 april 2026</datum>
+<fotograf>F: Fredrik Strage</fotograf>
