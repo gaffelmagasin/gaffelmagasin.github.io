@@ -1,0 +1,6 @@
+<titel>Lögndetektorn</titel>
+<ingress>"Vi måste ställa några initiala frågor för att etablera vad sanningen är." AGC tar ett lögndetektortest.</ingress>
+<skribent>Albin G Carlsson</skribent>
+<porträtt>albin_spg</porträtt>
+<fotograf>F: Majken Strömmer Willems + Wikimedia</bild>
+<datum>14 april 2026</datum>
