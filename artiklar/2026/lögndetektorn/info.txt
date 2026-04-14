@@ -1,4 +1,4 @@
-<titel>Lögndetektorn</titel>
+<titel>Lögndetektor</titel>
 <ingress>"Vi måste ställa några initiala frågor för att etablera vad sanningen är." AGC tar ett lögndetektortest.</ingress>
 <skribent>Albin G Carlsson</skribent>
 <porträtt>albin_spg</porträtt>
