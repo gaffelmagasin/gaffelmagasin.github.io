@@ -1,0 +1,6 @@
+<titel>Ett samtal med Tjim</titel>
+<ingress>Del ett av tre i Agnes Engströms serie <i>Sex, socialism & snurrande skivor</i>: ett samtal med bandet Tjim</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Agnes Engström</fotograf>
+<datum>16 april 2026</datum>
