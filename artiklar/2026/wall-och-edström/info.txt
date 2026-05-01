@@ -2,5 +2,5 @@
 <ingress>Del två av tre i Agnes Engströms serie <i>Sex, socialism & snurrande skivor</i>: ett samtal med diskjockeyarna Axel Wall och Tom Hedlund</ingress>
 <skribent>Agnes Engström</skribent>
 <porträtt>agnes_spg</porträtt>
-<fotograf>F: Agnes Engström</fotograf>
+<fotograf>F: Rebecca Envall Berglund + Agnes Engström</fotograf>
 <datum>1 maj 2026</datum>
