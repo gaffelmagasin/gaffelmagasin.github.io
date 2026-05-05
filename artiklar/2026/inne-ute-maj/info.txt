@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan Maj</titel>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för denna månad (Maj).</ingress>
+<skribent>Redaktionen</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<datum>5 maj 2025</datum>
