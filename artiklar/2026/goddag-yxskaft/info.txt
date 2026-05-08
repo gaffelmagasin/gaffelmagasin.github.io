@@ -1,0 +1,5 @@
+<titel>Goddag yxskaft</titel>
+<ingress>Olle Ordqvist om ett uttryck.</ingress>
+<skribent>Olle Ordqvist</skribent>
+<porträtt>olle_spg</porträtt>
+<datum>8 maj 2026</datum>
