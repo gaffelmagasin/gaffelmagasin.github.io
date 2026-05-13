@@ -1,0 +1,6 @@
+<titel>Ett samtal med Agitator</titel>
+<ingress>Del tre av tre i Agnes Engströms serie <i>Sex, socialism & snurrande skivor</i>: ett samtal med bandet Agitator</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Agnes Engström</fotograf>
+<datum>13 maj 2026</datum>
