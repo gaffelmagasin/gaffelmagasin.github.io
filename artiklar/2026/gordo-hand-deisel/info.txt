@@ -1,0 +1,5 @@
+<titel>Gordo, Hand & Deisel</titel>
+<ingress>Elsa Bolander gör ett försök att nysta upp härvan av Emrik-Forsling-anstrukna Göteborgsband som är Gordo Corso, Hand Audiovisual och Deisel Benzin.</ingress>
+<skribent>Elsa Bolander</skribent>
+<porträtt>elsa_spg</porträtt>
+<datum>27 maj 2026</datum>
