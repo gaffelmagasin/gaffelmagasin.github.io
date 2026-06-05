@@ -1,0 +1,6 @@
+<titel>Jocke Åhlund & Jockum Nordström tar kafferast</titel>
+<ingress>Agnes Engström har startat en till intervjuserie. I detta avsnitt dricker hon kaffe med Jocke Åhlund och Jockum Nordström.</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Anton Lernstal. Press.</fotograf>
+<datum>5 juni 2026</datum>
