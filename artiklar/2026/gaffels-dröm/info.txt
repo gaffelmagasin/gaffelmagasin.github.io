@@ -1,0 +1,5 @@
+<titel>Gaffels 115:e dröm</titel>
+<ingress>”Ombord skeppet Pequod stryker vi längs med relingen. Luften sticker av salt, ögonen svider såsom de gör om de får salt i sig.” Gaffel har drömt.</ingress>
+<skribent>Gaffel</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<datum>10 juni 2026</datum>
