@@ -1,0 +1,6 @@
+<titel>Västlänken till Diamondland</titel>
+<ingress>”Douglas går upp på scen, GBG allstars, sex stjärnor och en sol.” AGC om ett studiebesök på västlänken och hos Douglas Diamond.</ingress>
+<skribent>Albin G Carlsson</skribent>
+<porträtt>albin_spg</porträtt>
+<fotograf>F: Henrik Luhr</bild>
+<datum>16 juni 2026</datum>
