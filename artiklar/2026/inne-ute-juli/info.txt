@@ -1,0 +1,5 @@
+<titel>Inne-Ute-Listan Juli</titel>
+<ingress>Gaffel presenterar vad som är ute och vad som är inne för nästa månad (juli).</ingress>
+<skribent>Redaktionen</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<datum>29 juni 2025</datum>
