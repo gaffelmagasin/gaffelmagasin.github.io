@@ -1,0 +1,6 @@
+<titel>Äventyr i Adrian Recordings FAQ</titel>
+<ingress>Nils Hagberg gör textanalys.</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>F: Press</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>2 juli 2026</datum>
