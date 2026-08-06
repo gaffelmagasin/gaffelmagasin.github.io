@@ -1,0 +1,6 @@
+<titel>Hip to hänga med</titel>
+<ingress>Z'avex vu? Pontus Ohlson är/om yuppien.</ingress>
+<skribent>Pontus Ohlson</skribent>
+<porträtt>pontus_spg</porträtt>
+<fotograf>F: Wikimedia Commons</fotograf>
+<datum>6 augusti 2025</datum>
