@@ -1,0 +1,6 @@
+<titel>Recension: Våldsvågen</titel>
+<ingress>"Vem satte eld på Lisebergs Oceana? Vem sköt ner DC6:an som krascha i Ndola?" Pontus Ohlson recenserar ett recensionsexemplar.</ingress>
+<skribent>Pontus Ohlson</skribent>
+<porträtt>pontus_spg</porträtt>
+<fotograf>F: Civil Polis</fotograf>
+<datum>2 september 2026</datum>
