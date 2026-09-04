@@ -5,11 +5,6 @@ Signatur{Nils}
 Text{Vi skulle intervjua Sveriges siste nihilist men han ställde in och sa att det inte spelar någon roll egentligen vilket vi tyckte var lite taskigt}
 
 ===
-Titel{Pastor}
-Signatur{sigett}
-Text{Hej hoppsan}
-
-===
 Titel{Snygga lines i Paul Simons musik}
 Signatur{Pontus Ohlson}
 Text{Han har “a way with words”, den där Pål. Detta är ett tvärsnitt.
