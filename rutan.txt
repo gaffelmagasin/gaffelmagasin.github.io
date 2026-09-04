@@ -33,16 +33,18 @@ Snack om mis-/desinformation och andra knepigheter från vår nuvarande medievä
 Jag vill ha fler låtar om nyhetsvärdering}
 
 ===
-Titel{En bild}
-Signatur{Bild}
-Text{}
-Bild{https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo_BILD.svg}
+Titel{Bråda råd}
+Signatur{Nils}
+Text{Drick upp ölen. Gå ut ur baren. Tänd ciggen. Se dig omkring. De sista två blossen är lika trevliga som de första två. Däremellan bor vanans ointresse. 
+<br><br>
+Svep världen i grönt tyg. Undvik lagom många frestelser för att behålla självrespekten. Men underkasta dig tillräckligt många för att upprätthålla rutinerna. 
+<br><br>
+Gå in igen. Tala med dina bekanta. Fråga dem sådant du vet att de vill berätta.
+<br><br>
+-Hur träffades ni egentligen?
+<br><br>
+Ignorera dem ibland. Låt dig inte bli frestad att vika ut i ointressanta diskussioner.
+<br><br>
+-Jag hade en så jävla konstig dröm inatt.}
 
-===
-Text{}
-Bild{}
 
-===
-Signatur{000000}
-Text{()()()()}
-Bild{https://tt.se/_next/image?url=https%3A%2F%2Fttnewsagency-cms.s3.eu-north-1.amazonaws.com%2Fbildbanken_hero_a2c5911877.webp&w=3840&q=80}
