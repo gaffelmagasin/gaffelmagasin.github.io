@@ -1,0 +1,6 @@
+<titel>TJURFÄKTNING</titel>
+<ingress>Eller Henrik Ekengren Oscarsson sista strid.</ingress>
+<skribent>Nils Hagberg</skribent>
+<fotograf>Wikimedia</fotograf>
+<porträtt>nils_spg</porträtt>
+<datum>16 september 2026</datum>
