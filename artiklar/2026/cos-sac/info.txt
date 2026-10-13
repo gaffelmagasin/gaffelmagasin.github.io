@@ -1,0 +1,6 @@
+<titel>C&S: Sex and the city</titel>
+<ingress>Vilgot Andersson avslutar sin spalt.</ingress>
+<skribent>Vilgot Andersson</skribent>
+<fotograf>F: Wikimedia</fotograf>
+<porträtt>vilgot_spg</porträtt>
+<datum>13 oktober 2026</datum>
