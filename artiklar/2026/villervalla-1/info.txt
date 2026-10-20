@@ -1,0 +1,6 @@
+<titel>Uppdrag Villervalla: ISAK HEDTJÄRN feat. Grismask</titel>
+<ingress>Del 1 av 3: "Rockklassiker spelas i bakgrunden under hela intervjun."</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Agnes Engström</fotograf>
+<datum>20 oktober 2026</datum>
