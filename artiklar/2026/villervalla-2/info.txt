@@ -1,0 +1,6 @@
+<titel>Uppdrag Villervalla: Hund begraven</titel>
+<ingress>Del 2 av 3: Ärendet överlämnat till förundersökningsledare Agnes Engström</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Agnes Engström</fotograf>
+<datum>27 oktober 2026</datum>
