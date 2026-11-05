@@ -1,0 +1,6 @@
+<titel>BAEVER</titel>
+<ingress>“En lätt doft av svavel och svett osar från vattendraget.“ Love Wickelgren Svensby uppfyller det han åtagit sig</ingress>
+<skribent>Love Wickelgren Svensby</skribent>
+<porträtt>love_spg</porträtt>
+<datum>5 november 2026</datum>
+<fotograf></fotograf>
