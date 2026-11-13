@@ -149,7 +149,7 @@
 		}
 
 		.holder_mobile{
-			width: 90vw;
+			width: clamp(100px,90vw,300px);
 			margin: auto;
 			margin-bottom: 90px;
 		}
@@ -246,7 +246,7 @@
 
 		var isMobile = detectMob();
 
-		if(true){
+		if(isMobile){
 			document.getElementById('rutan_hållare').classList.remove('holder');
 			document.getElementById('rutan_hållare').classList.add('holder_mobile');
 		}
