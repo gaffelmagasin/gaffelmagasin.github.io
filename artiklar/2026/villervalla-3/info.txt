@@ -1,0 +1,6 @@
+<titel>Kontrarecension Villervalla: Lathund</titel>
+<ingress>Del 3 av 3: Agnes Engström går i dialog</ingress>
+<skribent>Agnes Engström</skribent>
+<porträtt>agnes_spg</porträtt>
+<fotograf>F: Agnes Engström</fotograf>
+<datum>13 november 2026</datum>
