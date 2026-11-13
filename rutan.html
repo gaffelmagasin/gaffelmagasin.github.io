@@ -138,10 +138,9 @@
 		}
 
 		.holder{
-			overflow-x: scroll;
-			height: auto;
-			display: contents;
-			align-content: center;
+			overflow: auto;
+		    white-space:nowrap;
+		    width: clamp(100px,90vw,1500px);
 			margin: auto;
 			margin-bottom: 90px;
 		}
@@ -155,8 +154,11 @@
 		.post{
 			background: #000000FF;
 			width: 300px;
+			display: inline-block;
+			  vertical-align:top;
+			  margin-right:20px;
+			  white-space:normal;
 			margin: 10px;
-			flex-grow: 3;
 		}
 		.post_mobile{
 			background: #000000FF;
