@@ -139,6 +139,7 @@
 
 		.holder{
 			overflow-x: auto;
+			overflox-y: none;
 			scrollbar-color: #000000 #FFFFFF;
   			scrollbar-width: thin;
 		    white-space:nowrap;
@@ -146,6 +147,12 @@
 			margin: auto;
 			margin-bottom: 90px;
 		}
+		holder.top-scrollbars {
+		    transform: rotateX(180deg);
+		  }
+		  holder.top-scrollbars * {
+		    transform: rotateX(180deg);
+		  }
 
 		.holder_mobile{
 			width: clamp(100px,90vw,300px);
